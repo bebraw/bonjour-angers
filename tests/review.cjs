@@ -7,6 +7,8 @@ const assert=require('node:assert/strict');
   state.answers.name={right:2,miss:0,attempts:2,streak:2};save();
   if(!acceptsAnswer(questions.find(q=>q.id==='name'),"Je m'appelle Juho."))throw Error('Custom name rejected');
   if(!acceptsAnswer(questions.find(q=>q.id==='coffee'),'Je voudrais un café, s’il vous plaît.'))throw Error('Polite variant rejected');
+  if(!acceptsAnswer(questions.find(q=>q.id==='hotel-breakfast'),'À quelle heure est le petit déjeuner ?'))throw Error('Unhyphenated breakfast rejected');
+  if(!acceptsAnswer(questions.find(q=>q.id==='hotel-breakfast'),'À quelle heure est le petit-déjeuner, s’il vous plaît ?'))throw Error('Polite breakfast rejected');
   start('conference');
  });
  for(let i=0;i<3;i++){

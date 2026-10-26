@@ -11,6 +11,9 @@
 .vocab-field select { width: 100%; font: 13px/1.4 var(--mono); padding: 12px 10px; }
 .vocab-start, .vocab-result-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
 .vocab-start .primary { min-width: 150px; }
+.vocab-review { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.vocab-review:empty { display: none; }
+.vocab-review > .metrics { flex-basis: 100%; margin: 2px 0 0; }
 .vocab-options, .vocab-collection, .vocab-add, .vocab-strength-help { border-top: 2px solid var(--ink); margin: 18px 0 0; }
 .vocab-options > summary, .vocab-collection > summary, .vocab-add > summary, .vocab-strength-help > summary { padding: 12px 0; }
 .vocab-options[open], .vocab-collection[open], .vocab-add[open], .vocab-strength-help[open] { padding-bottom: 15px; }
@@ -62,6 +65,15 @@
 #vocab-feedback p { font-size: 14px; margin: 10px 0; }
 #vocab-feedback .phonetic { font-size: 12px; }
 #vocab-feedback > .primary { margin-top: 5px; }
+.vocab-learning-notes { border-top: 1px solid var(--ink); margin-top: 18px; padding-top: 10px; overflow-wrap: anywhere; }
+.vocab-learning-notes .audio-row { margin: 8px 0 14px; }
+.vocab-learning-notes .intro-example { font-weight: 650; line-height: 1.4; }
+.vocab-learning-notes .translation { color: var(--muted); }
+.vocab-spelling { border-top: 1px solid var(--ink); margin-top: 16px; font-size: 13px; overflow-wrap: anywhere; }
+.vocab-spelling > summary { min-height: 44px; padding: 12px 0; font: 11px var(--mono); }
+.vocab-spelling p { font-size: 13px; margin: 8px 0; }
+.vocab-spelling-word { font-weight: 700; }
+.vocab-spelling-letters { font-family: var(--mono); }
 .vocab-warning { padding: 14px; border: 2px dashed var(--ink); margin: 16px 0; background: var(--lime); font: 12px/1.6 var(--mono); }
 #vocab-notice { font-size: 13px; border-left: 4px solid var(--ink); padding-left: 12px; }
 #vocab-notice:empty { display: none; }

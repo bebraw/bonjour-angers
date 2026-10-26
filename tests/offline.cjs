@@ -12,7 +12,7 @@ const assert=require('node:assert/strict');
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  await context.setOffline(true);await page.close();let p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));
  await p.goto('http://127.0.0.1:8765/');await p.getByText('Offline · lessons ready',{exact:true}).waitFor();
- await p.getByRole('button',{name:'Scenarios',exact:true}).click();await p.getByRole('button',{name:'Practice scenarios',exact:true}).click();
+ await p.getByRole('button',{name:'Scenarios',exact:true}).click();await p.getByRole('button',{name:'Mixed practice',exact:true}).click();
  for(const name of ['Bonjour !','Où est la gare ?','Right','Je voudrais un billet pour Angers.']){
   await p.getByRole('button',{name,exact:true}).click();await p.getByRole('button',{name:/Next question|See my progress/}).click();
  }

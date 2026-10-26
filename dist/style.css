@@ -85,6 +85,18 @@ details > p { font-size: 13px; }
 .card-meta { font-size: 10px; }
 .card button { width: 100%; padding: 13px 16px; border: 0; border-top: 2px solid var(--ink); background: transparent; color: var(--ink); display: flex; align-items: center; justify-content: space-between; gap: 10px; text-align: left; font: 700 12px var(--mono); }
 .card button:hover { background: var(--lime); }
+/* Align scenario headings and actions to the same page gutter. */
+.scenario-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 24px 0 16px; }
+.scenario-heading h1 { margin: 0; }
+.scenario-heading .secondary { flex: none; }
+.scenario-cards .card { display: flex; flex-direction: column; }
+.scenario-cards .card-body { flex: 1; padding: 18px; }
+.scenario-cards h2 { margin: 0 0 10px; font-size: 25px; }
+.scenario-cards p { margin: 0; line-height: 1.5; }
+.scenario-actions { display: grid; grid-template-columns: 1fr 1fr; }
+.scenario-actions button { justify-content: center; min-height: 48px; text-align: center; }
+.scenario-actions button + button { border-left: 2px solid var(--ink); background: var(--lime); }
+.scenario-actions button + button:hover { background: var(--ink); color: var(--lime); }
 .tip { display: flex; align-items: center; gap: 15px; border-left: 4px solid var(--ink); padding: 5px 18px; margin: 24px 0; }
 .tip p { font-size: 13px; }
 .week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
@@ -98,7 +110,7 @@ details > p { font-size: 13px; }
 .sound { flex: none; width: 44px; height: 44px; border: 2px solid var(--ink); background: var(--bg); color: var(--ink); }
 .audio-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
 .audio-row button { font-size: 11px; padding: 9px 12px; }
-dialog { color: var(--ink); background: var(--bg); border: 3px solid var(--ink); width: min(650px, calc(100% - 24px)); max-height: calc(100dvh - 24px); padding: 28px; }
+dialog { color: var(--ink); background: var(--bg); border: 3px solid var(--ink); width: min(650px, calc(100% - 24px)); max-width: calc(100% - 24px); max-height: calc(100dvh - 24px); margin: auto; padding: 28px; }
 dialog::backdrop { background: #0009; }
 .close { position: absolute; right: 8px; top: 5px; background: var(--bg); border: 0; color: var(--ink); font-size: 29px; width: 44px; }
 dialog h2 { margin: 15px 36px 20px 0; font-size: 30px; }
@@ -160,6 +172,11 @@ dialog h2 { margin: 15px 36px 20px 0; font-size: 30px; }
   .cards { grid-template-columns: 1fr; gap: 12px; }
   .card-top { min-height: 50px; font-size: 23px; }
   .card-body { padding: 16px; }
+  .scenario-heading { align-items: flex-start; flex-wrap: wrap; margin: 20px 0 14px; }
+  .scenario-heading h1 { font-size: 36px; }
+  .scenario-heading .secondary { font-size: 11px; padding: 10px 12px; }
+  .scenario-cards .card-body { padding: 16px; }
+  .scenario-cards h2 { font-size: 24px; }
   .section-heading { align-items: baseline; gap: 12px; }
   .section-heading span { font-size: 9px; }
   .week { grid-template-columns: repeat(3, minmax(0, 1fr)); }

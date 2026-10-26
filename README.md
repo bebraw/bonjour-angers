@@ -26,6 +26,10 @@ Bump `VERSION` in `dist/sw.js` whenever any cached asset changes before deployme
 
 ## Verification
 
+Scenarios includes nine practical situations with 36 adaptive questions and nine four-turn dialogues: directions, café orders, conference introductions, hotel check-in, tram travel, bakery orders, restaurant dietary needs, registration and post-talk networking. Each card offers Dialogue and Practice; Mixed practice selects weak skills across topics. Progress totals reflect all questions, and new scenario IDs are supported by the shared sync model. Cards use consistent page gutters, internal heading spacing and action rows; lessons keep symmetric margins on narrow screens.
+
+Run `node tests/scenarios.cjs` for all-topic completion/sync, accepted typed answers, new dialogues/phrasebook content and mobile/desktop margin checks. `node tests/vocabulary-tips.cjs` checks opt-in tips, assisted scoring, answer-review content and narrow-screen wrapping.
+
 Serve `dist/` over localhost or HTTPS, e.g. `python3 -m http.server 8765 --directory dist`.
 
 With Playwright and Chromium available, run `node tests/offline.cjs` and `node tests/review.cjs`. The browser executable is `/usr/bin/chromium` in the development environment. Tests verify a fresh offline window, a complete offline lesson, persisted progress, search/dialogues, cache recovery, malformed storage, and reviewed quiz/focus behavior. `tests/offline.cjs` uses an iPhone-sized Chromium viewport; it does not replace a real Safari/iOS test.
@@ -47,6 +51,8 @@ The Vocabulary trainer includes 240 original word pairs across everyday essentia
 Continuous mode is the default; optional 5/10/20-word rounds are available. Default practice selects weak due words first, then new ones, and skips resting words. Strength is stored per direction on a 0–100 scale: a correct initial recall adds 20, a correct retry adds 5, and an error or Show answer subtracts 30. At 80 a word is well known. Initial successes schedule reviews after 1/3/7/14/30 days as strength grows; correct retries and words missed three times take a 10-minute rest. A rolling queue keeps continuous sessions bounded in memory, while missed-word directions and progress stay saved. Five XP are added to the main progress for each correct initial attempt; retry attempts earn no extra XP.
 
 Personal French/English pairs (up to 100) and vocabulary progress use `bonjour-angers-vocabulary-v1` localStorage. Rounds save after each answer and can resume after reopening offline. Reset progress preserves the personal word list. The new data, script and stylesheet are part of the offline pack.
+
+Words has a direct **Review N due words** action above the practice settings. It selects previously practiced, due words across all topics and modes, ignoring learning filters so due words cannot be stranded in another mode. Rounds include up to 20 unique words and choose one due track per word. **Review learned words** also lets you revisit practiced words before their scheduled review. The Progress vocabulary card links to the same actions, and reconnecting sync refreshes the review count/buttons. `node tests/vocabulary-review.cjs` verifies both entry points, due-only selection, early review, filter independence and saved review rounds.
 
 Run `node tests/vocabulary.cjs` and `node tests/continuous.cjs` for vocabulary grading, review/retry, saved-round, custom-text safety and offline coverage. It uses a temporary local HTTP server on port 8792 and an iPhone-size Chromium viewport.
 
@@ -89,7 +95,9 @@ Sync tests: `tests/sync-model.cjs`, `tests/sync-client.cjs`, `tests/sync-server.
 
 ### Tips
 
-Word practice has a Tip button with a partial spelling cue and letter count. A tip does not grade or penalize the word by itself. A correct hinted answer earns 5 strength points, rests for 10 minutes, and earns no XP; unaided recall still earns 20 strength points. This uses the same conservative assisted-answer event in cloud sync, so the rule stays consistent across devices. Tip state stays with the device-local active round and survives reopening.
+Word practice has a Tip button with a partial spelling cue and letter count. A tip does not grade or penalize the word by itself. A correct hinted answer earns 5 strength points, rests for 10 minutes, and earns no XP; unaided recall still earns 20 strength points. This uses the same conservative assisted-answer event in cloud sync, so the rule stays consistent across devices. Tips open only when requested on the current screen. Reopening or resuming a prompt closes the tip while preserving assisted scoring for that attempt. Later retries start with the tip closed.
+
+Every graded word now shows a word guide below Next: approximate pronunciation, normal/slow device audio, a French usage example with its English translation, and a usage note when provided. Spelling & accents expands to show the exact French form, letter sequence, accent names and relevant article guidance. Introductions also offer the spelling guide. These details remain hidden during recall and listening so they do not give away the answer. Personal words use their saved usage note and spelling without inventing pronunciation or examples.
 
 ### Compact phone practice
 

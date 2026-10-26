@@ -6,9 +6,15 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
   const WORD_IDS = Object.freeze(["hello","thanks","please","excuse","yes","no","today","tomorrow","now","here","there","open","closed","name","help","station","train","tram","ticket","platform","departure","arrival","reservation","hotel","bedroom","key","address","left","right","straight","coffee","tea","water","bread","croissant","set-menu","menu","table","bill","jug","dish","dessert","vegetarian","without","takeaway","conference","presentation","badge","registration","meeting-room","break","question","answer","research","field","programme","poster","university","researcher","chat","goodbye","good-evening","see-you-soon","okay","understand","speak","repeat-verb","slowly","wait","buy","price","shop","pharmacy","doctor","hospital","toilets","help-noun","emergency","phone","battery","charger","wifi","clock-time","morning","afternoon","evening","yesterday","week","day","rain","sun","hot","cold","one","two","three","four","five","six","seven","eight","nine","ten","twenty","how-much","bus","transport-stop","airport","taxi","car","bicycle","on-foot","street-map","street","town-square","city-centre","bridge","river","entrance","exit","near","far-from","opposite","next-to","behind","in-front-of","cross","turn","go","come","return-trip","one-way","delay","connection","final-stop","driver","passenger","suitcase","luggage-item","passport","hotel-reception","floor","lift","stairs","shower","towel","breakfast","stay","overnight-stay","available","lunch","dinner","restaurant-server","bakery","restaurant","counter","terrace","drinking-glass","cup","plate","fork","knife","spoon","napkin","salt","pepper","sugar","milk","butter","cheese","egg","chicken","fish","meat","vegetables","salad","soup","rice","pasta","potato","apple","juice","beer","wine","bottle","sparkling-water","still-water","portion","food-order","order-food","pay","bank-card","cash","separate-bill","eat-in","lecture","session","workshop","meeting","seminar","speaker","audience","attendee","organizer","colleague","student","professor","laboratory","team","project","topic","title","abstract","scientific-paper","result","method","data","experiment","analysis","conclusion","source","reference","graph","slide","screen","microphone","projector","cable","socket","computer","link","website","email","business-card","appointment","date","time-slot","duration","present","send"]);
-  const QUESTION_IDS = Object.freeze(['hello','station','right','ticket','coffee','here','bill','water','name','repeat','talk','english']);
+  const QUESTION_IDS = Object.freeze(['hello','station','right','ticket','coffee','here','bill','water','name','repeat','talk','english',
+    'hotel-booking','hotel-breakfast','hotel-wifi','hotel-checkout',
+    'tram-stop','tram-line','tram-time','tram-validate',
+    'bakery-bread','bakery-quantity','bakery-price','bakery-card',
+    'restaurant-menu','restaurant-vegetarian','restaurant-allergy','restaurant-finished',
+    'registration-badge','registration-programme','registration-room','registration-start',
+    'networking-field','networking-question','networking-contact','networking-thanks']);
   const TRACKS = Object.freeze(['en-fr','fr-en','context','listen']);
-  const TOPICS = Object.freeze(['travel','food','conference']);
+  const TOPICS = Object.freeze(['travel','food','conference','hotel','tram','bakery','restaurant','registration','networking']);
   const WORDS = new Set(WORD_IDS), QUESTIONS = new Set(QUESTION_IDS);
   const MAX_CUSTOM = 100, MAX_COUNT = 1000000000, MAX_TIME = 8640000000000000;
   const MAX_SNAPSHOT_BYTES = 1000000, MAX_OPERATION_BYTES = 1050000;
@@ -91,7 +97,7 @@
     clean.app.xp=number(app.xp,MAX_COUNT*100,'XP');
     clean.app.day=number(app.day,7,'trip day',1);if(clean.app.day<1)throw new TypeError('Invalid trip day');
     clean.app.days=[...new Set(array(app.days,'practice days',10000).map(day))].sort();
-    clean.app.complete=TOPICS.filter(t=>array(app.complete,'completed scenarios',3).includes(t));
+    clean.app.complete=TOPICS.filter(t=>array(app.complete,'completed scenarios',TOPICS.length).includes(t));
     if(app.complete!==undefined&&app.complete.some(t=>!TOPICS.includes(t)))throw new TypeError('Unknown scenario');
     if(app.answers!==undefined) {
       const answers=record(app.answers,'scenario answers');

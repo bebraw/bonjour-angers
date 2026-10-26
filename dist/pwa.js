@@ -1,5 +1,5 @@
 (() => {
-  const BUILD='v6-account-sync';
+  const BUILD='v7-word-guide-scenarios';
   const panel=document.querySelector('#offline-panel');
   const label=document.querySelector('#offline-status');
   const retry=document.querySelector('#offline-retry');
