@@ -13,7 +13,14 @@ window.VOCABULARY_WORDS = [
       "hi",
       "good morning",
       "good afternoon"
-    ]
+    ],
+    "usage": "Say bonjour when entering a shop or starting a daytime conversation.",
+    "context": {
+      "sentence": "____, madame.",
+      "answer": "Bonjour",
+      "translation": "Hello, madam.",
+      "accepted": []
+    }
   },
   {
     "id": "thanks",
@@ -26,7 +33,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "thanks"
-    ]
+    ],
+    "usage": "Use merci alone, or merci pour followed by the thing you appreciate.",
+    "context": {
+      "sentence": "____ pour votre aide.",
+      "answer": "Merci",
+      "translation": "Thank you for your help.",
+      "accepted": []
+    }
   },
   {
     "id": "please",
@@ -39,7 +53,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [
       "s’il te plaît"
     ],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Add this polite phrase to a request when speaking to a stranger or a group.",
+    "context": {
+      "sentence": "Un café, ____.",
+      "answer": "s’il vous plaît",
+      "translation": "A coffee, please.",
+      "accepted": []
+    }
   },
   {
     "id": "excuse",
@@ -53,7 +74,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "sorry",
       "pardon"
-    ]
+    ],
+    "usage": "Use pardon to get attention politely or apologise for a small interruption.",
+    "context": {
+      "sentence": "____, où est la gare ?",
+      "answer": "Pardon",
+      "translation": "Excuse me, where is the station?",
+      "accepted": []
+    }
   },
   {
     "id": "yes",
@@ -66,7 +94,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "yeah"
-    ]
+    ],
+    "usage": "Use oui to agree or answer a yes-or-no question positively.",
+    "context": {
+      "sentence": "____, j’ai une réservation.",
+      "answer": "Oui",
+      "translation": "Yes, I have a reservation.",
+      "accepted": []
+    }
   },
   {
     "id": "no",
@@ -77,7 +112,14 @@ window.VOCABULARY_WORDS = [
     "example": "Non, merci.",
     "exampleEn": "No, thank you.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use non, merci for a brief, polite refusal.",
+    "context": {
+      "sentence": "____, merci.",
+      "answer": "Non",
+      "translation": "No, thank you.",
+      "accepted": []
+    }
   },
   {
     "id": "today",
@@ -88,7 +130,14 @@ window.VOCABULARY_WORDS = [
     "example": "Le colloque commence aujourd’hui.",
     "exampleEn": "The conference starts today.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use aujourd’hui to say that something happens on the current day.",
+    "context": {
+      "sentence": "Le colloque commence ____.",
+      "answer": "aujourd’hui",
+      "translation": "The conference starts today.",
+      "accepted": []
+    }
   },
   {
     "id": "tomorrow",
@@ -99,7 +148,14 @@ window.VOCABULARY_WORDS = [
     "example": "Je pars demain.",
     "exampleEn": "I leave tomorrow.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use demain for plans on the day after today.",
+    "context": {
+      "sentence": "Je pars ____.",
+      "answer": "demain",
+      "translation": "I leave tomorrow.",
+      "accepted": []
+    }
   },
   {
     "id": "now",
@@ -112,7 +168,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "right now"
-    ]
+    ],
+    "usage": "Put maintenant in a request when you want to do something right away.",
+    "context": {
+      "sentence": "Je voudrais payer ____.",
+      "answer": "maintenant",
+      "translation": "I would like to pay now.",
+      "accepted": []
+    }
   },
   {
     "id": "here",
@@ -123,7 +186,14 @@ window.VOCABULARY_WORDS = [
     "example": "La salle est ici.",
     "exampleEn": "The room is here.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use ici for the place where you are speaking.",
+    "context": {
+      "sentence": "La salle est ____.",
+      "answer": "ici",
+      "translation": "The room is here.",
+      "accepted": []
+    }
   },
   {
     "id": "there",
@@ -136,7 +206,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "there"
-    ]
+    ],
+    "usage": "Use là-bas for a place some distance away, often while pointing.",
+    "context": {
+      "sentence": "L’arrêt de tram est ____.",
+      "answer": "là-bas",
+      "translation": "The tram stop is over there.",
+      "accepted": []
+    }
   },
   {
     "id": "open",
@@ -149,7 +226,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [
       "ouverte"
     ],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "A business can be ouvert; use ouverte with a feminine noun such as la pharmacie.",
+    "context": {
+      "sentence": "Le café est ____.",
+      "answer": "ouvert",
+      "translation": "The café is open.",
+      "accepted": []
+    }
   },
   {
     "id": "closed",
@@ -164,7 +248,14 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "shut"
-    ]
+    ],
+    "usage": "A business can be fermé; use fermée with a feminine noun such as la boutique.",
+    "context": {
+      "sentence": "Le musée est ____.",
+      "answer": "fermé",
+      "translation": "The museum is closed.",
+      "accepted": []
+    }
   },
   {
     "id": "name",
@@ -180,7 +271,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the name",
       "a name"
-    ]
+    ],
+    "usage": "Nom often means surname on a form; prénom means first name.",
+    "context": {
+      "sentence": "Quel est votre ____ ?",
+      "answer": "nom",
+      "translation": "What is your name?",
+      "accepted": []
+    }
   },
   {
     "id": "help",
@@ -193,7 +291,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "help"
-    ]
+    ],
+    "usage": "Pouvez-vous m’aider ? is a polite way to ask someone to help you.",
+    "context": {
+      "sentence": "Pouvez-vous m’____ ?",
+      "answer": "aider",
+      "translation": "Can you help me?",
+      "accepted": []
+    }
   },
   {
     "id": "station",
@@ -212,7 +317,14 @@ window.VOCABULARY_WORDS = [
       "the station",
       "the train station",
       "the railway station"
-    ]
+    ],
+    "usage": "La gare is a railway station; a bus station is une gare routière.",
+    "context": {
+      "sentence": "Où est la ____ ?",
+      "answer": "gare",
+      "translation": "Where is the train station?",
+      "accepted": []
+    }
   },
   {
     "id": "train",
@@ -228,7 +340,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the train",
       "a train"
-    ]
+    ],
+    "usage": "Prendre le train means to travel by train.",
+    "context": {
+      "sentence": "Le ____ arrive à dix heures.",
+      "answer": "train",
+      "translation": "The train arrives at ten o’clock.",
+      "accepted": []
+    }
   },
   {
     "id": "tram",
@@ -249,7 +368,14 @@ window.VOCABULARY_WORDS = [
       "tramway",
       "streetcar",
       "the streetcar"
-    ]
+    ],
+    "usage": "Tram is the everyday short form of tramway.",
+    "context": {
+      "sentence": "Je prends le ____.",
+      "answer": "tram",
+      "translation": "I’m taking the tram.",
+      "accepted": []
+    }
   },
   {
     "id": "ticket",
@@ -265,7 +391,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the ticket",
       "a ticket"
-    ]
+    ],
+    "usage": "Use billet for a train ticket; a tram ticket may also be called un ticket.",
+    "context": {
+      "sentence": "Un ____ pour Angers, s’il vous plaît.",
+      "answer": "billet",
+      "translation": "A ticket to Angers, please.",
+      "accepted": []
+    }
   },
   {
     "id": "platform",
@@ -282,7 +415,14 @@ window.VOCABULARY_WORDS = [
       "the platform",
       "train platform",
       "the train platform"
-    ]
+    ],
+    "usage": "Look for quai on railway signs; voie identifies the numbered track.",
+    "context": {
+      "sentence": "Quel est le ____ pour ce train ?",
+      "answer": "quai",
+      "translation": "Which platform is this train leaving from?",
+      "accepted": []
+    }
   },
   {
     "id": "departure",
@@ -297,7 +437,14 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the departure"
-    ]
+    ],
+    "usage": "Use départ when checking the time a train or flight leaves.",
+    "context": {
+      "sentence": "Le ____ est à neuf heures.",
+      "answer": "départ",
+      "translation": "Departure is at nine o’clock.",
+      "accepted": []
+    }
   },
   {
     "id": "arrival",
@@ -312,7 +459,14 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the arrival"
-    ]
+    ],
+    "usage": "Arrivée is feminine and commonly appears on transport information boards.",
+    "context": {
+      "sentence": "L’____ est à midi.",
+      "answer": "arrivée",
+      "translation": "Arrival is at noon.",
+      "accepted": []
+    }
   },
   {
     "id": "reservation",
@@ -331,7 +485,14 @@ window.VOCABULARY_WORDS = [
       "booking",
       "the booking",
       "a booking"
-    ]
+    ],
+    "usage": "J’ai une réservation works at hotels and restaurants.",
+    "context": {
+      "sentence": "J’ai une ____ pour ce soir.",
+      "answer": "réservation",
+      "translation": "I have a reservation for this evening.",
+      "accepted": []
+    }
   },
   {
     "id": "hotel",
@@ -347,7 +508,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the hotel",
       "a hotel"
-    ]
+    ],
+    "usage": "The h is silent, so l’hôtel links smoothly with the word before it.",
+    "context": {
+      "sentence": "L’____ est près de la gare.",
+      "answer": "hôtel",
+      "translation": "The hotel is near the station.",
+      "accepted": []
+    }
   },
   {
     "id": "bedroom",
@@ -367,7 +535,14 @@ window.VOCABULARY_WORDS = [
       "the hotel room",
       "room",
       "the room"
-    ]
+    ],
+    "usage": "Use chambre for a hotel room or bedroom, rather than a meeting room.",
+    "context": {
+      "sentence": "Ma ____ est au deuxième étage.",
+      "answer": "chambre",
+      "translation": "My room is on the second floor.",
+      "accepted": []
+    }
   },
   {
     "id": "key",
@@ -385,7 +560,16 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the key",
       "a key"
-    ]
+    ],
+    "usage": "Clé and clef are both spellings of the same word.",
+    "context": {
+      "sentence": "Voici la ____ de votre chambre.",
+      "answer": "clé",
+      "translation": "Here is the key to your room.",
+      "accepted": [
+        "clef"
+      ]
+    }
   },
   {
     "id": "address",
@@ -401,7 +585,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the address",
       "an address"
-    ]
+    ],
+    "usage": "Use adresse to ask for a street address or an email address.",
+    "context": {
+      "sentence": "Quelle est l’____ de l’hôtel ?",
+      "answer": "adresse",
+      "translation": "What is the hotel’s address?",
+      "accepted": []
+    }
   },
   {
     "id": "left",
@@ -415,7 +606,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "left",
       "on the left"
-    ]
+    ],
+    "usage": "Use à gauche after tournez to give a left-turn instruction.",
+    "context": {
+      "sentence": "Tournez ____.",
+      "answer": "à gauche",
+      "translation": "Turn left.",
+      "accepted": []
+    }
   },
   {
     "id": "right",
@@ -429,7 +627,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "right",
       "on the right"
-    ]
+    ],
+    "usage": "Use à droite to locate something on the right or describe a right turn.",
+    "context": {
+      "sentence": "La pharmacie est ____.",
+      "answer": "à droite",
+      "translation": "The pharmacy is on the right.",
+      "accepted": []
+    }
   },
   {
     "id": "straight",
@@ -443,7 +648,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "straight on",
       "straight"
-    ]
+    ],
+    "usage": "Tout droit means straight ahead; à droite means to the right.",
+    "context": {
+      "sentence": "Continuez ____.",
+      "answer": "tout droit",
+      "translation": "Continue straight ahead.",
+      "accepted": []
+    }
   },
   {
     "id": "coffee",
@@ -459,7 +671,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the coffee",
       "a coffee"
-    ]
+    ],
+    "usage": "Ordering un café in France usually gets you an espresso.",
+    "context": {
+      "sentence": "Un ____, s’il vous plaît.",
+      "answer": "café",
+      "translation": "A coffee, please.",
+      "accepted": []
+    }
   },
   {
     "id": "tea",
@@ -475,7 +694,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the tea",
       "a tea"
-    ]
+    ],
+    "usage": "Use un thé when ordering a serving, and le thé when talking about tea generally.",
+    "context": {
+      "sentence": "Je voudrais un ____.",
+      "answer": "thé",
+      "translation": "I would like a tea.",
+      "accepted": []
+    }
   },
   {
     "id": "water",
@@ -491,7 +717,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the water",
       "some water"
-    ]
+    ],
+    "usage": "Ask for une carafe d’eau with a meal when you want a jug of tap water.",
+    "context": {
+      "sentence": "Une carafe d’____, s’il vous plaît.",
+      "answer": "eau",
+      "translation": "A jug of tap water, please.",
+      "accepted": []
+    }
   },
   {
     "id": "bread",
@@ -507,7 +740,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the bread",
       "some bread"
-    ]
+    ],
+    "usage": "Du pain means some bread, whereas un pain can mean a loaf.",
+    "context": {
+      "sentence": "Est-ce qu’il y a du ____ ?",
+      "answer": "pain",
+      "translation": "Is there any bread?",
+      "accepted": []
+    }
   },
   {
     "id": "croissant",
@@ -523,7 +763,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the croissant",
       "a croissant"
-    ]
+    ],
+    "usage": "Use un croissant to order one, or deux croissants to order two.",
+    "context": {
+      "sentence": "Un ____ et un thé, s’il vous plaît.",
+      "answer": "croissant",
+      "translation": "A croissant and a tea, please.",
+      "accepted": []
+    }
   },
   {
     "id": "set-menu",
@@ -541,7 +788,14 @@ window.VOCABULARY_WORDS = [
       "a set menu",
       "fixed-price menu",
       "the fixed-price menu"
-    ]
+    ],
+    "usage": "A restaurant menu is usually a fixed-price set of courses, not the full list of dishes.",
+    "context": {
+      "sentence": "Je voudrais le ____ à vingt euros.",
+      "answer": "menu",
+      "translation": "I would like the twenty-euro set menu.",
+      "accepted": []
+    }
   },
   {
     "id": "menu",
@@ -559,7 +813,14 @@ window.VOCABULARY_WORDS = [
       "a menu",
       "à la carte menu",
       "a la carte menu"
-    ]
+    ],
+    "usage": "Ask for la carte to see the restaurant’s full list of dishes.",
+    "context": {
+      "sentence": "La ____, s’il vous plaît.",
+      "answer": "carte",
+      "translation": "The menu, please.",
+      "accepted": []
+    }
   },
   {
     "id": "table",
@@ -575,7 +836,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the table",
       "a table"
-    ]
+    ],
+    "usage": "Une table pour followed by a number is a useful restaurant request.",
+    "context": {
+      "sentence": "Une ____ pour une personne, s’il vous plaît.",
+      "answer": "table",
+      "translation": "A table for one person, please.",
+      "accepted": []
+    }
   },
   {
     "id": "bill",
@@ -594,7 +862,14 @@ window.VOCABULARY_WORDS = [
       "check",
       "the check",
       "restaurant bill"
-    ]
+    ],
+    "usage": "L’addition is the restaurant bill; a shop receipt is usually un ticket de caisse.",
+    "context": {
+      "sentence": "L’____, s’il vous plaît.",
+      "answer": "addition",
+      "translation": "The bill, please.",
+      "accepted": []
+    }
   },
   {
     "id": "jug",
@@ -616,7 +891,14 @@ window.VOCABULARY_WORDS = [
       "pitcher",
       "the pitcher",
       "a pitcher"
-    ]
+    ],
+    "usage": "Use une carafe d’eau to ask for a jug of water at a restaurant.",
+    "context": {
+      "sentence": "La ____ est sur la table.",
+      "answer": "carafe",
+      "translation": "The jug is on the table.",
+      "accepted": []
+    }
   },
   {
     "id": "dish",
@@ -635,7 +917,14 @@ window.VOCABULARY_WORDS = [
       "main course",
       "the main course",
       "a main course"
-    ]
+    ],
+    "usage": "Le plat du jour is the dish of the day; le plat can also mean a main course.",
+    "context": {
+      "sentence": "Quel est le ____ du jour ?",
+      "answer": "plat",
+      "translation": "What is the dish of the day?",
+      "accepted": []
+    }
   },
   {
     "id": "dessert",
@@ -651,7 +940,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the dessert",
       "a dessert"
-    ]
+    ],
+    "usage": "Dessert is masculine; an extra s distinguishes it from désert, a desert.",
+    "context": {
+      "sentence": "Un ____, s’il vous plaît.",
+      "answer": "dessert",
+      "translation": "A dessert, please.",
+      "accepted": []
+    }
   },
   {
     "id": "vegetarian",
@@ -664,7 +960,14 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [
       "végétarienne"
     ],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use végétarien with a masculine noun and végétarienne with a feminine noun.",
+    "context": {
+      "sentence": "Est-ce que ce plat est ____ ?",
+      "answer": "végétarien",
+      "translation": "Is this dish vegetarian?",
+      "accepted": []
+    }
   },
   {
     "id": "without",
@@ -675,7 +978,14 @@ window.VOCABULARY_WORDS = [
     "example": "Un café sans sucre, s’il vous plaît.",
     "exampleEn": "A coffee without sugar, please.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Put sans before an ingredient you do not want, such as sans sucre.",
+    "context": {
+      "sentence": "Un café ____ sucre, s’il vous plaît.",
+      "answer": "sans",
+      "translation": "A coffee without sugar, please.",
+      "accepted": []
+    }
   },
   {
     "id": "takeaway",
@@ -691,7 +1001,14 @@ window.VOCABULARY_WORDS = [
       "take away",
       "takeout",
       "to go"
-    ]
+    ],
+    "usage": "Say à emporter when taking food or drink away rather than eating there.",
+    "context": {
+      "sentence": "Un thé ____, s’il vous plaît.",
+      "answer": "à emporter",
+      "translation": "A tea to take away, please.",
+      "accepted": []
+    }
   },
   {
     "id": "conference",
@@ -711,7 +1028,14 @@ window.VOCABULARY_WORDS = [
       "the academic conference",
       "symposium",
       "a symposium"
-    ]
+    ],
+    "usage": "Colloque commonly names an academic meeting with several talks or sessions.",
+    "context": {
+      "sentence": "Je suis ici pour le ____.",
+      "answer": "colloque",
+      "translation": "I’m here for the academic conference.",
+      "accepted": []
+    }
   },
   {
     "id": "presentation",
@@ -727,7 +1051,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the presentation",
       "a presentation"
-    ]
+    ],
+    "usage": "Use présentation for your talk or a colleague’s presentation.",
+    "context": {
+      "sentence": "Votre ____ était intéressante.",
+      "answer": "présentation",
+      "translation": "Your presentation was interesting.",
+      "accepted": []
+    }
   },
   {
     "id": "badge",
@@ -747,7 +1078,14 @@ window.VOCABULARY_WORDS = [
       "the name badge",
       "name tag",
       "nametag"
-    ]
+    ],
+    "usage": "At registration, mon badge means your attendee name badge.",
+    "context": {
+      "sentence": "Où est-ce que je peux prendre mon ____ ?",
+      "answer": "badge",
+      "translation": "Where can I collect my badge?",
+      "accepted": []
+    }
   },
   {
     "id": "registration",
@@ -764,7 +1102,14 @@ window.VOCABULARY_WORDS = [
       "the registration",
       "enrolment",
       "enrollment"
-    ]
+    ],
+    "usage": "Use inscription for signing up; bureau d’inscription means registration desk.",
+    "context": {
+      "sentence": "Où est le bureau d’____ ?",
+      "answer": "inscription",
+      "translation": "Where is the registration desk?",
+      "accepted": []
+    }
   },
   {
     "id": "meeting-room",
@@ -784,7 +1129,14 @@ window.VOCABULARY_WORDS = [
       "the conference room",
       "meeting room",
       "the meeting room"
-    ]
+    ],
+    "usage": "Salle is used for a meeting or lecture room; chambre usually means a bedroom.",
+    "context": {
+      "sentence": "La présentation est dans cette ____.",
+      "answer": "salle",
+      "translation": "The presentation is in this room.",
+      "accepted": []
+    }
   },
   {
     "id": "break",
@@ -800,7 +1152,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the break",
       "a break"
-    ]
+    ],
+    "usage": "Une pause is a break in the programme; pause-café is a coffee break.",
+    "context": {
+      "sentence": "La ____ commence à onze heures.",
+      "answer": "pause",
+      "translation": "The break starts at eleven o’clock.",
+      "accepted": []
+    }
   },
   {
     "id": "question",
@@ -816,7 +1175,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the question",
       "a question"
-    ]
+    ],
+    "usage": "J’ai une question is a simple way to signal that you want to ask something.",
+    "context": {
+      "sentence": "J’ai une ____.",
+      "answer": "question",
+      "translation": "I have a question.",
+      "accepted": []
+    }
   },
   {
     "id": "answer",
@@ -835,7 +1201,14 @@ window.VOCABULARY_WORDS = [
       "response",
       "the response",
       "a response"
-    ]
+    ],
+    "usage": "Use réponse for a reply to a spoken question or a written message.",
+    "context": {
+      "sentence": "Merci pour votre ____.",
+      "answer": "réponse",
+      "translation": "Thank you for your answer.",
+      "accepted": []
+    }
   },
   {
     "id": "research",
@@ -850,7 +1223,14 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the research"
-    ]
+    ],
+    "usage": "Research is usually expressed as la recherche, without a plural ending.",
+    "context": {
+      "sentence": "Je travaille dans la ____.",
+      "answer": "recherche",
+      "translation": "I work in research.",
+      "accepted": []
+    }
   },
   {
     "id": "field",
@@ -871,7 +1251,14 @@ window.VOCABULARY_WORDS = [
       "area of research",
       "area",
       "domain"
-    ]
+    ],
+    "usage": "Use domaine to describe your field or area of research.",
+    "context": {
+      "sentence": "Dans quel ____ travaillez-vous ?",
+      "answer": "domaine",
+      "translation": "What field do you work in?",
+      "accepted": []
+    }
   },
   {
     "id": "programme",
@@ -890,7 +1277,14 @@ window.VOCABULARY_WORDS = [
       "the program",
       "schedule",
       "the schedule"
-    ]
+    ],
+    "usage": "The conference programme lists sessions, times and locations.",
+    "context": {
+      "sentence": "Le ____ est sur le site du colloque.",
+      "answer": "programme",
+      "translation": "The programme is on the conference website.",
+      "accepted": []
+    }
   },
   {
     "id": "poster",
@@ -908,7 +1302,14 @@ window.VOCABULARY_WORDS = [
       "a poster",
       "conference poster",
       "research poster"
-    ]
+    ],
+    "usage": "Affiche means a poster; academic events also commonly use the word poster.",
+    "context": {
+      "sentence": "Mon ____ est près de l’entrée.",
+      "answer": "affiche",
+      "translation": "My poster is near the entrance.",
+      "accepted": []
+    }
   },
   {
     "id": "university",
@@ -924,7 +1325,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the university",
       "a university"
-    ]
+    ],
+    "usage": "Use à l’université when saying you work or study at a university.",
+    "context": {
+      "sentence": "Je travaille à l’____.",
+      "answer": "université",
+      "translation": "I work at the university.",
+      "accepted": []
+    }
   },
   {
     "id": "researcher",
@@ -942,7 +1350,16 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the researcher",
       "a researcher"
-    ]
+    ],
+    "usage": "A female researcher can be called une chercheuse.",
+    "context": {
+      "sentence": "Je suis ____.",
+      "answer": "chercheur",
+      "translation": "I am a researcher.",
+      "accepted": [
+        "chercheuse"
+      ]
+    }
   },
   {
     "id": "chat",
@@ -957,7 +1374,14 @@ window.VOCABULARY_WORDS = [
       "chat",
       "to talk",
       "talk"
-    ]
+    ],
+    "usage": "Discuter de quelque chose means to discuss or chat about something.",
+    "context": {
+      "sentence": "On peut ____ pendant la pause.",
+      "answer": "discuter",
+      "translation": "We can chat during the break.",
+      "accepted": []
+    }
   },
   {
     "id": "goodbye",
@@ -971,7 +1395,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "bye",
       "good bye"
-    ]
+    ],
+    "usage": "Use au revoir when leaving a shop or ending a polite conversation.",
+    "context": {
+      "sentence": "____, à demain !",
+      "answer": "Au revoir",
+      "translation": "Goodbye, see you tomorrow!",
+      "accepted": []
+    }
   },
   {
     "id": "good-evening",
@@ -982,7 +1413,14 @@ window.VOCABULARY_WORDS = [
     "example": "Bonsoir, j’ai une réservation.",
     "exampleEn": "Good evening, I have a reservation.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use bonsoir as a greeting in the evening, rather than as a farewell.",
+    "context": {
+      "sentence": "____, j’ai une réservation.",
+      "answer": "Bonsoir",
+      "translation": "Good evening, I have a reservation.",
+      "accepted": []
+    }
   },
   {
     "id": "see-you-soon",
@@ -993,7 +1431,14 @@ window.VOCABULARY_WORDS = [
     "example": "Merci et à bientôt !",
     "exampleEn": "Thank you, and see you soon!",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "À bientôt is a friendly goodbye when you expect to meet again.",
+    "context": {
+      "sentence": "Merci et ____ !",
+      "answer": "à bientôt",
+      "translation": "Thank you, and see you soon!",
+      "accepted": []
+    }
   },
   {
     "id": "okay",
@@ -1009,7 +1454,14 @@ window.VOCABULARY_WORDS = [
       "all right",
       "alright",
       "agreed"
-    ]
+    ],
+    "usage": "D’accord expresses agreement, as in accepting a suggested time or plan.",
+    "context": {
+      "sentence": "____, merci.",
+      "answer": "D’accord",
+      "translation": "Okay, thank you.",
+      "accepted": []
+    }
   },
   {
     "id": "understand",
@@ -1022,7 +1474,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "understand"
-    ]
+    ],
+    "usage": "Je ne comprends pas means I do not understand."
   },
   {
     "id": "speak",
@@ -1035,7 +1488,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "speak"
-    ]
+    ],
+    "usage": "Use parler français without an article when saying you speak French."
   },
   {
     "id": "repeat-verb",
@@ -1048,7 +1502,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "repeat"
-    ]
+    ],
+    "usage": "Pouvez-vous répéter ? asks someone to say the same thing again."
   },
   {
     "id": "slowly",
@@ -1059,7 +1514,14 @@ window.VOCABULARY_WORDS = [
     "example": "Parlez plus lentement, s’il vous plaît.",
     "exampleEn": "Please speak more slowly.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Plus lentement means more slowly and is useful when someone speaks too fast.",
+    "context": {
+      "sentence": "Parlez plus ____, s’il vous plaît.",
+      "answer": "lentement",
+      "translation": "Please speak more slowly.",
+      "accepted": []
+    }
   },
   {
     "id": "wait",
@@ -1072,7 +1534,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "wait"
-    ]
+    ],
+    "usage": "Attendre takes a direct object: attendre le train means wait for the train."
   },
   {
     "id": "buy",
@@ -1087,7 +1550,8 @@ window.VOCABULARY_WORDS = [
       "buy",
       "to purchase",
       "purchase"
-    ]
+    ],
+    "usage": "Je voudrais acheter followed by a noun is a polite way to say what you want to buy."
   },
   {
     "id": "price",
@@ -1103,7 +1567,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the price",
       "a price"
-    ]
+    ],
+    "usage": "Quel est le prix ? asks how much something costs."
   },
   {
     "id": "shop",
@@ -1122,7 +1587,8 @@ window.VOCABULARY_WORDS = [
       "store",
       "the store",
       "a store"
-    ]
+    ],
+    "usage": "Use magasin for a shop; a food market is un marché."
   },
   {
     "id": "pharmacy",
@@ -1141,7 +1607,8 @@ window.VOCABULARY_WORDS = [
       "chemist",
       "chemist’s",
       "drugstore"
-    ]
+    ],
+    "usage": "A pharmacie is the place to ask a pharmacist for medicine or advice."
   },
   {
     "id": "doctor",
@@ -1159,7 +1626,8 @@ window.VOCABULARY_WORDS = [
       "the doctor",
       "a doctor",
       "physician"
-    ]
+    ],
+    "usage": "Use médecin for a medical doctor, rather than an academic title."
   },
   {
     "id": "hospital",
@@ -1175,7 +1643,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the hospital",
       "a hospital"
-    ]
+    ],
+    "usage": "Hôpital begins with a silent h and takes l’ in the singular."
   },
   {
     "id": "toilets",
@@ -1195,7 +1664,8 @@ window.VOCABULARY_WORDS = [
       "the restroom",
       "bathroom",
       "the bathroom"
-    ]
+    ],
+    "usage": "Les toilettes is normally plural, even when asking for a single bathroom."
   },
   {
     "id": "help-noun",
@@ -1212,7 +1682,8 @@ window.VOCABULARY_WORDS = [
       "help",
       "assistance",
       "the help"
-    ]
+    ],
+    "usage": "Aide is a noun here; avoir besoin d’aide means to need help."
   },
   {
     "id": "emergency",
@@ -1228,7 +1699,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "an emergency",
       "the emergency"
-    ]
+    ],
+    "usage": "C’est une urgence tells someone that the situation is an emergency."
   },
   {
     "id": "phone",
@@ -1246,7 +1718,8 @@ window.VOCABULARY_WORDS = [
       "a phone",
       "telephone",
       "the telephone"
-    ]
+    ],
+    "usage": "Téléphone can mean a phone generally; téléphone portable specifies a mobile phone."
   },
   {
     "id": "battery",
@@ -1262,7 +1735,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the battery",
       "a battery"
-    ]
+    ],
+    "usage": "Use batterie when talking about the rechargeable battery in your phone."
   },
   {
     "id": "charger",
@@ -1279,7 +1753,8 @@ window.VOCABULARY_WORDS = [
       "the charger",
       "a charger",
       "phone charger"
-    ]
+    ],
+    "usage": "Un chargeur is the device you plug in to charge a phone or computer."
   },
   {
     "id": "wifi",
@@ -1297,7 +1772,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "wifi",
       "wireless internet"
-    ]
+    ],
+    "usage": "Ask for le mot de passe du Wi-Fi when you need the Wi-Fi password."
   },
   {
     "id": "clock-time",
@@ -1313,7 +1789,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "time",
       "the time"
-    ]
+    ],
+    "usage": "Quelle heure est-il ? asks for the time of day."
   },
   {
     "id": "morning",
@@ -1329,7 +1806,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the morning",
       "a morning"
-    ]
+    ],
+    "usage": "Le matin can mean in the morning as a habit; ce matin means this morning."
   },
   {
     "id": "afternoon",
@@ -1345,7 +1823,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the afternoon",
       "an afternoon"
-    ]
+    ],
+    "usage": "Cet après-midi means this afternoon; après-midi can be masculine or feminine."
   },
   {
     "id": "evening",
@@ -1361,7 +1840,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the evening",
       "an evening"
-    ]
+    ],
+    "usage": "Le soir often describes an evening habit; ce soir means this evening."
   },
   {
     "id": "yesterday",
@@ -1372,7 +1852,8 @@ window.VOCABULARY_WORDS = [
     "example": "Je suis arrivé hier.",
     "exampleEn": "I arrived yesterday.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use hier for events on the day before today."
   },
   {
     "id": "week",
@@ -1388,7 +1869,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the week",
       "a week"
-    ]
+    ],
+    "usage": "Une semaine is a period of seven days."
   },
   {
     "id": "day",
@@ -1404,7 +1886,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the day",
       "a day"
-    ]
+    ],
+    "usage": "Use jour when counting days, as in trois jours."
   },
   {
     "id": "rain",
@@ -1419,7 +1902,8 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the rain"
-    ]
+    ],
+    "usage": "La pluie names rain; il pleut is the usual way to say it is raining."
   },
   {
     "id": "sun",
@@ -1434,7 +1918,8 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the sun"
-    ]
+    ],
+    "usage": "Il y a du soleil means it is sunny."
   },
   {
     "id": "hot",
@@ -1447,7 +1932,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [
       "chaude"
     ],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use il fait chaud for weather and j’ai chaud for feeling hot."
   },
   {
     "id": "cold",
@@ -1460,7 +1946,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [
       "froide"
     ],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Use il fait froid for weather and j’ai froid for feeling cold."
   },
   {
     "id": "one",
@@ -1473,7 +1960,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "1"
-    ]
+    ],
+    "usage": "Un means one before a masculine noun; use une before a feminine noun."
   },
   {
     "id": "two",
@@ -1486,7 +1974,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "2"
-    ]
+    ],
+    "usage": "Use deux with a plural noun, such as deux billets."
   },
   {
     "id": "three",
@@ -1499,7 +1988,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "3"
-    ]
+    ],
+    "usage": "Use trois with plural nouns when counting people, days or items."
   },
   {
     "id": "four",
@@ -1512,7 +2002,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "4"
-    ]
+    ],
+    "usage": "Quatre has the same form before masculine and feminine nouns."
   },
   {
     "id": "five",
@@ -1525,7 +2016,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "5"
-    ]
+    ],
+    "usage": "Dans cinq minutes means in five minutes."
   },
   {
     "id": "six",
@@ -1538,7 +2030,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "6"
-    ]
+    ],
+    "usage": "The final sound of six changes with the following word; listen to the full example."
   },
   {
     "id": "seven",
@@ -1551,7 +2044,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "7"
-    ]
+    ],
+    "usage": "Sept heures means seven o’clock."
   },
   {
     "id": "eight",
@@ -1564,7 +2058,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "8"
-    ]
+    ],
+    "usage": "Huit heures means eight o’clock; there is no linking sound before huit."
   },
   {
     "id": "nine",
@@ -1577,7 +2072,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "9"
-    ]
+    ],
+    "usage": "Neuf means nine; the same spelling can also mean new in other contexts."
   },
   {
     "id": "ten",
@@ -1590,7 +2086,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "10"
-    ]
+    ],
+    "usage": "Use dix euros when saying a price of ten euros."
   },
   {
     "id": "twenty",
@@ -1603,7 +2100,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "20"
-    ]
+    ],
+    "usage": "Vingt euros means twenty euros; prices are often said without cents when exact."
   },
   {
     "id": "how-much",
@@ -1616,7 +2114,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "how many"
-    ]
+    ],
+    "usage": "Combien coûte… ? asks how much something costs."
   },
   {
     "id": "bus",
@@ -1632,7 +2131,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the bus",
       "a bus"
-    ]
+    ],
+    "usage": "Use prendre le bus when describing travel by bus.",
+    "context": {
+      "sentence": "Quel ____ va au centre-ville ?",
+      "answer": "bus",
+      "translation": "Which bus goes to the city centre?",
+      "accepted": []
+    }
   },
   {
     "id": "transport-stop",
@@ -1651,7 +2157,14 @@ window.VOCABULARY_WORDS = [
       "bus stop",
       "tram stop",
       "public transport stop"
-    ]
+    ],
+    "usage": "Use arrêt de bus or arrêt de tram to specify the type of stop.",
+    "context": {
+      "sentence": "Où est l’____ de tram ?",
+      "answer": "arrêt",
+      "translation": "Where is the tram stop?",
+      "accepted": []
+    }
   },
   {
     "id": "airport",
@@ -1667,7 +2180,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the airport",
       "an airport"
-    ]
+    ],
+    "usage": "Use à l’aéroport when saying you are going to the airport.",
+    "context": {
+      "sentence": "Je vais à l’____.",
+      "answer": "aéroport",
+      "translation": "I’m going to the airport.",
+      "accepted": []
+    }
   },
   {
     "id": "taxi",
@@ -1685,7 +2205,14 @@ window.VOCABULARY_WORDS = [
       "a taxi",
       "cab",
       "a cab"
-    ]
+    ],
+    "usage": "Un taxi pour la gare is a simple way to request a taxi to the station.",
+    "context": {
+      "sentence": "Je voudrais un ____ pour la gare.",
+      "answer": "taxi",
+      "translation": "I would like a taxi to the station.",
+      "accepted": []
+    }
   },
   {
     "id": "car",
@@ -1701,7 +2228,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the car",
       "a car"
-    ]
+    ],
+    "usage": "Voiture is feminine: une voiture, ma voiture."
   },
   {
     "id": "bicycle",
@@ -1722,7 +2250,8 @@ window.VOCABULARY_WORDS = [
       "a bicycle",
       "a bike",
       "the bike"
-    ]
+    ],
+    "usage": "Vélo is the everyday word for a bicycle; bicyclette is another option."
   },
   {
     "id": "on-foot",
@@ -1736,7 +2265,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "walking",
       "by foot"
-    ]
+    ],
+    "usage": "À pied means walking; the word pied stays singular in this phrase.",
+    "context": {
+      "sentence": "Je vais à l’hôtel ____.",
+      "answer": "à pied",
+      "translation": "I’m walking to the hotel.",
+      "accepted": []
+    }
   },
   {
     "id": "street-map",
@@ -1755,7 +2291,8 @@ window.VOCABULARY_WORDS = [
       "a map",
       "town map",
       "city map"
-    ]
+    ],
+    "usage": "Use plan for a map of a town or building; carte is used for wider geographic maps."
   },
   {
     "id": "street",
@@ -1771,7 +2308,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the street",
       "a street"
-    ]
+    ],
+    "usage": "A street name often includes rue, such as rue du Musée."
   },
   {
     "id": "town-square",
@@ -1789,7 +2327,8 @@ window.VOCABULARY_WORDS = [
       "the square",
       "a square",
       "city square"
-    ]
+    ],
+    "usage": "Place can mean a town square; in other contexts it can mean a seat or space."
   },
   {
     "id": "city-centre",
@@ -1809,7 +2348,8 @@ window.VOCABULARY_WORDS = [
       "downtown",
       "the city centre",
       "the city center"
-    ]
+    ],
+    "usage": "Centre-ville is the central part of a town or city."
   },
   {
     "id": "bridge",
@@ -1825,7 +2365,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the bridge",
       "a bridge"
-    ]
+    ],
+    "usage": "Use traverser le pont when giving directions across a bridge."
   },
   {
     "id": "river",
@@ -1841,7 +2382,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the river",
       "a river"
-    ]
+    ],
+    "usage": "Rivière is feminine; a river that reaches the sea is called a fleuve."
   },
   {
     "id": "entrance",
@@ -1858,7 +2400,8 @@ window.VOCABULARY_WORDS = [
       "the entrance",
       "an entrance",
       "entry"
-    ]
+    ],
+    "usage": "Look for entrée on signs showing the way into a building."
   },
   {
     "id": "exit",
@@ -1876,7 +2419,8 @@ window.VOCABULARY_WORDS = [
       "an exit",
       "way out",
       "the way out"
-    ]
+    ],
+    "usage": "Look for sortie on signs showing the way out."
   },
   {
     "id": "near",
@@ -1892,7 +2436,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "near to",
       "close to"
-    ]
+    ],
+    "usage": "Près de becomes près du before a masculine singular noun with le."
   },
   {
     "id": "far-from",
@@ -1903,7 +2448,8 @@ window.VOCABULARY_WORDS = [
     "example": "Le colloque est loin de l’hôtel ?",
     "exampleEn": "Is the conference far from the hotel?",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Loin de describes distance from a place, as in loin de la gare."
   },
   {
     "id": "opposite",
@@ -1916,7 +2462,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "across from"
-    ]
+    ],
+    "usage": "En face de locates something across from a building or landmark."
   },
   {
     "id": "next-to",
@@ -1929,7 +2476,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "beside"
-    ]
+    ],
+    "usage": "À côté de means beside or next to a place or object."
   },
   {
     "id": "behind",
@@ -1940,7 +2488,8 @@ window.VOCABULARY_WORDS = [
     "example": "Le jardin est derrière le musée.",
     "exampleEn": "The garden is behind the museum.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Derrière is followed directly by the noun phrase, without de."
   },
   {
     "id": "in-front-of",
@@ -1951,7 +2500,8 @@ window.VOCABULARY_WORDS = [
     "example": "Le taxi est devant l’hôtel.",
     "exampleEn": "The taxi is in front of the hotel.",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Devant is followed directly by the place or object you are in front of."
   },
   {
     "id": "cross",
@@ -1964,7 +2514,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "cross"
-    ]
+    ],
+    "usage": "Use traverser la rue for crossing a street."
   },
   {
     "id": "turn",
@@ -1977,7 +2528,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "turn"
-    ]
+    ],
+    "usage": "Tournez à droite is a polite instruction to turn right."
   },
   {
     "id": "go",
@@ -1990,7 +2542,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "go"
-    ]
+    ],
+    "usage": "Je voudrais aller à… is useful when explaining your destination."
   },
   {
     "id": "come",
@@ -2003,7 +2556,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "come"
-    ]
+    ],
+    "usage": "Vous pouvez venir… ? asks whether someone can come."
   },
   {
     "id": "return-trip",
@@ -2021,7 +2575,8 @@ window.VOCABULARY_WORDS = [
       "the return journey",
       "the return trip",
       "return"
-    ]
+    ],
+    "usage": "Le retour is the journey back; aller-retour means a return ticket."
   },
   {
     "id": "one-way",
@@ -2043,7 +2598,8 @@ window.VOCABULARY_WORDS = [
       "one way journey",
       "one-way trip",
       "single journey"
-    ]
+    ],
+    "usage": "Use un aller simple for a ticket in one direction only."
   },
   {
     "id": "delay",
@@ -2059,7 +2615,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the delay",
       "a delay"
-    ]
+    ],
+    "usage": "Avoir du retard means to be late; dix minutes de retard specifies the delay."
   },
   {
     "id": "connection",
@@ -2077,7 +2634,8 @@ window.VOCABULARY_WORDS = [
       "the connection",
       "a connection",
       "train connection"
-    ]
+    ],
+    "usage": "A correspondance is a change of train, bus or other transport on a journey."
   },
   {
     "id": "final-stop",
@@ -2095,7 +2653,8 @@ window.VOCABULARY_WORDS = [
       "last stop",
       "the last stop",
       "terminus"
-    ]
+    ],
+    "usage": "Le terminus is the final stop on a route."
   },
   {
     "id": "driver",
@@ -2115,7 +2674,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the driver",
       "a driver"
-    ]
+    ],
+    "usage": "Conducteur is a male driver; conductrice is the feminine form."
   },
   {
     "id": "passenger",
@@ -2133,7 +2693,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the passenger",
       "a passenger"
-    ]
+    ],
+    "usage": "Passager is masculine; passagère is the feminine form."
   },
   {
     "id": "suitcase",
@@ -2149,7 +2710,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the suitcase",
       "a suitcase"
-    ]
+    ],
+    "usage": "Une valise is a suitcase, while un sac is a bag."
   },
   {
     "id": "luggage-item",
@@ -2166,7 +2728,8 @@ window.VOCABULARY_WORDS = [
       "a piece of luggage",
       "luggage",
       "baggage"
-    ]
+    ],
+    "usage": "Bagage is countable: un bagage means one piece of luggage."
   },
   {
     "id": "passport",
@@ -2182,7 +2745,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the passport",
       "a passport"
-    ]
+    ],
+    "usage": "Voici mon passeport is useful when presenting your passport at check-in."
   },
   {
     "id": "hotel-reception",
@@ -2201,7 +2765,8 @@ window.VOCABULARY_WORDS = [
       "reception desk",
       "front desk",
       "the front desk"
-    ]
+    ],
+    "usage": "Use la réception for the hotel’s front desk or reception area."
   },
   {
     "id": "floor",
@@ -2220,7 +2785,8 @@ window.VOCABULARY_WORDS = [
       "a floor",
       "storey",
       "story"
-    ]
+    ],
+    "usage": "The ground floor is le rez-de-chaussée; the next floor up is le premier étage."
   },
   {
     "id": "lift",
@@ -2239,7 +2805,8 @@ window.VOCABULARY_WORDS = [
       "elevator",
       "the elevator",
       "an elevator"
-    ]
+    ],
+    "usage": "Ascenseur is masculine and begins with a vowel, so it takes l’."
   },
   {
     "id": "stairs",
@@ -2257,7 +2824,8 @@ window.VOCABULARY_WORDS = [
       "stairs",
       "the stairs",
       "stairway"
-    ]
+    ],
+    "usage": "Escalier refers to a staircase; les escaliers can refer to the stairs collectively."
   },
   {
     "id": "shower",
@@ -2273,7 +2841,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the shower",
       "a shower"
-    ]
+    ],
+    "usage": "La douche ne fonctionne pas reports that the shower is not working."
   },
   {
     "id": "towel",
@@ -2289,7 +2858,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the towel",
       "a towel"
-    ]
+    ],
+    "usage": "In a hotel, serviette usually means towel; serviette de table means napkin."
   },
   {
     "id": "breakfast",
@@ -2306,7 +2876,8 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the breakfast"
-    ]
+    ],
+    "usage": "In France, petit déjeuner means breakfast, while déjeuner means lunch."
   },
   {
     "id": "stay",
@@ -2322,7 +2893,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the stay",
       "a stay"
-    ]
+    ],
+    "usage": "Séjour is a noun for the time you spend somewhere."
   },
   {
     "id": "overnight-stay",
@@ -2341,7 +2913,8 @@ window.VOCABULARY_WORDS = [
       "a night's stay",
       "overnight stay",
       "night at a hotel"
-    ]
+    ],
+    "usage": "Nuitée is used when quoting the price of one night’s accommodation."
   },
   {
     "id": "available",
@@ -2352,7 +2925,8 @@ window.VOCABULARY_WORDS = [
     "example": "Vous avez une chambre disponible ?",
     "exampleEn": "Do you have a room available?",
     "frAccepted": [],
-    "enAccepted": []
+    "enAccepted": [],
+    "usage": "Disponible has the same written form with masculine and feminine nouns."
   },
   {
     "id": "lunch",
@@ -2367,7 +2941,14 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the lunch"
-    ]
+    ],
+    "usage": "In France, déjeuner names the midday meal.",
+    "context": {
+      "sentence": "Le ____ commence à midi.",
+      "answer": "déjeuner",
+      "translation": "Lunch starts at noon.",
+      "accepted": []
+    }
   },
   {
     "id": "dinner",
@@ -2382,7 +2963,14 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the dinner"
-    ]
+    ],
+    "usage": "In France, dîner names the evening meal.",
+    "context": {
+      "sentence": "Le ____ est à dix-neuf heures.",
+      "answer": "dîner",
+      "translation": "Dinner is at seven p.m.",
+      "accepted": []
+    }
   },
   {
     "id": "restaurant-server",
@@ -2404,7 +2992,14 @@ window.VOCABULARY_WORDS = [
       "the waiter",
       "the server",
       "the waitress"
-    ]
+    ],
+    "usage": "Serveur is masculine; serveuse is the feminine form.",
+    "context": {
+      "sentence": "Le ____ apporte la carte.",
+      "answer": "serveur",
+      "translation": "The server brings the menu.",
+      "accepted": []
+    }
   },
   {
     "id": "bakery",
@@ -2420,7 +3015,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the bakery",
       "a bakery"
-    ]
+    ],
+    "usage": "A boulangerie sells bread and commonly sells croissants and other pastries.",
+    "context": {
+      "sentence": "La ____ ouvre tôt.",
+      "answer": "boulangerie",
+      "translation": "The bakery opens early.",
+      "accepted": []
+    }
   },
   {
     "id": "restaurant",
@@ -2436,7 +3038,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the restaurant",
       "a restaurant"
-    ]
+    ],
+    "usage": "Un bon restaurant means a good restaurant."
   },
   {
     "id": "counter",
@@ -2453,7 +3056,8 @@ window.VOCABULARY_WORDS = [
       "counter",
       "the counter",
       "bar counter"
-    ]
+    ],
+    "usage": "Au comptoir means at the counter, often where café orders are taken."
   },
   {
     "id": "terrace",
@@ -2471,7 +3075,8 @@ window.VOCABULARY_WORDS = [
       "the terrace",
       "patio",
       "outdoor seating area"
-    ]
+    ],
+    "usage": "En terrasse means outside on the café or restaurant’s terrace."
   },
   {
     "id": "drinking-glass",
@@ -2488,7 +3093,8 @@ window.VOCABULARY_WORDS = [
       "glass",
       "a glass",
       "the glass"
-    ]
+    ],
+    "usage": "Un verre d’eau means a glass of water; verre can also mean the material glass."
   },
   {
     "id": "cup",
@@ -2504,7 +3110,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the cup",
       "a cup"
-    ]
+    ],
+    "usage": "Use tasse for a cup, especially for coffee or tea."
   },
   {
     "id": "plate",
@@ -2520,7 +3127,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the plate",
       "a plate"
-    ]
+    ],
+    "usage": "Assiette is feminine and takes l’ before its vowel."
   },
   {
     "id": "fork",
@@ -2536,7 +3144,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the fork",
       "a fork"
-    ]
+    ],
+    "usage": "Fourchette is feminine: une fourchette."
   },
   {
     "id": "knife",
@@ -2552,7 +3161,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the knife",
       "a knife"
-    ]
+    ],
+    "usage": "Couteau is masculine; its plural is couteaux."
   },
   {
     "id": "spoon",
@@ -2570,7 +3180,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the spoon",
       "a spoon"
-    ]
+    ],
+    "usage": "Cuillère and cuiller are alternative spellings."
   },
   {
     "id": "napkin",
@@ -2587,7 +3198,8 @@ window.VOCABULARY_WORDS = [
       "the napkin",
       "a napkin",
       "table napkin"
-    ]
+    ],
+    "usage": "Use serviette de table to distinguish a napkin from a towel."
   },
   {
     "id": "salt",
@@ -2603,7 +3215,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the salt",
       "some salt"
-    ]
+    ],
+    "usage": "Du sel means some salt; le sel names salt generally."
   },
   {
     "id": "pepper",
@@ -2619,7 +3232,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the pepper",
       "black pepper"
-    ]
+    ],
+    "usage": "Poivre means the seasoning pepper; a bell pepper is un poivron."
   },
   {
     "id": "sugar",
@@ -2635,7 +3249,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the sugar",
       "some sugar"
-    ]
+    ],
+    "usage": "Sans sucre means without sugar."
   },
   {
     "id": "milk",
@@ -2651,7 +3266,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the milk",
       "some milk"
-    ]
+    ],
+    "usage": "Un peu de lait means a little milk."
   },
   {
     "id": "butter",
@@ -2667,7 +3283,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the butter",
       "some butter"
-    ]
+    ],
+    "usage": "Du beurre means some butter, often served with bread."
   },
   {
     "id": "cheese",
@@ -2683,7 +3300,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the cheese",
       "some cheese"
-    ]
+    ],
+    "usage": "Fromage is masculine; du fromage means some cheese."
   },
   {
     "id": "egg",
@@ -2699,7 +3317,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "an egg",
       "the egg"
-    ]
+    ],
+    "usage": "Œuf is singular; œufs is plural and its pronunciation changes."
   },
   {
     "id": "chicken",
@@ -2715,7 +3334,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the chicken",
       "some chicken"
-    ]
+    ],
+    "usage": "Poulet names chicken as a food as well as the bird."
   },
   {
     "id": "fish",
@@ -2731,7 +3351,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the fish",
       "some fish"
-    ]
+    ],
+    "usage": "Poisson means fish; avoid confusing it with poison, which means poison."
   },
   {
     "id": "meat",
@@ -2747,7 +3368,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the meat",
       "some meat"
-    ]
+    ],
+    "usage": "Je ne mange pas de viande says that you do not eat meat."
   },
   {
     "id": "vegetables",
@@ -2764,7 +3386,8 @@ window.VOCABULARY_WORDS = [
       "the vegetables",
       "some vegetables",
       "veggies"
-    ]
+    ],
+    "usage": "Légumes means vegetables, not only beans or lentils."
   },
   {
     "id": "salad",
@@ -2780,7 +3403,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the salad",
       "a salad"
-    ]
+    ],
+    "usage": "Une salade can be a salad dish, while de la salade can mean some lettuce or salad."
   },
   {
     "id": "soup",
@@ -2796,7 +3420,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the soup",
       "some soup"
-    ]
+    ],
+    "usage": "La soupe du jour is the soup of the day."
   },
   {
     "id": "rice",
@@ -2812,7 +3437,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the rice",
       "some rice"
-    ]
+    ],
+    "usage": "Riz is masculine, and its final z is normally silent."
   },
   {
     "id": "pasta",
@@ -2828,7 +3454,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the pasta",
       "some pasta"
-    ]
+    ],
+    "usage": "Pâtes is plural in French, even when English uses the uncountable word pasta."
   },
   {
     "id": "potato",
@@ -2844,7 +3471,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the potato",
       "a potato"
-    ]
+    ],
+    "usage": "Pomme de terre literally means earth apple; the plural is pommes de terre."
   },
   {
     "id": "apple",
@@ -2860,7 +3488,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the apple",
       "an apple"
-    ]
+    ],
+    "usage": "Une pomme is an apple; do not confuse it with a pomme de terre, a potato."
   },
   {
     "id": "juice",
@@ -2876,7 +3505,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the juice",
       "some juice"
-    ]
+    ],
+    "usage": "Jus d’orange means orange juice."
   },
   {
     "id": "beer",
@@ -2892,7 +3522,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the beer",
       "a beer"
-    ]
+    ],
+    "usage": "Une bière orders a serving of beer."
   },
   {
     "id": "wine",
@@ -2908,7 +3539,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the wine",
       "some wine"
-    ]
+    ],
+    "usage": "Un verre de vin means a glass of wine."
   },
   {
     "id": "bottle",
@@ -2924,7 +3556,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the bottle",
       "a bottle"
-    ]
+    ],
+    "usage": "Une bouteille d’eau means a bottle of water."
   },
   {
     "id": "sparkling-water",
@@ -2941,7 +3574,8 @@ window.VOCABULARY_WORDS = [
       "fizzy water",
       "carbonated water",
       "the sparkling water"
-    ]
+    ],
+    "usage": "Eau gazeuse means sparkling water; gazeuse agrees with feminine eau."
   },
   {
     "id": "still-water",
@@ -2958,7 +3592,8 @@ window.VOCABULARY_WORDS = [
       "non-sparkling water",
       "non sparkling water",
       "the still water"
-    ]
+    ],
+    "usage": "Eau plate means non-sparkling water; plate agrees with feminine eau."
   },
   {
     "id": "portion",
@@ -2976,7 +3611,8 @@ window.VOCABULARY_WORDS = [
       "a portion",
       "serving",
       "a serving"
-    ]
+    ],
+    "usage": "Une petite portion asks for a small serving."
   },
   {
     "id": "food-order",
@@ -2993,7 +3629,8 @@ window.VOCABULARY_WORDS = [
       "order",
       "the order",
       "food order"
-    ]
+    ],
+    "usage": "Commande is the noun for an order you have placed."
   },
   {
     "id": "order-food",
@@ -3008,7 +3645,8 @@ window.VOCABULARY_WORDS = [
       "to order",
       "order",
       "order food"
-    ]
+    ],
+    "usage": "Use commander when placing an order for food or drink."
   },
   {
     "id": "pay",
@@ -3021,7 +3659,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "pay"
-    ]
+    ],
+    "usage": "Je voudrais payer is a polite way to say you are ready to pay."
   },
   {
     "id": "bank-card",
@@ -3039,7 +3678,8 @@ window.VOCABULARY_WORDS = [
       "a bank card",
       "bankcard",
       "payment card"
-    ]
+    ],
+    "usage": "Par carte bancaire means by bank card; in conversation, par carte is common."
   },
   {
     "id": "cash",
@@ -3054,7 +3694,8 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "cash money"
-    ]
+    ],
+    "usage": "En espèces means in cash; espèces is plural in this expression."
   },
   {
     "id": "separate-bill",
@@ -3072,7 +3713,8 @@ window.VOCABULARY_WORDS = [
       "the separate bill",
       "separate check",
       "a separate check"
-    ]
+    ],
+    "usage": "Ask for une addition séparée when you want your own bill."
   },
   {
     "id": "eat-in",
@@ -3088,7 +3730,14 @@ window.VOCABULARY_WORDS = [
       "eating in",
       "dine in",
       "on the premises"
-    ]
+    ],
+    "usage": "Say sur place when eating or drinking at the café rather than taking it away.",
+    "context": {
+      "sentence": "Un café ____, s’il vous plaît.",
+      "answer": "sur place",
+      "translation": "A coffee for here, please.",
+      "accepted": []
+    }
   },
   {
     "id": "lecture",
@@ -3107,7 +3756,14 @@ window.VOCABULARY_WORDS = [
       "talk",
       "the talk",
       "a talk"
-    ]
+    ],
+    "usage": "Conférence can mean a single talk or lecture, while colloque names an academic event.",
+    "context": {
+      "sentence": "La ____ commence à dix heures.",
+      "answer": "conférence",
+      "translation": "The lecture starts at ten o’clock.",
+      "accepted": []
+    }
   },
   {
     "id": "session",
@@ -3123,7 +3779,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the session",
       "a session"
-    ]
+    ],
+    "usage": "A session is one scheduled part of a conference programme.",
+    "context": {
+      "sentence": "La prochaine ____ commence bientôt.",
+      "answer": "session",
+      "translation": "The next session starts soon.",
+      "accepted": []
+    }
   },
   {
     "id": "workshop",
@@ -3139,7 +3802,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the workshop",
       "a workshop"
-    ]
+    ],
+    "usage": "Un atelier usually involves practical work or participation.",
+    "context": {
+      "sentence": "Je participe à un ____ demain.",
+      "answer": "atelier",
+      "translation": "I’m taking part in a workshop tomorrow.",
+      "accepted": []
+    }
   },
   {
     "id": "meeting",
@@ -3155,7 +3825,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the meeting",
       "a meeting"
-    ]
+    ],
+    "usage": "Réunion names a meeting rather than the room where it happens.",
+    "context": {
+      "sentence": "La ____ est dans cette salle.",
+      "answer": "réunion",
+      "translation": "The meeting is in this room.",
+      "accepted": []
+    }
   },
   {
     "id": "seminar",
@@ -3171,7 +3848,14 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the seminar",
       "a seminar"
-    ]
+    ],
+    "usage": "Un séminaire is an academic teaching or discussion session.",
+    "context": {
+      "sentence": "Le ____ dure une heure.",
+      "answer": "séminaire",
+      "translation": "The seminar lasts one hour.",
+      "accepted": []
+    }
   },
   {
     "id": "speaker",
@@ -3192,7 +3876,8 @@ window.VOCABULARY_WORDS = [
       "a speaker",
       "presenter",
       "the presenter"
-    ]
+    ],
+    "usage": "Intervenant refers to a speaker or contributor at an event; intervenante is feminine."
   },
   {
     "id": "audience",
@@ -3208,7 +3893,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the audience",
       "an audience"
-    ]
+    ],
+    "usage": "Public is a masculine singular noun for the audience as a group."
   },
   {
     "id": "attendee",
@@ -3229,7 +3915,8 @@ window.VOCABULARY_WORDS = [
       "participant",
       "the participant",
       "a participant"
-    ]
+    ],
+    "usage": "Participant is masculine; participante is feminine."
   },
   {
     "id": "organizer",
@@ -3250,7 +3937,8 @@ window.VOCABULARY_WORDS = [
       "the organiser",
       "an organizer",
       "an organiser"
-    ]
+    ],
+    "usage": "Organisateur is masculine; organisatrice is the feminine form."
   },
   {
     "id": "colleague",
@@ -3269,7 +3957,8 @@ window.VOCABULARY_WORDS = [
       "a colleague",
       "coworker",
       "co-worker"
-    ]
+    ],
+    "usage": "Collègue uses the same noun form for men and women; the article changes."
   },
   {
     "id": "student",
@@ -3287,7 +3976,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the student",
       "a student"
-    ]
+    ],
+    "usage": "Étudiant is masculine; étudiante is feminine."
   },
   {
     "id": "professor",
@@ -3306,7 +3996,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the professor",
       "a professor"
-    ]
+    ],
+    "usage": "Professeur and professeure can refer to university teachers, depending on gender."
   },
   {
     "id": "laboratory",
@@ -3325,7 +4016,8 @@ window.VOCABULARY_WORDS = [
       "lab",
       "the lab",
       "a lab"
-    ]
+    ],
+    "usage": "Laboratoire is often shortened to labo in informal conversation."
   },
   {
     "id": "team",
@@ -3341,7 +4033,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the team",
       "a team"
-    ]
+    ],
+    "usage": "Équipe is feminine even when its members are men."
   },
   {
     "id": "project",
@@ -3357,7 +4050,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the project",
       "a project"
-    ]
+    ],
+    "usage": "Travailler sur un projet means to work on a project."
   },
   {
     "id": "topic",
@@ -3376,7 +4070,8 @@ window.VOCABULARY_WORDS = [
       "subject",
       "the subject",
       "a subject"
-    ]
+    ],
+    "usage": "Use sujet to ask what a talk, paper or discussion is about."
   },
   {
     "id": "title",
@@ -3392,7 +4087,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the title",
       "a title"
-    ]
+    ],
+    "usage": "Titre is masculine and refers to the name of a talk, paper or book."
   },
   {
     "id": "abstract",
@@ -3411,7 +4107,8 @@ window.VOCABULARY_WORDS = [
       "summary",
       "the summary",
       "a summary"
-    ]
+    ],
+    "usage": "At a conference, résumé is the short summary or abstract of a contribution."
   },
   {
     "id": "scientific-paper",
@@ -3432,7 +4129,8 @@ window.VOCABULARY_WORDS = [
       "the article",
       "a research paper",
       "journal article"
-    ]
+    ],
+    "usage": "Article can mean an academic paper; article scientifique makes that meaning explicit."
   },
   {
     "id": "result",
@@ -3450,7 +4148,8 @@ window.VOCABULARY_WORDS = [
       "a result",
       "finding",
       "a finding"
-    ]
+    ],
+    "usage": "Résultat is masculine; research results are often discussed in the plural."
   },
   {
     "id": "method",
@@ -3466,7 +4165,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the method",
       "a method"
-    ]
+    ],
+    "usage": "Méthode is feminine; quelle méthode… ? asks which method is used."
   },
   {
     "id": "data",
@@ -3481,7 +4181,8 @@ window.VOCABULARY_WORDS = [
     ],
     "enAccepted": [
       "the data"
-    ]
+    ],
+    "usage": "Données is normally plural in this academic sense."
   },
   {
     "id": "experiment",
@@ -3498,7 +4199,8 @@ window.VOCABULARY_WORDS = [
       "experiment",
       "the experiment",
       "an experiment"
-    ]
+    ],
+    "usage": "Expérience can mean an experiment or experience; context tells you which."
   },
   {
     "id": "analysis",
@@ -3514,7 +4216,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the analysis",
       "an analysis"
-    ]
+    ],
+    "usage": "Analyse is feminine; an analysis in progress can be presque terminée."
   },
   {
     "id": "conclusion",
@@ -3530,7 +4233,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the conclusion",
       "a conclusion"
-    ]
+    ],
+    "usage": "Quelle est votre conclusion ? asks someone for their conclusion."
   },
   {
     "id": "source",
@@ -3546,7 +4250,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the source",
       "a source"
-    ]
+    ],
+    "usage": "Source can refer to the origin of data or information."
   },
   {
     "id": "reference",
@@ -3564,7 +4269,8 @@ window.VOCABULARY_WORDS = [
       "a reference",
       "citation",
       "the citation"
-    ]
+    ],
+    "usage": "Use référence when asking for publication details or a citation."
   },
   {
     "id": "graph",
@@ -3583,7 +4289,8 @@ window.VOCABULARY_WORDS = [
       "chart",
       "the chart",
       "a chart"
-    ]
+    ],
+    "usage": "Graphique is a masculine noun for a graph or chart."
   },
   {
     "id": "slide",
@@ -3600,7 +4307,8 @@ window.VOCABULARY_WORDS = [
       "slide",
       "the slide",
       "a slide"
-    ]
+    ],
+    "usage": "Diapositive is often shortened to diapo in conversation."
   },
   {
     "id": "screen",
@@ -3616,7 +4324,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the screen",
       "a screen"
-    ]
+    ],
+    "usage": "Écran can refer to a computer screen or a projection screen."
   },
   {
     "id": "microphone",
@@ -3636,7 +4345,8 @@ window.VOCABULARY_WORDS = [
       "a microphone",
       "mic",
       "the mic"
-    ]
+    ],
+    "usage": "Micro is the common short form of microphone."
   },
   {
     "id": "projector",
@@ -3652,7 +4362,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the projector",
       "a projector"
-    ]
+    ],
+    "usage": "Projecteur is masculine; use it when asking about presentation equipment."
   },
   {
     "id": "cable",
@@ -3668,7 +4379,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the cable",
       "a cable"
-    ]
+    ],
+    "usage": "Un câble pour mon ordinateur means a cable for your computer."
   },
   {
     "id": "socket",
@@ -3688,7 +4400,8 @@ window.VOCABULARY_WORDS = [
       "power outlet",
       "outlet",
       "electrical outlet"
-    ]
+    ],
+    "usage": "Une prise is an electrical socket; prise de courant makes the meaning explicit."
   },
   {
     "id": "computer",
@@ -3704,7 +4417,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the computer",
       "a computer"
-    ]
+    ],
+    "usage": "Ordinateur is masculine; ordinateur portable means a laptop."
   },
   {
     "id": "link",
@@ -3722,7 +4436,8 @@ window.VOCABULARY_WORDS = [
       "the link",
       "a link",
       "hyperlink"
-    ]
+    ],
+    "usage": "Envoyer le lien means to send the web link."
   },
   {
     "id": "website",
@@ -3739,7 +4454,8 @@ window.VOCABULARY_WORDS = [
       "the website",
       "a website",
       "web site"
-    ]
+    ],
+    "usage": "Site web can be shortened to site when the online context is clear."
   },
   {
     "id": "email",
@@ -3761,7 +4477,8 @@ window.VOCABULARY_WORDS = [
       "an email",
       "e-mail",
       "email message"
-    ]
+    ],
+    "usage": "Courriel means email; e-mail and mail are also common in France."
   },
   {
     "id": "business-card",
@@ -3778,7 +4495,8 @@ window.VOCABULARY_WORDS = [
       "the business card",
       "a business card",
       "visiting card"
-    ]
+    ],
+    "usage": "Carte de visite is a business card, not a bank card."
   },
   {
     "id": "appointment",
@@ -3794,7 +4512,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the appointment",
       "an appointment"
-    ]
+    ],
+    "usage": "Rendez-vous names an appointment or arranged meeting and has the same written plural form."
   },
   {
     "id": "date",
@@ -3810,7 +4529,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the date",
       "a date"
-    ]
+    ],
+    "usage": "Date is feminine; quelle date… ? asks on which date something happens."
   },
   {
     "id": "time-slot",
@@ -3828,7 +4548,8 @@ window.VOCABULARY_WORDS = [
       "a time slot",
       "timeslot",
       "slot"
-    ]
+    ],
+    "usage": "Créneau is a scheduled time slot; its plural is créneaux."
   },
   {
     "id": "duration",
@@ -3844,7 +4565,8 @@ window.VOCABULARY_WORDS = [
     "enAccepted": [
       "the duration",
       "length of time"
-    ]
+    ],
+    "usage": "Durée is the length of time something lasts, rather than its start time."
   },
   {
     "id": "present",
@@ -3857,7 +4579,8 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "present"
-    ]
+    ],
+    "usage": "Présenter mon projet means to give a presentation of your project."
   },
   {
     "id": "send",
@@ -3870,6 +4593,7 @@ window.VOCABULARY_WORDS = [
     "frAccepted": [],
     "enAccepted": [
       "send"
-    ]
+    ],
+    "usage": "Je peux vous envoyer… means I can send you something, using polite vous."
   }
 ];

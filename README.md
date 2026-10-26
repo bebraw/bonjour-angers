@@ -51,3 +51,20 @@ Personal French/English pairs (up to 100) and vocabulary progress use `bonjour-a
 Run `node tests/vocabulary.cjs` and `node tests/continuous.cjs` for vocabulary grading, review/retry, saved-round, custom-text safety and offline coverage. It uses a temporary local HTTP server on port 8792 and an iPhone-size Chromium viewport.
 
 Design reference: an archive listing describes [Sanakysely/AskWord ’97](https://apajalista.net/id?id=51798) as a vocabulary-test program. This trainer uses an original word collection and implementation with a simple typed recall loop.
+
+## Study-first and skill-specific practice
+
+Words is now the default screen. Unknown words are introduced with their spelling, meaning, device audio, usage note and example before grading. Continue records exposure only (no XP or strength), and rotates the first recall after up to two other queued items. All 240 built-in entries have usage notes; personal pairs can include an optional usage note. Existing correct recall progress is preserved and treated as prior exposure.
+
+Three modes share the continuous/due-word engine but keep separate progress: Recall (meaning/form, including both translation directions), Sentence (80 curated gap-fill cards with disambiguating English translations), and Listen & spell (play audio, then type the spelling including articles). Sentence introductions teach the full inflected example first. Listening answers and meanings stay hidden until feedback. Failed audio can be skipped without affecting strength; audio availability still depends on installed device voices. No spoken-pronunciation assessment is claimed.
+
+The UI uses a monochrome brutalist layout with one primary prompt/action. Options, the word list, strength explanation, offline setup and diagnostics are collapsed. Errors still expose the relevant offline controls.
+
+### Research rationale and limits
+
+- [Barcroft (2007)](https://doi.org/10.1111/j.1467-9922.2007.00398.x) supports giving initial form/meaning exposure followed by opportunities for retrieval. This motivates study-first; the exact two-item delay is a product choice.
+- [Nakata (2015)](https://doi.org/10.1017/S0272263114000825) supports spacing L2 vocabulary retrieval. The app’s numerical strength and day intervals are transparent heuristics, not validated probabilities of remembering.
+- [van den Broek et al. (2018)](https://doi.org/10.1111/lang.12285) distinguish contextual comprehension from retrieval-based retention. Sentence practice supplements plain recall rather than replacing it.
+- [Uchihara et al. (2022)](https://doi.org/10.1111/modl.12775) provide evidence for combining written and spoken input and auditory practice. This motivates multimodal introductions and a separate listening skill, without claiming dictation or browser TTS itself was proven superior.
+
+Run `node tests/pedagogy.cjs` for non-scoring study-first exposure, delayed recall, mode-specific strengths, offline sentence/session resume and listening/no-audio behavior. Automated tests use Chromium; real iOS speech and Home Screen behavior require device verification.

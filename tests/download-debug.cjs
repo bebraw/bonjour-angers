@@ -29,7 +29,7 @@ const server=http.createServer(async(req,res)=>{
   assert.equal(await page.locator('#offline-progress').getAttribute('value'),await page.locator('#offline-progress').getAttribute('max'));
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await context.setOffline(true);await page.close();const offline=await context.newPage();await offline.goto(base+'/');await offline.getByText('Offline · lessons ready',{exact:true}).waitFor();
-  await offline.getByRole('button',{name:'Start my first lesson'}).click();await offline.getByRole('button',{name:'Bonjour !',exact:true}).click();assert.deepEqual(errors,[]);await context.close();
+  await offline.getByRole('button',{name:'Scenarios',exact:true}).click();await offline.getByRole('button',{name:'Practice scenarios',exact:true}).click();await offline.getByRole('button',{name:'Bonjour !',exact:true}).click();assert.deepEqual(errors,[]);await context.close();
   console.log('PASS: partial progress, HTTP503 diagnostics, retained files, missing-file-only retry, mobile layout, offline new-window lesson');
   for(const mode of ['mime','signin']){
    fault=mode;const c=await browser.newContext();const p=await c.newPage();await p.goto(base+'/');await p.getByRole('button',{name:'Retry missing files',exact:true}).waitFor();

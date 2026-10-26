@@ -1,5 +1,5 @@
 /* Change VERSION whenever a saved lesson asset changes. */
-const VERSION = 'v4-vocabulary';
+const VERSION = 'v5-study-first';
 const CACHE = 'bonjour-angers-offline-' + VERSION;
 // Save the canonical page once; /index.html may redirect on private hosting.
 const CORE = ['/', '/style.css', '/app.js', '/pwa.js', '/vocabulary-data.js', '/vocabulary.js', '/vocabulary.css', '/manifest.webmanifest',
