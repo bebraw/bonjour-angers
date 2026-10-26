@@ -33,10 +33,10 @@ async function options(page){if(!await page.locator('.vocab-options').evaluate(d
   assert.equal(await p.locator('.vocab-word').count(),3);
   await p.getByRole('button',{name:'Start',exact:true}).click();await studyIntroductions(p);
   await p.getByRole('textbox',{name:'Answer',exact:true}).fill('wrong');await p.getByRole('button',{name:'Check',exact:true}).click();
-  assert.match(await p.locator('#vocab-turn').textContent(),/\/ 4/);
+  assert.equal((await p.evaluate(()=>JSON.parse(localStorage.getItem('bonjour-angers-vocabulary-v1')))).session.queue.length,4);
   const before=await p.evaluate(()=>JSON.parse(localStorage.getItem('bonjour-angers-vocabulary-v1')));
-  await p.reload();await p.getByRole('button',{name:'Words',exact:true}).click();
-  assert.equal(await p.getByRole('button',{name:'Check',exact:true}).isDisabled(),true);
+  await p.reload();
+  assert.equal(await p.locator('#vocab-check').isDisabled(),true);
   assert.deepEqual(await p.evaluate(()=>JSON.parse(localStorage.getItem('bonjour-angers-vocabulary-v1')).progress),before.progress);
   await p.getByRole('button',{name:'Next',exact:true}).click();
   for(let i=0;i<3;i++){
@@ -55,7 +55,7 @@ async function options(page){if(!await page.locator('.vocab-options').evaluate(d
   await p.getByRole('button',{name:'Words',exact:true}).click();await p.getByRole('button',{name:'Resume',exact:true}).click();
   assert.equal(await p.getByRole('textbox',{name:'Answer',exact:true}).getAttribute('lang'),'en');
   // Navigate and resume in a fresh offline window, including all newly added assets.
-  await ctx.setOffline(true);await p.close();p=await ctx.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto('http://127.0.0.1:8792/');await p.getByRole('button',{name:'Words',exact:true}).click();
+  await ctx.setOffline(true);await p.close();p=await ctx.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto('http://127.0.0.1:8792/');
   await p.getByRole('textbox',{name:'Answer',exact:true}).waitFor();assert.equal(await p.getByRole('textbox',{name:'Answer',exact:true}).getAttribute('lang'),'en');
   await p.getByRole('button',{name:'Back',exact:true}).click();
   await p.getByText('Add words',{exact:true}).click();await p.getByLabel('French',{exact:true}).fill('<img src=x onerror=window.vocabXss=true>');await p.getByLabel('English',{exact:true}).fill('literal text');await p.getByRole('button',{name:'Add',exact:true}).click();

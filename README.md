@@ -1,6 +1,6 @@
 # Bonjour Angers
 
-A buildless, private beginner French trainer for a week in Angers. All lesson content, exercises and progress work offline once the offline pack is prepared.
+A private beginner French trainer for a week in Angers. All lesson content, exercises and progress work offline once the offline pack is prepared.
 
 ## Before flying: iPhone and iPad
 
@@ -15,7 +15,7 @@ Audio currently uses the browser's French voice. Voice availability and offline 
 
 ## Implementation
 
-- `dist/` is deployed directly; no build or runtime server is required.
+- Frontend source assets remain under `dist/`. `node scripts/build-worker.mjs` embeds them into the dependency-free Worker at `dist/server/index.js`; only the Worker, hosting manifest and migrations are packaged.
 - `manifest.webmanifest`, PNG icons and Apple metadata support Home Screen installation.
 - `sw.js` activates first, then saves the complete offline pack on request. It validates lesson HTML, rejects login/error pages, accepts validated same-origin redirects, and serves saved lessons on offline launches. It only manages caches prefixed `bonjour-angers-offline-`.
 - `pwa.js` shows file-count progress, bytes saved, active filenames, and elapsed time. Readiness requires every file to be verified in CacheStorage. Downloads use two concurrent requests, a 15-second per-request limit, and one retry for transient errors. Successful files remain saved; Retry requests only missing files. A previous pack is preserved until the update finishes.
@@ -68,3 +68,29 @@ The UI uses a monochrome brutalist layout with one primary prompt/action. Option
 - [Uchihara et al. (2022)](https://doi.org/10.1111/modl.12775) provide evidence for combining written and spoken input and auditory practice. This motivates multimodal introductions and a separate listening skill, without claiming dictation or browser TTS itself was proven superior.
 
 Run `node tests/pedagogy.cjs` for non-scoring study-first exposure, delayed recall, mode-specific strengths, offline sentence/session resume and listening/no-audio behavior. Automated tests use Chromium; real iOS speech and Home Screen behavior require device verification.
+
+## Private cross-device sync
+
+Open the app online using the same ChatGPT account on each device. Expand **Sync** and press **Sync now**. Progress, per-mode strengths, introductions, personal words and completed scenarios synchronize automatically after learning actions and on reconnect/focus. Active rounds, filters and local preferences stay device-local. Offline changes have durable IDs and remain queued until acknowledged. The backend uses the trusted Sites visitor identity, per-account records, an expected-account guard, same-origin JSON writes, an idempotent event ledger and an atomic compare-and-swap transaction for concurrent updates. API responses are `no-store` and are excluded from the service-worker cache.
+
+A legacy snapshot is merged on first connection: counters take maxima and the most recent strength record wins, because old local data has no event history. New practice operations merge exactly once, preserving both devices’ attempts and subsequent strength decreases. Reset advances the account’s learning generation; unsynchronized operations from older generations are acknowledged without restoring cleared progress. Reset keeps personal word pairs. Deletion tombstones prevent older backups or devices from recreating deleted personal IDs. Personal-list limit conflicts are rejected atomically, keep changes queued, and show a readable error with backup available.
+
+A different signed-in account pauses upload until an explicit profile switch. Previous browser profiles are retained separately. If another tab switches accounts, the current app blocks practice and reloads after preserving its last action in the previous profile.
+
+**Export backup** downloads or shares a JSON file containing the confirmed snapshot and pending operations, not authentication tokens. **Import backup** validates its size/schema and asks before merging. Event IDs make re-imports idempotent; destination generations allow an intentional restore after a reset. Backup files contain learning data and personal words.
+
+### Server and schema
+
+`worker/index.js` handles `/api/sync` and serves embedded assets. `.openai/hosting.json` declares the `DB` D1 binding. `drizzle/0000_sync.sql` and its journal define two tables; hosted migrations run before Worker upload. No request executes schema changes. `GET /api/health` returns only database readiness under the Site’s existing private access boundary. Per-account learning endpoints still require an authenticated visitor; a service bypass token alone is not a user identity.
+
+Build: `node scripts/build-worker.mjs`. Package from `dist/` with `.openai`, `server`, and `drizzle` directories. Generated deployment files are ignored; frontend source files remain tracked.
+
+Sync tests: `tests/sync-model.cjs`, `tests/sync-client.cjs`, `tests/sync-server.cjs`, `tests/sync-browser.cjs`. Unit tests use Node SQLite as a D1 adapter. Browser tests simulate trusted dispatch identity, use separate phone/iPad browser profiles, merge offline attempts after reopening, transfer personal words and strengths, and test backup import/export. Actual Sites identity and database provisioning are checked at deployment; physical iPhone/iPad behavior needs device confirmation.
+
+### Tips
+
+Word practice has a Tip button with a partial spelling cue and letter count. A tip does not grade or penalize the word by itself. A correct hinted answer earns 5 strength points, rests for 10 minutes, and earns no XP; unaided recall still earns 20 strength points. This uses the same conservative assisted-answer event in cloud sync, so the rule stays consistent across devices. Tip state stays with the device-local active round and survives reopening.
+
+### Compact phone practice
+
+Practice hides global navigation and offline/sync settings; Back returns to them. Strength and review timing are collapsed below the action. Grading replaces the input/disabled actions with feedback and Next, so those controls do not stack. The regression test checks Next stays in a 390×740 viewport. Home groups offline/install/sync under Settings. Critical sync-storage failures still display an in-practice warning with a backup action.

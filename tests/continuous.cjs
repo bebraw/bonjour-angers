@@ -2,7 +2,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const http=require('node:http'),fs=require('node:fs/promises'),path=require('node:path');
 const root=path.resolve(__dirname,'../dist');const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.png':'image/png','.webmanifest':'application/manifest+json'};
-const server=http.createServer(async(req,res)=>{try{const name=new URL(req.url,'http://localhost').pathname;const file=path.join(root,name==='/'?'index.html':name.slice(1));res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'text/plain','Cache-Control':'no-store'});res.end(await fs.readFile(file));}catch{res.writeHead(404);res.end();}});
+const server=http.createServer(async(req,res)=>{try{const name=new URL(req.url,'http://localhost').pathname;const file=path.join(root,name==='/'?'index.html':name.slice(1));const body=await fs.readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'text/plain','Cache-Control':'no-store'});res.end(body);}catch{res.writeHead(404);res.end();}});
 async function studyIntroductions(page){
  for(let i=0;i<30;i++){
   if(await page.locator('#intro-continue').count()){await page.locator('#intro-continue').click();continue;}
@@ -33,7 +33,7 @@ async function options(page){if(!await page.locator('.vocab-options').evaluate(d
     await p3.getByRole('button',{name:'Check',exact:true}).click();await p3.getByRole('button',{name:'Next',exact:true}).click();
   }
   await studyIntroductions(p3);const before=await p3.evaluate(()=>JSON.parse(localStorage.getItem('bonjour-angers-vocabulary-v1')).session);assert.equal(before.answered,31);assert.ok(before.queue.length<40);assert.ok(!before.queue.some(i=>i.id===missedId));assert.ok(before.missedTurns.some(i=>i.id===missedId));
-  await c3.setOffline(true);await p3.close();p3=await c3.newPage();await p3.goto('http://127.0.0.1:8793/');await p3.getByRole('button',{name:'Words',exact:true}).click();await p3.getByRole('textbox',{name:'Answer',exact:true}).waitFor();const after=await p3.evaluate(()=>JSON.parse(localStorage.getItem('bonjour-angers-vocabulary-v1')).session);assert.equal(after.answered,31);assert.equal(after.index,before.index);assert.equal(await p3.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);await p3.screenshot({path:path.join(root,'../qa/vocabulary-continuous-mobile.png'),fullPage:true});await c3.close();
+  await c3.setOffline(true);await p3.close();p3=await c3.newPage();await p3.goto('http://127.0.0.1:8793/');await p3.getByRole('textbox',{name:'Answer',exact:true}).waitFor();const after=await p3.evaluate(()=>JSON.parse(localStorage.getItem('bonjour-angers-vocabulary-v1')).session);assert.equal(after.answered,31);assert.equal(after.index,before.index);assert.equal(await p3.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);await p3.screenshot({path:path.join(root,'../qa/vocabulary-continuous-mobile.png'),fullPage:true});await c3.close();
   console.log('PASS: continuous default, known words skipped, strength increases and intervals, three-miss cooldown, rolling queue pruning, missed directions retained, continuous offline resume after31 turns, mobile layout');
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1;server.close()});

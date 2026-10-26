@@ -1,0 +1,7 @@
+qa/
+dist/server/
+dist/.openai/
+dist/drizzle/
+node_modules/
+.wrangler/
+.outputs/

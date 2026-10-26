@@ -1,5 +1,5 @@
 (() => {
-  const BUILD='v5-study-first';
+  const BUILD='v6-account-sync';
   const panel=document.querySelector('#offline-panel');
   const label=document.querySelector('#offline-status');
   const retry=document.querySelector('#offline-retry');
@@ -52,7 +52,7 @@
     for(const f of failures){const li=document.createElement('li');li.textContent=f.path+': '+safe(f.error);fileList.append(li);}
     retry.hidden=running||ready;
     retry.textContent=completed?'Retry missing files':'Retry download';
-    if(failures.length&&!running){detail.open=true;document.querySelector('#offline-tools').open=true;}
+    if(failures.length&&!running){detail.open=true;document.querySelector('#offline-tools').open=true;document.querySelector('#app-tools').open=true;}
     debug();
   }
   function workerRequest(worker,type,progress=false) {
@@ -116,7 +116,7 @@
         const estimate=await navigator.storage.estimate();
         storage=Math.round((estimate.usage||0)/1024)+' KB used / '+Math.round((estimate.quota||0)/1024/1024)+' MB quota';
       }
-    }catch(error){lastError=safe(error.message||error.name);phase='Setup error';note(lastError);detail.open=true;document.querySelector('#offline-tools').open=true;}
+    }catch(error){lastError=safe(error.message||error.name);phase='Setup error';note(lastError);detail.open=true;document.querySelector('#offline-tools').open=true;document.querySelector('#app-tools').open=true;}
     finally{checking=false;if(last)last.running=false;render();}
   }
   retry.onclick=prepare;

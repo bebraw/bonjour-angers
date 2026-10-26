@@ -1,8 +1,8 @@
 /* Change VERSION whenever a saved lesson asset changes. */
-const VERSION = 'v5-study-first';
+const VERSION = 'v6-account-sync';
 const CACHE = 'bonjour-angers-offline-' + VERSION;
 // Save the canonical page once; /index.html may redirect on private hosting.
-const CORE = ['/', '/style.css', '/app.js', '/pwa.js', '/vocabulary-data.js', '/vocabulary.js', '/vocabulary.css', '/manifest.webmanifest',
+const CORE = ['/', '/style.css', '/app.js', '/pwa.js', '/sync-model.js', '/sync.js', '/vocabulary-data.js', '/vocabulary.js', '/vocabulary.css', '/manifest.webmanifest',
   '/icons/icon-192.png', '/icons/icon-512.png', '/icons/maskable-512.png', '/icons/apple-touch-icon.png'];
 const files = CORE.map(path => ({path, state:'pending', bytes:0, attempt:0, error:''}));
 let job = null, started = 0, finished = 0, running = false;
@@ -108,7 +108,7 @@ async function saved(path) {
 }
 self.addEventListener('fetch',event=>{
   const url=new URL(event.request.url);
-  if(event.request.method!=='GET'||url.origin!==self.location.origin)return;
+  if(event.request.method!=='GET'||url.origin!==self.location.origin||url.pathname.startsWith('/api/'))return;
   if(event.request.mode==='navigate'&&(url.pathname==='/'||url.pathname==='/index.html')) {
     event.respondWith((async()=>{
       const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),8000);

@@ -177,3 +177,10 @@ dialog h2 { margin: 15px 36px 20px 0; font-size: 30px; }
 
 .save-status{display:none}.save-status[data-error="true"]{display:block}#offline-tools>summary{font-weight:400}#offline-tools:not([open]){border:0}#offline-panel{margin-top:0}
 @media(max-width:720px){nav{gap:0}nav button{padding:9px 7px;min-width:44px}}
+
+#sync-tools{border-bottom:2px solid var(--ink);margin:0 0 18px}#sync-tools p{font:11px/1.6 var(--mono);overflow-wrap:anywhere}.sync-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.sync-actions label{display:inline-flex;align-items:center;cursor:pointer;min-height:44px}#sync-message:empty,#sync-account:empty{display:none}
+
+/* Settings and network tools never displace the active word. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+#offline-panel{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:4px 0 8px;margin-bottom:12px;border-width:1px}.offline-line{flex:1;min-width:0}#app-tools{font:11px var(--mono)}#app-tools>summary{min-height:44px;padding:10px 0}#app-tools[open]{flex-basis:100%}#offline-panel:has(#app-tools[open]){flex-wrap:wrap}#sync-tools{margin-bottom:0;border-bottom:0}#app-tools #offline-tools{border:0}#app-tools #sync-tools{border-top:1px solid var(--ink)}
+body[data-practice="true"] .site-header,body[data-practice="true"] #offline-panel{display:none}body[data-practice="true"] main{padding-top:8px}
