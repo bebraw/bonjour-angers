@@ -22,7 +22,7 @@ Audio currently uses the browser's French voice. Voice availability and offline 
 - All styles are local and use system font fallbacks. There are no external lesson or font requests.
 - Progress remains in `bonjour-angers-v1` localStorage, compatible with the original prototype. Storage input is validated at startup.
 
-Bump `VERSION` in `dist/sw.js` whenever any cached asset changes before deployment. The service worker will install the new pack fully before activation. Keep source and the deployment archive from the same Git commit.
+Bump `VERSION` in `dist/sw.js` whenever any cached asset changes before deployment. The new worker activates first, then reports progress while saving the pack; the previous pack is kept until the new pack is complete. Keep source and the deployment archive from the same Git commit.
 
 ## Verification
 
@@ -39,3 +39,15 @@ Expand **Download debug info** or use **Copy debug info** after a failure. The r
 A mobile connection can report online even when an individual request fails; the UI reports that failure rather than assuming Wi-Fi is required. The download heartbeat keeps long transfers distinguishable from a stopped worker. Keep the app open while preparing the pack; background suspension can interrupt iOS downloads.
 
 `tests/download-debug.cjs` exercises an actual failed asset and retry using a local fault-injection HTTP server.
+
+## Vocabulary trainer
+
+The Vocabulary trainer includes 240 original word pairs across everyday essentials, travel, dining, and conferences. Continuous practice asks for typed translations in either direction or a mix. Missing accents and optional articles are accepted; an explicitly wrong French article is checked. Each word has a usage example and pronunciation hint.
+
+Continuous mode is the default; optional 5/10/20-word rounds are available. Default practice selects weak due words first, then new ones, and skips resting words. Strength is stored per direction on a 0–100 scale: a correct initial recall adds 20, a correct retry adds 5, and an error or Show answer subtracts 30. At 80 a word is well known. Initial successes schedule reviews after 1/3/7/14/30 days as strength grows; correct retries and words missed three times take a 10-minute rest. A rolling queue keeps continuous sessions bounded in memory, while missed-word directions and progress stay saved. Five XP are added to the main progress for each correct initial attempt; retry attempts earn no extra XP.
+
+Personal French/English pairs (up to 100) and vocabulary progress use `bonjour-angers-vocabulary-v1` localStorage. Rounds save after each answer and can resume after reopening offline. Reset progress preserves the personal word list. The new data, script and stylesheet are part of the offline pack.
+
+Run `node tests/vocabulary.cjs` and `node tests/continuous.cjs` for vocabulary grading, review/retry, saved-round, custom-text safety and offline coverage. It uses a temporary local HTTP server on port 8792 and an iPhone-size Chromium viewport.
+
+Design reference: an archive listing describes [Sanakysely/AskWord ’97](https://apajalista.net/id?id=51798) as a vocabulary-test program. This trainer uses an original word collection and implementation with a simple typed recall loop.

@@ -1,5 +1,5 @@
 (() => {
-  const BUILD='v3-download-debug';
+  const BUILD='v4-vocabulary';
   const panel=document.querySelector('#offline-panel');
   const label=document.querySelector('#offline-status');
   const retry=document.querySelector('#offline-retry');
@@ -99,8 +99,9 @@
       }
       const worker=await activeWorker(registration);
       phase='Checking saved files';note('Worker activated');render();
-      let data=await workerRequest(worker,'GET_OFFLINE_STATUS');render(data);
-      if(data.protocol!==3)throw new Error('An older offline worker is active. Reload once to finish the update.');
+      let data=await workerRequest(worker,'GET_OFFLINE_STATUS');
+      if(data.protocol!==3||data.version!==BUILD){data.ready=false;render(data);throw new Error('An older offline worker is active. Reload once to finish the update.');}
+      render(data);
       if(!data.ready&&navigator.onLine){
         phase='Downloading missing files';note('Download requested');render();
         data=await workerRequest(worker,'REPAIR_OFFLINE',true);render(data);
