@@ -83,7 +83,7 @@ A different signed-in account pauses upload until an explicit profile switch. Pr
 
 `worker/index.js` handles `/api/sync` and serves embedded assets. `.openai/hosting.json` declares the `DB` D1 binding. `drizzle/0000_sync.sql` and its journal define two tables; hosted migrations run before Worker upload. No request executes schema changes. `GET /api/health` returns only database readiness under the Site’s existing private access boundary. Per-account learning endpoints still require an authenticated visitor; a service bypass token alone is not a user identity.
 
-Build: `node scripts/build-worker.mjs`. Package from `dist/` with `.openai`, `server`, and `drizzle` directories. Generated deployment files are ignored; frontend source files remain tracked.
+Build: `node scripts/build-worker.mjs`. Package from the project root with `.openai`, `dist/server`, and `drizzle` directories (for example, `tar -czf /tmp/angers-worker.tar.gz .openai dist/server drizzle`). The hosting declaration is `"d1": "DB"`; it is a string, not an object. Generated deployment files are ignored; frontend source files remain tracked.
 
 Sync tests: `tests/sync-model.cjs`, `tests/sync-client.cjs`, `tests/sync-server.cjs`, `tests/sync-browser.cjs`. Unit tests use Node SQLite as a D1 adapter. Browser tests simulate trusted dispatch identity, use separate phone/iPad browser profiles, merge offline attempts after reopening, transfer personal words and strengths, and test backup import/export. Actual Sites identity and database provisioning are checked at deployment; physical iPhone/iPad behavior needs device confirmation.
 
