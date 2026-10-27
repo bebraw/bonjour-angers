@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import './build-learning-data.mjs';
 const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
 const source=path.join(root,'dist');
-const names=['index.html','style.css','vocabulary.css','app.js','vocabulary-data.js','learning-data.js','vocabulary.js','sync-model.js','sync.js','pwa.js','sw.js','manifest.webmanifest','images/word-anchors.svg','icons/icon-192.png','icons/icon-512.png','icons/maskable-512.png','icons/apple-touch-icon.png'];
+const names=['index.html','style.css','vocabulary.css','app.js','vocabulary-data.js','learning-data.js','focus-engine.js','vocabulary.js','sync-model.js','sync.js','pwa.js','sw.js','manifest.webmanifest','images/word-anchors.svg','icons/icon-192.png','icons/icon-512.png','icons/maskable-512.png','icons/apple-touch-icon.png'];
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json','.webmanifest':'application/manifest+json','.png':'image/png','.svg':'image/svg+xml'};
 const assets={};
 for(const name of names){const body=await fs.readFile(path.join(source,name));assets['/'+name]={type:types[path.extname(name)],body:body.toString('base64')};}

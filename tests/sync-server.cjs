@@ -19,6 +19,9 @@ try{
  const finnish=(await(await call('finnish')).json()).state;
  assert.equal(finnish.vocab.progress.street.article.strength,20);assert.equal(finnish.vocab.progress.street.sound.strength,20);
  assert.equal(finnish.vocab.progress.street['en-fr'],undefined);assert.ok(finnish.vocab.introduced['street|article']);assert.ok(finnish.vocab.introduced['street|sound']);
+ const focusOps=[op('focus-first',{wordId:'coffee',track:'en-fr',ok:true,retry:false,day,focus:true}),op('focus-repeat-1',{wordId:'coffee',track:'en-fr',ok:true,retry:true,day,focus:true,rehearsal:true}),op('focus-repeat-2',{wordId:'coffee',track:'en-fr',ok:true,retry:true,day,focus:true,rehearsal:true})];
+ assert.equal((await call('focus',focusOps)).status,200);assert.equal((await call('focus',focusOps)).status,200);
+ const focused=(await(await call('focus')).json()).state;assert.equal(focused.vocab.progress.coffee['en-fr'].strength,20);assert.equal(focused.vocab.progress.coffee['en-fr'].right,3);assert.equal(focused.app.xp,5);assert.ok(focused.vocab.progress.coffee['en-fr'].due<=at+86400000);
  const reset=op('reset-alice',{},'reset');await call('alice',[reset,op('after-reset',undefined,'vocab.attempt','reset-alice')]);await call('alice',[op('stale-phone-answer')]);state=await(await call('alice')).json();assert.equal(state.state.app.xp,5);assert.equal(state.state.epoch,'reset-alice');
  // An idempotent retry that races between initial document read and ID lookup must not return stale state.
  const racing=op('racing',undefined,'vocab.attempt','reset-alice');db.beforeLookup=async()=>{assert.equal((await call('alice',[racing])).status,200);};const raceReply=await(await call('alice',[racing])).json();assert.equal(raceReply.state.vocab.progress.hello['en-fr'].right,2);

@@ -141,7 +141,13 @@
     switch(op.kind) {
       case 'baseline':case 'import':clean.payload={snapshot:sanitizeSnapshot(p.snapshot)};break;
       case 'vocab.attempt':clean.payload={wordId:wordId(p.wordId),track:track(p.track),ok:bool(p.ok,'answer result'),
-        retry:p.retry===undefined?false:bool(p.retry,'retry flag'),cooldown:p.cooldown===undefined?false:bool(p.cooldown,'cooldown flag'),day:day(p.day)};break;
+        retry:p.retry===undefined?false:bool(p.retry,'retry flag'),cooldown:p.cooldown===undefined?false:bool(p.cooldown,'cooldown flag'),day:day(p.day)};
+        {
+          const focus=p.focus===undefined?false:bool(p.focus,'focus flag'),rehearsal=p.rehearsal===undefined?false:bool(p.rehearsal,'rehearsal flag');
+          if(rehearsal&&!focus)throw new TypeError('Rehearsal requires focused practice');
+          if(focus)clean.payload.focus=true;
+          if(rehearsal)clean.payload.rehearsal=true;
+        }break;
       case 'app.scenario':
         if(!QUESTIONS.has(p.questionId))throw new TypeError('Unknown scenario question');
         clean.payload={questionId:p.questionId,ok:bool(p.ok,'answer result'),day:day(p.day)};break;
@@ -230,7 +236,15 @@
         const records=state.vocab.progress[p.wordId]||(state.vocab.progress[p.wordId]={});
         const current=records[p.track]||{right:0,wrong:0,streak:0,strength:0,due:0,last:0};
         const next={...current,last:Math.max(op.at,current.last)};
-        if(p.ok){next.right=Math.min(MAX_COUNT,next.right+1);next.streak=Math.min(5,next.streak+1);next.strength=Math.min(100,next.strength+(p.retry?5:20));next.due=Math.min(MAX_TIME,next.last+(p.retry?10*60000:interval(next.strength)));if(!p.retry)state.app.xp=Math.min(MAX_COUNT*100,state.app.xp+5);}
+        if(p.ok){
+          next.right=Math.min(MAX_COUNT,next.right+1);next.streak=Math.min(5,next.streak+1);
+          if(!p.rehearsal)next.strength=Math.min(100,next.strength+(p.retry?5:20));
+          const scheduled=Math.min(MAX_TIME,next.last+(p.retry?10*60000:interval(next.strength)));
+          const nextDay=Math.min(MAX_TIME,next.last+DAY),nextShort=Math.min(MAX_TIME,next.last+10*60000);
+          next.due=p.focus?(p.rehearsal?Math.min(Math.max(current.due,nextShort),nextDay):Math.min(scheduled,nextDay)):scheduled;
+          if(p.focus&&p.cooldown)next.due=nextShort;
+          if(!p.retry&&!p.rehearsal)state.app.xp=Math.min(MAX_COUNT*100,state.app.xp+5);
+        }
         else{next.wrong=Math.min(MAX_COUNT,next.wrong+1);next.streak=0;next.strength=Math.max(0,next.strength-30);next.due=Math.min(MAX_TIME,next.last+(p.cooldown?10*60000:0));}
         records[p.track]=next;addDay(state,p.day);break;
       }

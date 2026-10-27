@@ -110,6 +110,12 @@
 .vocab-intro .vocab-anchor { margin: 12px 0; padding-top: 8px; padding-bottom: 8px; }
 #vocab-tip-text > p { margin: 10px 0; }
 #vocab-tip-text .vocab-picture { max-width: 340px; }
+.vocab-focus-progress { margin: 2px 0 8px; font: 11px/1.5 var(--mono); color: var(--muted); }
+.vocab-focus-word { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-top: 1px solid var(--ink); padding: 12px 0; overflow-wrap: anywhere; }
+.vocab-focus-word > .metrics { flex: none; margin: 0; font-size: 10px; }
+#vocab-focus-start { flex-basis: 100%; }
+#vocab-focus-wait { margin: 20px 0; }
+#vocab-focus-resume { min-width: 140px; }
 @media (max-width: 360px) {
   .vocab-picture { gap: 8px; padding: 8px; }
   .vocab-picture svg { width: 96px; height: 72px; flex-basis: 96px; }

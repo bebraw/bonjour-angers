@@ -10,8 +10,9 @@
   const skillTracks=['context','listen','article','sound'];
   const trackLabel={...directions,...modes};
   const base=window.VOCABULARY_WORDS;
+  const Focus=window.FocusReviewEngine;
   const count=value=>Number.isSafeInteger(value)&&value>=0?value:0;
-  let storageOK=true,host,context={},library=false,query='';
+  let storageOK=true,host,context={},library=false,query='',recoveredFocus=false;
   function load() {
     const clean={progress:{},introduced:{},custom:[],settings:{mode:'recall',category:'all',direction:'en-fr',length:0,pool:'smart',gloss:'both',visuals:true},session:null};
     try {
@@ -42,14 +43,20 @@
       const s=saved.session;
       if(s&&Array.isArray(s.queue)&&s.queue.length>0&&s.queue.length<=60&&s.queue.every(i=>i&&ids.has(i.id)&&tracks.includes(i.direction)&&typeof i.retry==='boolean')&&Number.isInteger(s.index)&&s.index>=0&&s.index<=s.queue.length) {
         const answer=s.answer&&typeof s.answer.ok==='boolean'&&typeof s.answer.text==='string'?{ok:s.answer.ok,text:s.answer.text.slice(0,200),revealed:!!s.answer.revealed}:null;
-        clean.session={queue:s.queue.map(i=>({id:i.id,direction:i.direction,retry:i.retry,hinted:i.hinted===true,...(i.direction==='sound'&&[0,1].includes(i.soundIndex)?{soundIndex:i.soundIndex}:{})})),index:s.index,original:Math.min(20,count(s.original)),firstCorrect:count(s.firstCorrect),xp:count(s.xp),continuous:!!s.continuous,answered:count(s.answered),correctCount:count(s.correctCount),skipped:Array.isArray(s.skipped)?s.skipped.filter(id=>ids.has(id)):[],reviews:{},missedTurns:Array.isArray(s.missedTurns)?s.missedTurns.filter(i=>i&&ids.has(i.id)&&tracks.includes(i.direction)).map(i=>({id:i.id,direction:i.direction})).slice(0,ids.size*tracks.length):[],config:{...clean.settings},answer,missed:Array.isArray(s.missed)?[...new Set(s.missed.filter(id=>ids.has(id)))]:[],recalled:Array.isArray(s.recalled)?[...new Set(s.recalled.filter(id=>ids.has(id)))]:[]};
+        clean.session={queue:s.queue.map(i=>({id:i.id,direction:i.direction,retry:i.retry,hinted:i.hinted===true,...(i.focusBuffer===true?{focusBuffer:true}:{}),...(i.direction==='sound'&&[0,1].includes(i.soundIndex)?{soundIndex:i.soundIndex}:{})})),index:s.index,original:Math.min(20,count(s.original)),firstCorrect:count(s.firstCorrect),xp:count(s.xp),continuous:!!s.continuous,answered:count(s.answered),correctCount:count(s.correctCount),skipped:Array.isArray(s.skipped)?s.skipped.filter(id=>ids.has(id)):[],reviews:{},missedTurns:Array.isArray(s.missedTurns)?s.missedTurns.filter(i=>i&&ids.has(i.id)&&tracks.includes(i.direction)).map(i=>({id:i.id,direction:i.direction})).slice(0,ids.size*tracks.length):[],config:{...clean.settings},answer,missed:Array.isArray(s.missed)?[...new Set(s.missed.filter(id=>ids.has(id)))]:[],recalled:Array.isArray(s.recalled)?[...new Set(s.recalled.filter(id=>ids.has(id)))]:[]};
         if(s.config&&Object.hasOwn(categories,s.config.category)&&Object.hasOwn(directions,s.config.direction)&&['smart','all','tricky'].includes(s.config.pool))clean.session.config={...clean.settings,category:s.config.category,direction:s.config.direction,pool:s.config.pool,length:0,mode:Object.hasOwn(modes,s.config.mode)?s.config.mode:'recall'};
         if(s.reviews&&typeof s.reviews==='object')for(const id of ids)for(const d of tracks){const key=id+'|'+d;if(s.reviews[key])clean.session.reviews[key]=Math.min(3,count(s.reviews[key]));}
+        if(s.focus!==undefined){
+          const available=[...base,...clean.custom],restored=Focus?.restore(s.focus,(id,direction)=>{const word=available.find(w=>w.id===id);return !!word&&eligible(word,direction);});
+          const current=clean.session.queue[0],entry=restored?.cohort.find(e=>e.id===current.id&&e.direction===current.direction);
+          if(!restored||clean.session.queue.length!==1||!entry||(!answer&&!restored.waitUntil&&s.index===0&&entry.status!=='active'&&!(entry.status==='complete'&&current.focusBuffer))||(s.index===1&&restored.cohort.some(e=>e.status==='active'))){clean.session=null;recoveredFocus=true;}
+          else clean.session.focus=restored;
+        }
       }
     }catch {storageOK=false;}
     return clean;
   }
-  let data=load();
+  let data=load();if(recoveredFocus)persist();
   function persist(){try{localStorage.setItem(KEY,JSON.stringify(data));storageOK=true;}catch{storageOK=false;}}
   function words(){return [...base,...data.custom];}
   function eligible(word,direction){return direction==='context'?!!word.context:direction==='article'?!!word.article&&word.article.quiz!==false&&['m','f'].includes(word.article.gender)&&['le','la'].includes(word.article.definite):direction==='sound'?!!word.sound&&typeof word.sound.target==='string'&&Array.isArray(word.sound.choices)&&word.sound.choices.length===2:tracks.includes(direction);}
@@ -127,11 +134,53 @@
     if(!turns.length){renderHome();host.querySelector('#vocab-notice').textContent=dueOnly?'No words due right now. Review learned words to practice early.':'Practice a word first, then review it here.';return;}
     startRound(turns,{category:'all',direction:'mixed',mode:'recall',length:20,pool:'all'});
   }
+  function focusTurns(requested,excluded=new Set()){
+    const now=Date.now(),wanted=requested?new Map():null;
+    if(wanted)for(const turn of requested){const id=typeof turn==='string'?turn:turn.id;if(!wanted.has(id))wanted.set(id,[]);if(typeof turn!=='string'&&tracks.includes(turn.direction))wanted.get(id).push(turn.direction);}
+    const choices=words().flatMap(word=>{
+      if(excluded.has(word.id)||(wanted&&!wanted.has(word.id)))return [];
+      const requestedTracks=wanted?.get(word.id),available=(requestedTracks?.length?requestedTracks:tracks).filter(d=>eligible(word,d)).map(direction=>({id:word.id,direction,p:progress(word.id,direction)})).filter(x=>wanted||x.p.last&&(x.p.strength<80||x.p.due<=now)&&!(x.p.due>now&&x.p.due<=x.p.last+10*60000));
+      available.sort((a,b)=>(a.p.due>now)-(b.p.due>now)||a.p.strength-b.p.strength||b.p.wrong-a.p.wrong||a.p.last-b.p.last);
+      return available.length?[available[0]]:[];
+    });
+    choices.sort((a,b)=>(a.p.due>now)-(b.p.due>now)||a.p.strength-b.p.strength||b.p.wrong-a.p.wrong||a.p.last-b.p.last);
+    return choices.slice(0,5).map(({id,direction})=>({id,direction}));
+  }
+  function prepareFocusTurn(session){
+    const choice=Focus.next(session.focus,Date.now());session.focus=choice.state;session.answer=null;
+    if(choice.done){session.index=session.queue.length;return;}
+    session.index=0;
+    if(choice.item)session.queue=[choice.item];
+  }
+  function startFocused(requested,excluded=new Set()){
+    const turns=focusTurns(requested,excluded);
+    if(!turns.length){renderHome();host.querySelector('#vocab-notice').textContent=excluded.size?'No other weak words right now. Return later for spaced review.':'Practice a few words first, then focus on the ones that need repetition.';return;}
+    if(data.session&&data.session.index<data.session.queue.length&&!confirm('Replace the paused round? Answers already practiced will stay saved.'))return;
+    data.session={queue:[],index:0,original:turns.length,firstCorrect:0,xp:0,continuous:false,answered:0,correctCount:0,skipped:[],missedTurns:[],reviews:{},config:{...data.settings},answer:null,missed:[],recalled:[],focus:Focus.create(turns)};
+    prepareFocusTurn(data.session);library=false;persist();renderSession();focusHeading();
+  }
+  function focusProgress(word,item){
+    const s=data.session;if(!s?.focus)return;
+    const stats=Focus.summary(s.focus),entry=s.focus.cohort.find(e=>e.id===item.id&&e.direction===item.direction);
+    let target=host.querySelector('#vocab-focus-progress');if(!target){target=el('p',undefined,'vocab-focus-progress');target.id='vocab-focus-progress';host.querySelector('.vocab-session-top').after(target);}
+    target.textContent=stats.remaining+' '+(stats.remaining===1?'word':'words')+' left · '+(item.focusBuffer?'quick recap':(entry?.successes||0)+'/3 correct without hints');
+    const bar=host.querySelector('#vocab-round-progress');if(bar){bar.hidden=false;bar.max=stats.total*3;bar.value=stats.recalls;bar.setAttribute('aria-label','Focused answers completed');}
+  }
+  function renderFocusPause(){
+    document.body.dataset.practice='true';const s=data.session,deadline=s.focus.waitUntil;
+    host.innerHTML='<div class="vocab-session-top"><button id="vocab-pause" class="secondary">Back</button><span class="eyebrow">FOCUSED REVIEW</span></div><section class="vocab-quiz"><h1 data-vocab-heading>A short pause.</h1><p>Let this word settle before recalling it again.</p><p id="vocab-focus-wait" class="metrics" role="status"></p><button id="vocab-focus-resume" class="primary">Try again</button></section>';
+    host.querySelector('#vocab-pause').onclick=()=>{persist();renderHome();};
+    const resume=host.querySelector('#vocab-focus-resume'),status=host.querySelector('#vocab-focus-wait');
+    function update(){if(!host.contains(resume)){clearInterval(timer);return;}const remaining=Math.max(0,Math.ceil((deadline-Date.now())/1000));resume.disabled=remaining>0;status.textContent=remaining?'Ready in '+remaining+' s':'Ready to recall again.';if(!remaining)clearInterval(timer);}
+    const timer=setInterval(update,1000);update();
+    resume.onclick=()=>{if(Date.now()<deadline)return;clearInterval(timer);s.focus.waitUntil=0;prepareFocusTurn(s);persist();renderSession();focusHeading();};
+  }
   function renderReviewControls(){
     const stats=summary(),target=host.querySelector('#vocab-review');if(!target)return;
     host.querySelector('#vocab-summary').textContent=stats.total+' words / '+stats.learned+' strong';
     target.replaceChildren();
-    if(stats.due){const due=button('Review '+stats.due+' due '+(stats.due===1?'word':'words'),()=>startReview(true),'primary');due.id='vocab-review-due';target.append(due);}
+    const focused=focusTurns();if(focused.length){const focus=button('Focus on '+focused.length+' weak '+(focused.length===1?'word':'words'),()=>startFocused(),'primary');focus.id='vocab-focus-start';target.append(focus,el('p','Repeat a small set until answered three times without hints.','metrics'));}
+    if(stats.due){const due=button('Review '+stats.due+' due '+(stats.due===1?'word':'words'),()=>startReview(true),'secondary');due.id='vocab-review-due';target.append(due);}
     if(stats.practiced){const known=button('Review learned words',()=>startReview(false));known.id='vocab-review-known';target.append(known);const note=el('p',stats.due?'All topics and modes · up to 20 words per round.':'Nothing due. You can still review learned words.','metrics');target.append(note);}
   }
   function settingsSelect(label,id,options,value,onchange){const field=el('div',undefined,'vocab-field');const caption=el('label',label);caption.htmlFor=id;field.append(caption);const select=el('select');select.id=id;for(const [key,text]of Object.entries(options)){const o=el('option',text);o.value=key;select.append(o);}select.value=String(value);select.onchange=()=>{onchange(select.value);persist();};field.append(select);return field;}
@@ -178,7 +227,7 @@
       if(word.usage)card.append(el('p',word.usage));
       card.append(audioButtons(word));
       const p=el('p',tracks.filter(d=>eligible(word,d)).map(d=>turnLabel(d)+': '+progress(word.id,d).strength+'% strength · '+progress(word.id,d).right+' correct').join(' · '),'metrics');card.append(p);
-      if(word.category==='custom')card.append(button('Remove my word',()=>{if(!confirm('Remove this word pair and its vocabulary progress?'))return;data.custom=data.custom.filter(w=>w.id!==word.id);delete data.progress[word.id];if(data.session?.queue.some(i=>i.id===word.id))data.session=null;persist();window.LearningSync?.record('custom.delete',{wordId:word.id});renderHome();}));
+      if(word.category==='custom')card.append(button('Remove my word',()=>{if(!confirm('Remove this word pair and its vocabulary progress?'))return;data.custom=data.custom.filter(w=>w.id!==word.id);delete data.progress[word.id];if(data.session?.queue.some(i=>i.id===word.id)||data.session?.focus?.cohort.some(i=>i.id===word.id))data.session=null;persist();window.LearningSync?.record('custom.delete',{wordId:word.id});renderHome();}));
       target.append(card);
     }
   }
@@ -293,6 +342,7 @@
   function renderSession(){
     const session=data.session;
     if(!session||session.index>=session.queue.length){renderResult();return;}
+    if(session.focus?.waitUntil){renderFocusPause();return;}
     const item=session.queue[session.index],word=words().find(w=>w.id===item.id);
     if(!word||!eligible(word,item.direction)){data.session=null;persist();renderHome();return;}
     if(item.direction==='sound'&&![0,1].includes(item.soundIndex)){item.soundIndex=Math.random()<.5?0:1;persist();}
@@ -304,7 +354,7 @@
     host.querySelector('#vocab-turn').textContent=turnLabel(item.direction);
     host.querySelector('.vocab-question-meta').append(el('span',turnLabel(item.direction),'level'));host.querySelector('.vocab-quiz').dataset.mode=item.direction;
     showStrength(word,item);
-    const bar=host.querySelector('#vocab-round-progress');bar.hidden=session.continuous;bar.max=session.queue.length;bar.value=session.index;
+    const bar=host.querySelector('#vocab-round-progress');bar.hidden=session.continuous;bar.max=session.queue.length;bar.value=session.index;focusProgress(word,item);
     const instruction=host.querySelector('.vocab-instruction');instruction.textContent=isArticle?'Which noun group?':isSound?'Listen, then choose the spelling.':isListen?'Type what you hear, including the article.':isContext?'Fill the gap.':toFrench?'In French:':'Give the meaning:';instruction.hidden=!choiceMode;
     const prompt=host.querySelector('#vocab-prompt');prompt.textContent=needsAudio?'Listen.':isArticle?word.article.base:isContext?word.context.sentence:toFrench?meaning(word):word.fr;prompt.lang=needsAudio?'en':isArticle||isContext||!toFrench?'fr':data.settings.gloss==='fi'?'fi':'en';
     if(!needsAudio&&!isContext&&toFrench&&data.settings.gloss==='both'&&word.fi)host.querySelector('#vocab-prompt-fi').textContent=word.fi;
@@ -361,24 +411,35 @@
   function grade(word,item,text,revealed){
     const s=data.session;if(!s||s.answer)return;
     const ok=!revealed&&matches(word,item.direction,text,item);s.answer={ok,text,revealed};
-    const p={...progress(word.id,item.direction)};p.last=Date.now();
+    const old=progress(word.id,item.direction),p={...old};p.last=Math.max(Date.now(),old.last);
+    const focus=!!s.focus,entry=focus?s.focus.cohort.find(e=>e.id===item.id&&e.direction===item.direction):null;
+    const rehearsal=focus&&(item.focusBuffer===true||entry.credited),assisted=!!(item.retry||item.hinted);
+    if(focus)s.focus=Focus.record(s.focus,item,{ok,hinted:!!item.hinted,revealed},p.last);
     s.answered=(s.answered||0)+1;
     if(ok){
-      p.right++;p.streak=Math.min(5,p.streak+1);p.strength=Math.min(100,(p.strength||0)+(item.retry||item.hinted?5:20));p.due=p.last+(item.retry||item.hinted?10*60000:interval(p.strength));
+      p.right++;p.streak=Math.min(5,p.streak+1);
+      if(!rehearsal)p.strength=Math.min(100,(p.strength||0)+(assisted?5:20));
+      p.due=rehearsal?Math.min(Math.max(old.due,p.last+10*60000),p.last+DAY):p.last+(assisted?10*60000:interval(p.strength));
+      if(focus&&!rehearsal)p.due=Math.min(p.due,p.last+DAY);
       s.correctCount=(s.correctCount||0)+1;
       if(!s.recalled.includes(word.id))s.recalled.push(word.id);
-      if(!item.retry&&!item.hinted){s.firstCorrect++;s.xp+=5;}
+      if(!assisted&&!rehearsal){s.firstCorrect++;s.xp+=5;}
     }else{
       p.wrong++;p.streak=0;p.strength=Math.max(0,(p.strength||0)-30);p.due=p.last;
       if(!s.missed.includes(word.id))s.missed.push(word.id);
       if(!s.missedTurns.some(i=>i.id===word.id&&i.direction===item.direction))s.missedTurns.push({id:word.id,direction:item.direction});
-      const key=item.id+'|'+item.direction;
-      const appearances=s.continuous?(s.reviews[key]||1):s.queue.filter(i=>i.id===item.id&&i.direction===item.direction).length;
-      if(appearances<3){s.queue.splice(Math.min(s.queue.length,s.index+3),0,{id:item.id,direction:item.direction,retry:true});s.reviews[key]=appearances+1;}
-      else p.due=p.last+10*60000;
+      if(focus){if(s.focus.cohort.find(e=>e.id===item.id&&e.direction===item.direction).status==='rest')p.due=p.last+10*60000;}
+      else {
+        const key=item.id+'|'+item.direction;
+        const appearances=s.continuous?(s.reviews[key]||1):s.queue.filter(i=>i.id===item.id&&i.direction===item.direction).length;
+        if(appearances<3){s.queue.splice(Math.min(s.queue.length,s.index+3),0,{id:item.id,direction:item.direction,retry:true});s.reviews[key]=appearances+1;}
+        else p.due=p.last+10*60000;
+      }
     }
+    const focusRest=focus&&s.focus.cohort.find(e=>e.id===item.id&&e.direction===item.direction).status==='rest';
+    if(focusRest)p.due=p.last+10*60000;
     if(!data.progress[word.id])data.progress[word.id]={};data.progress[word.id][item.direction]=p;
-    persist();context.onPractice?.(ok&&!item.retry&&!item.hinted?5:0);window.LearningSync?.record('vocab.attempt',{wordId:word.id,track:item.direction,ok,retry:!!(item.retry||item.hinted),cooldown:!ok&&p.due>p.last,day:new Date().toLocaleDateString('en-CA')});showFeedback(word,item);
+    persist();context.onPractice?.(ok&&!assisted&&!rehearsal?5:0);window.LearningSync?.record('vocab.attempt',{wordId:word.id,track:item.direction,ok,retry:assisted,cooldown:!!focusRest||!ok&&p.due>p.last,day:new Date().toLocaleDateString('en-CA'),...(focus?{focus:true,...(rehearsal?{rehearsal:true}:{})}:{})});showFeedback(word,item);
     if(!storageOK)storageNote();
   }
   function showFeedback(word,item){
@@ -387,16 +448,21 @@
     const box=el('div',undefined,'feedback '+(a.ok?'vocab-correct':'vocab-retry'));
     box.append(el('strong',a.ok?'Correct.':'Answer:'),el('p',answer,'vocab-correct-answer'));
     if(['listen','sound','article'].includes(item.direction))box.append(el('p',item.direction==='sound'?soundMeaning(word,answer):meaning(word),'translation'));
-    feedback.append(box);showStrength(word,item);
-    const next=button(!s.continuous&&s.index===s.queue.length-1?'Finish':'Next',advance,'primary');next.id='vocab-next';feedback.append(next);
+    feedback.append(box);showStrength(word,item);focusProgress(word,item);
+    const next=button(s.focus?(Focus.summary(s.focus).remaining?'Next':'Finish'):!s.continuous&&s.index===s.queue.length-1?'Finish':'Next',advance,'primary');next.id='vocab-next';feedback.append(next);
     feedback.append(learningNotes(word,item));
     host.querySelector('#vocab-answer').disabled=true;host.querySelector('#vocab-check').disabled=true;host.querySelector('#vocab-reveal').disabled=true;host.querySelector('#vocab-tip').disabled=true;host.querySelectorAll('.vocab-accent,.vocab-choice').forEach(b=>b.disabled=true);
     host.querySelector('#vocab-answer-form').hidden=true;host.querySelector('#vocab-tip-text').hidden=true;next.focus({preventScroll:true});
     host.querySelector('#vocab-turn').textContent=turnLabel(item.direction);
-    host.querySelector('#vocab-round-progress').max=s.queue.length;
+    if(!s.focus)host.querySelector('#vocab-round-progress').max=s.queue.length;
   }
   function advance(){
-    const s=data.session;if(!s)return;context.stop?.();s.index++;s.answer=null;
+    const s=data.session;if(!s)return;context.stop?.();
+    if(s.focus){
+      if(!s.answer)s.focus=Focus.skip(s.focus,s.queue[s.index],Date.now());
+      prepareFocusTurn(s);persist();renderSession();const input=host.querySelector('#vocab-answer');if(input&&!input.hidden)input.focus();else focusHeading();return;
+    }
+    s.index++;s.answer=null;
     if(s.continuous){
       // Keep a small rolling queue; successfully recalled words are excluded by their due date.
       if(s.queue.length-s.index<=3){
@@ -410,15 +476,29 @@
     persist();renderSession();
     const input=host.querySelector('#vocab-answer');if(input&&!input.hidden)input.focus();else focusHeading();
   }
+  function renderFocusedResult(s){
+    const stats=Focus.summary(s.focus),excluded=new Set(s.focus.cohort.map(e=>e.id));
+    host.innerHTML='<section class="vocab-result"><div class="eyebrow">FOCUS SET FINISHED</div><h1 data-vocab-heading>Done for now.</h1><p id="vocab-result-score"></p><p id="vocab-result-summary" class="sub"></p><div class="vocab-result-actions"></div><div id="vocab-result-words"></div><p id="vocab-notice" role="status"></p></section>';
+    host.querySelector('#vocab-result-score').textContent=stats.complete+' / '+stats.total+' words answered three times without hints';
+    host.querySelector('#vocab-result-summary').textContent=(stats.rest?stats.rest+' '+(stats.rest===1?'word needs':'words need')+' another review after a short rest. ':'')+(stats.skipped?stats.skipped+' skipped; audio skips did not change strength. ':'')+'Later spaced reviews will check what stays in memory.';
+    const actions=host.querySelector('.vocab-result-actions'),nextTurns=focusTurns(undefined,excluded);
+    if(nextTurns.length){const next=button('Next focus set',()=>{data.session=null;startFocused(undefined,excluded);},'primary');next.id='vocab-focus-next';actions.append(next);}
+    actions.append(button('Back',()=>{data.session=null;persist();renderHome();},nextTurns.length?'secondary':'primary'));
+    const target=host.querySelector('#vocab-result-words');
+    for(const entry of s.focus.cohort){const word=words().find(w=>w.id===entry.id);if(!word)continue;const row=el('div',undefined,'vocab-focus-word');const form=el('strong',word.fr);form.lang='fr';row.append(form,el('span',entry.status==='complete'?'3 without hints':entry.status==='skipped'?'Skipped':'Review later','metrics'));target.append(row);}
+    storageNote();
+  }
   function renderResult(){
     document.body.dataset.practice='false';const s=data.session;if(!s){renderHome();return;}
+    if(s.focus){renderFocusedResult(s);return;}
     host.innerHTML='<section class="vocab-result"><div class="eyebrow">ROUND COMPLETE</div><h1 data-vocab-heading>Done.</h1><p id="vocab-result-score"></p><p id="vocab-result-summary" class="sub"></p><div class="vocab-result-actions"></div><div id="vocab-result-words"></div><p id="vocab-notice" role="status"></p></section>';
     if(s.continuous){host.querySelector('.eyebrow').textContent='ALL CAUGHT UP';host.querySelector('h1').textContent='Caught up.';}
     if(s.skipped?.length){host.querySelector('h1').textContent='Audio skipped.';}
     host.querySelector('#vocab-result-score').textContent=s.correctCount+' correct / '+s.answered+' answered';
     host.querySelector('#vocab-result-summary').textContent=s.skipped?.length?'Skipped audio did not change strength. Try Recall or Sentence, or test audio while online.':s.continuous?'No words due. Change topic or come back later.':s.recalled.length+' words recalled by the end of the round. '+(s.missed.length?'The words you missed are listed below.':'Come back tomorrow for a fresh recall test.');
     const actions=host.querySelector('.vocab-result-actions');actions.append(button('Back',()=>{data.session=null;persist();renderHome();},'primary'));
-    if(s.missed.length)actions.append(button('Review mistakes',()=>{const turns=s.missedTurns.length?s.missedTurns:s.queue.filter(i=>!i.retry&&s.missed.includes(i.id)).map(i=>({id:i.id,direction:i.direction}));data.session=null;startRound(turns,s.config);}));
+    if(s.missed.length)actions.append(button('Review mistakes',()=>{const turns=s.missedTurns.length?s.missedTurns:s.queue.filter(i=>!i.retry&&s.missed.includes(i.id)).map(i=>({id:i.id,direction:i.direction}));data.session=null;startFocused(turns);}));
+    const focusSet=button('Focus this set',()=>{const turns=s.queue.map(i=>({id:i.id,direction:i.direction}));data.session=null;startFocused(turns);});focusSet.id='vocab-focus-set';actions.append(focusSet);
     const target=host.querySelector('#vocab-result-words');for(const id of s.missed){const w=words().find(w=>w.id===id);if(w){const card=el('div',undefined,'phrase');const text=el('div');const french=el('h3',w.fr);french.lang='fr';text.append(french,el('p',w.en));card.append(text,audioButtons(w));target.append(card);}}
     storageNote();
   }
@@ -427,12 +507,13 @@
     summary,
     reviewDue(){startReview(true);},
     reviewKnown(){startReview(false);},
+    focusReview(turns){startFocused(turns);},
     snapshot(){return structuredClone({progress:data.progress,introduced:data.introduced,custom:data.custom});},
     acceptSync(incoming){
       if(!incoming)return false;
       data.progress=structuredClone(incoming.progress);data.introduced=structuredClone(incoming.introduced);data.custom=structuredClone(incoming.custom);
       const ids=new Set(words().map(w=>w.id));
-      const invalid=!!data.session?.queue.some(i=>!ids.has(i.id));
+      const invalid=!!data.session&&(data.session.queue.some(i=>!ids.has(i.id))||!!data.session.focus?.cohort.some(i=>!ids.has(i.id)));
       if(invalid){data.session=null;library=true;persist();}
       if(library&&host?.querySelector('#vocab-word-list')){renderCollection();renderReviewControls();}
       return invalid;

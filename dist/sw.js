@@ -1,8 +1,8 @@
 /* Change VERSION whenever a saved lesson asset changes. */
-const VERSION = 'v8-finnish-memory';
+const VERSION = 'v9-focused-review';
 const CACHE = 'bonjour-angers-offline-' + VERSION;
 // Save the canonical page once; /index.html may redirect on private hosting.
-const CORE = ['/', '/style.css', '/app.js', '/pwa.js', '/sync-model.js', '/sync.js', '/vocabulary-data.js', '/learning-data.js', '/vocabulary.js', '/vocabulary.css', '/images/word-anchors.svg', '/manifest.webmanifest',
+const CORE = ['/', '/style.css', '/app.js', '/pwa.js', '/sync-model.js', '/sync.js', '/vocabulary-data.js', '/learning-data.js', '/focus-engine.js', '/vocabulary.js', '/vocabulary.css', '/images/word-anchors.svg', '/manifest.webmanifest',
   '/icons/icon-192.png', '/icons/icon-512.png', '/icons/maskable-512.png', '/icons/apple-touch-icon.png'];
 const files = CORE.map(path => ({path, state:'pending', bytes:0, attempt:0, error:''}));
 let job = null, started = 0, finished = 0, running = false;

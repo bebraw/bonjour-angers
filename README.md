@@ -93,6 +93,28 @@ These choices draw on [Kalmbach's Finnish-specific pronunciation guide](https://
 
 Run `node tests/finnish-support.cjs` for meaning-language preferences, article and sound workflows, separate strengths, visual hints, offline pictures/content and phone layout. The sync model/server suites also cover the new tracks and mode-specific introduction keys.
 
+## Focused narrowing review
+
+Words offers a prominent **Focus on 5 weak words** action after there is practiced vocabulary to review. It chooses up to five previously practiced word/skill pairs, prioritizing weak and due items across topics and modes. Resting, well-known items are skipped by default. The cohort stays fixed for the set. **Review mistakes** now uses the same focused loop; a finished round can also be practiced as a focused set. Normal continuous practice and ordinary due review remain available.
+
+Each word needs three answers without hints in the focus set. A wrong answer, Reveal or hinted answer resets that word's in-set count. Words leave the active pool as they qualify; a completed word can return between difficult retries to keep attempts apart. With three or more cohort words, retries have at least two other graded prompts between them. Two-word cohorts alternate. A single-word cohort takes a short 30-second pause between attempts. These are practical controls for this prototype, not experimentally established optimum delays. Eight attempts per word bound the set; unfinished words take a ten-minute rest rather than trapping the learner. Unavailable audio can be skipped without changing strength.
+
+The set counter is separate from longer-term strength. Each word can earn positive strength credit only once per focus set. Further correct rehearsal attempts are recorded but add no strength or XP. Errors still lower strength. Successful focused practice schedules another check within a day, with at least a short rest after recovery from a mistake; it does not retire a word for weeks based on rapid repeats. The client and authenticated server apply the same `focus`/`rehearsal` operation rules. The current cohort, clean-answer counts, pause and answer phase survive reopening offline on the same device. Learning attempts synchronize; active sets stay device-local.
+
+### Evidence and product choices
+
+| Primary research | Relevant finding | Application here |
+| --- | --- | --- |
+| [Nakata & Webb (2016), Does studying vocabulary in smaller sets increase learning?](https://doi.org/10.1017/S0272263115000236) | Compared 20-item whole learning with smaller subsets in L2 vocabulary. When spacing was matched, set size had little effect; spacing mattered more. | Offer a manageable small cohort while preserving gaps between repetitions. |
+| [Karpicke & Roediger (2008), The critical importance of retrieval for learning](https://doi.org/10.1126/science.1152408) | In foreign-language vocabulary learning, continued testing after a first correct answer improved delayed recall; continued study alone did not. | Keep practicing a word after its first success. |
+| [Rawson & Dunlosky (2011), Optimizing schedules of retrieval practice](https://doi.org/10.1037/a0023956) | Across 533 students learning conceptual material, initial successful retrieval and later relearning jointly affected durable and efficient learning. The authors recommended three initial correct recalls and three spaced relearning sessions for their conditions. | Multiple unaided answers followed by later review; the app's five-word size, consecutive-three criterion and timing are heuristics rather than a replication or universal optimum. |
+| [Nakata (2017), Does repeated practice make perfect?](https://doi.org/10.1017/S0272263116000280) | More within-session retrievals improved L2 vocabulary retention, but the advantage had a time cost; one retrieval was most efficient when time was controlled. | Allow enough repetition while bounding session effort. |
+| [Kornell (2009), Optimising learning using flashcards](https://doi.org/10.1002/acp.1537) | Small, separately practiced stacks reduced spacing and underperformed a larger spaced stack on delayed tests, despite learners' preferences. | Avoid immediate repeated echoes and retain later spaced checks. |
+
+This feature honors the user's useful experience with narrowing without treating immediate fluency as proof of long-term retention. Typed translation, sentence and dictation tasks require recall; article and sound-choice tasks measure recognition. Their scores remain separate, and focus completion means the set is finished for now. Later reviews check retention.
+
+Run `node tests/focused-review.cjs` for selection, repeated practice, narrowing, assistance, spacing, bounded effort, offline resume, deletion handling and model-consistent scoring. The focus engine's pure checks cover scheduler and restore edge cases; the sync model/server checks cover rehearsal credit and later-review timing.
+
 ## Private cross-device sync
 
 Open the app online using the same ChatGPT account on each device. Expand **Sync** and press **Sync now**. Progress, per-mode strengths, introductions, personal words and completed scenarios synchronize automatically after learning actions and on reconnect/focus. Active rounds, filters and local preferences stay device-local. Offline changes have durable IDs and remain queued until acknowledged. The backend uses the trusted Sites visitor identity, per-account records, an expected-account guard, same-origin JSON writes, an idempotent event ledger and an atomic compare-and-swap transaction for concurrent updates. API responses are `no-store` and are excluded from the service-worker cache.
