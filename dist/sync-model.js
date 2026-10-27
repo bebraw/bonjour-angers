@@ -13,7 +13,8 @@
     'restaurant-menu','restaurant-vegetarian','restaurant-allergy','restaurant-finished',
     'registration-badge','registration-programme','registration-room','registration-start',
     'networking-field','networking-question','networking-contact','networking-thanks']);
-  const TRACKS = Object.freeze(['en-fr','fr-en','context','listen']);
+  const TRACKS = Object.freeze(['en-fr','fr-en','context','listen','article','sound']);
+  const INTRO_TRACKS = Object.freeze(['context','listen','article','sound']);
   const TOPICS = Object.freeze(['travel','food','conference','hotel','tram','bakery','restaurant','registration','networking']);
   const WORDS = new Set(WORD_IDS), QUESTIONS = new Set(QUESTION_IDS);
   const MAX_CUSTOM = 100, MAX_COUNT = 1000000000, MAX_TIME = 8640000000000000;
@@ -121,10 +122,10 @@
     }
     if(vocab.introduced!==undefined) {
       const introduced=record(vocab.introduced,'introduced words');
-      if(Object.keys(introduced).length>(WORD_IDS.length+MAX_CUSTOM)*3)throw new TypeError('Too many word introductions');
+      if(Object.keys(introduced).length>(WORD_IDS.length+MAX_CUSTOM)*(INTRO_TRACKS.length+1))throw new TypeError('Too many word introductions');
       for(const key of Object.keys(introduced)) {
         const parts=key.split('|');wordId(parts[0]);
-        if(parts.length>2||(parts.length===2&&!['context','listen'].includes(parts[1])))throw new TypeError('Invalid introduction key');
+        if(parts.length>2||(parts.length===2&&!INTRO_TRACKS.includes(parts[1])))throw new TypeError('Invalid introduction key');
         if(permitted(parts[0]))clean.vocab.introduced[key]=number(introduced[key],MAX_TIME,'introduction date');
       }
     }
@@ -147,7 +148,7 @@
       case 'app.complete':if(!TOPICS.includes(p.topic))throw new TypeError('Unknown scenario');clean.payload={topic:p.topic};break;
       case 'vocab.introduced':
         clean.payload={wordId:wordId(p.wordId)};
-        if(p.track!==undefined){if(!['context','listen'].includes(p.track))throw new TypeError('Invalid introduction track');clean.payload.track=p.track;}break;
+        if(p.track!==undefined){if(!INTRO_TRACKS.includes(p.track))throw new TypeError('Invalid introduction track');clean.payload.track=p.track;}break;
       case 'custom.put':clean.payload={word:customWord(p.word)};break;
       case 'custom.delete':
         if(typeof p.wordId!=='string'||!CUSTOM_ID.test(p.wordId))throw new TypeError('Invalid personal word ID');
@@ -181,7 +182,7 @@
     }
     for(const [key,date]of Object.entries(incoming.vocab.introduced))if(!own(state.deletedCustom,key.split('|')[0]))state.vocab.introduced[key]=Math.max(state.vocab.introduced[key]||0,date);
     for(const id of Object.keys(state.deletedCustom)) {
-      delete state.vocab.progress[id];delete state.vocab.introduced[id];delete state.vocab.introduced[id+'|context'];delete state.vocab.introduced[id+'|listen'];
+      delete state.vocab.progress[id];delete state.vocab.introduced[id];for(const track of INTRO_TRACKS)delete state.vocab.introduced[id+'|'+track];
     }
     state.app.xp=Math.max(state.app.xp,incoming.app.xp);
     state.app.day=Math.max(state.app.day,incoming.app.day);
@@ -217,7 +218,7 @@
       case 'custom.delete': {
         const id=p.wordId;if(!own(state.deletedCustom,id)&&Object.keys(state.deletedCustom).length>=10000)throw new TypeError('Personal word deletion limit reached');state.deletedCustom[id]=Math.max(state.deletedCustom[id]||0,op.at);
         state.vocab.custom=state.vocab.custom.filter(w=>w.id!==id);delete state.vocab.progress[id];
-        delete state.vocab.introduced[id];delete state.vocab.introduced[id+'|context'];delete state.vocab.introduced[id+'|listen'];break;
+        delete state.vocab.introduced[id];for(const track of INTRO_TRACKS)delete state.vocab.introduced[id+'|'+track];break;
       }
       case 'vocab.introduced': {
         if(!usableWord(state,p.wordId))return state;

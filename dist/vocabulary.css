@@ -74,6 +74,46 @@
 .vocab-spelling p { font-size: 13px; margin: 8px 0; }
 .vocab-spelling-word { font-weight: 700; }
 .vocab-spelling-letters { font-family: var(--mono); }
+.vocab-finnish { color: var(--muted); font-size: 16px; margin: -6px 0 14px; overflow-wrap: anywhere; }
+.vocab-finnish:empty { display: none; }
+.vocab-intro .intro-finnish { margin: -5px 0 12px; }
+.vocab-anchor { border-left: 3px solid var(--ink); padding: 9px 12px; margin: 14px 0; background: var(--lime); overflow-wrap: anywhere; }
+.vocab-anchor > strong { display: block; font: 10px/1.5 var(--mono); }
+.vocab-anchor > p { font-size: 14px; line-height: 1.5; margin: 6px 0 0; }
+.vocab-picture { display: flex; align-items: center; gap: 12px; margin: 12px 0; padding: 10px; border: 1px solid var(--ink); background: #fff; }
+.vocab-picture svg { display: block; width: 120px; height: 90px; flex: 0 0 120px; }
+.vocab-picture figcaption { font: 11px/1.5 var(--mono); overflow-wrap: anywhere; }
+.vocab-picture figcaption > strong, .vocab-picture figcaption > span { display: block; }
+.vocab-picture figcaption > strong { font-size: 14px; margin-bottom: 4px; }
+.vocab-article-note { border-top: 1px solid var(--ink); padding-top: 12px; margin: 14px 0; font-size: 13px; }
+.vocab-article-note > strong { font: 11px var(--mono); }
+.vocab-article-note .vocab-article-forms { font-weight: 700; }
+.vocab-sound-fi { font-size: 13px; line-height: 1.55; margin: 12px 0; }
+.vocab-english-sounds > summary { font: 10px var(--mono); min-height: 44px; padding: 12px 0; }
+.vocab-patterns { border-top: 2px solid var(--ink); margin: 18px 0 0; }
+.vocab-patterns > summary { padding: 12px 0; font: 11px/1.5 var(--mono); }
+.vocab-patterns section { margin: 14px 0; }
+.vocab-patterns h3 { font-size: 16px; margin: 0 0 6px; }
+.vocab-patterns p { font-size: 13px; line-height: 1.6; margin: 0; }
+.vocab-choices { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 12px 0; }
+.vocab-choices:empty { display: none; }
+.vocab-choice { min-height: 52px; width: 100%; text-align: left; overflow-wrap: anywhere; }
+.vocab-sound-study { border-top: 1px solid var(--ink); padding-top: 12px; margin: 14px 0; }
+.vocab-sound-example { font-weight: 700; font-size: 20px; min-width: 80px; }
+.vocab-sound-pair { border-top: 1px solid var(--ink); padding-top: 10px; margin-top: 12px; }
+.vocab-sound-pair > strong { font-size: 22px; }
+.vocab-sound-pair > .translation { margin: 5px 0; }
+.vocab-article-brief { font: 11px/1.5 var(--mono); margin: 10px 0; }
+#intro-more { border-top: 1px solid var(--ink); margin-top: 14px; }
+#intro-more > summary { min-height: 44px; padding: 12px 0; font: 11px/1.5 var(--mono); }
+.vocab-intro .vocab-picture svg { width: 104px; height: 78px; flex-basis: 104px; }
+.vocab-intro .vocab-anchor { margin: 12px 0; padding-top: 8px; padding-bottom: 8px; }
+#vocab-tip-text > p { margin: 10px 0; }
+#vocab-tip-text .vocab-picture { max-width: 340px; }
+@media (max-width: 360px) {
+  .vocab-picture { gap: 8px; padding: 8px; }
+  .vocab-picture svg { width: 96px; height: 72px; flex-basis: 96px; }
+}
 .vocab-warning { padding: 14px; border: 2px dashed var(--ink); margin: 16px 0; background: var(--lime); font: 12px/1.6 var(--mono); }
 #vocab-notice { font-size: 13px; border-left: 4px solid var(--ink); padding-left: 12px; }
 #vocab-notice:empty { display: none; }

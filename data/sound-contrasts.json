@@ -1,0 +1,134 @@
+{
+  "street": {
+    "target": "rue",
+    "choices": [
+      "rue",
+      "roue"
+    ],
+    "targetFi": "katu",
+    "foilFi": "pyörä",
+    "note": "French u in rue is close to Finnish y; ou in roue is close to Finnish u. Round your lips and keep the vowel steady.",
+    "targetEn": "street",
+    "foilEn": "wheel"
+  },
+  "two": {
+    "target": "deux",
+    "choices": [
+      "deux",
+      "doux"
+    ],
+    "targetFi": "kaksi",
+    "foilFi": "pehmeä; makea",
+    "note": "Eu in deux is near Finnish ö, with tighter rounding. Ou in doux is near Finnish u. The final x is silent in these words here.",
+    "targetEn": "two",
+    "foilEn": "soft; sweet"
+  },
+  "train": {
+    "target": "train",
+    "choices": [
+      "train",
+      "trait"
+    ],
+    "targetFi": "juna",
+    "foilFi": "viiva; piirre",
+    "note": "Train ends in a nasal vowel: air also passes through the nose, without a separate Finnish n. Trait ends in an oral vowel; its t is silent.",
+    "targetEn": "train",
+    "foilEn": "line; feature"
+  },
+  "bread": {
+    "target": "pain",
+    "choices": [
+      "pain",
+      "paix"
+    ],
+    "targetFi": "leipä",
+    "foilFi": "rauha",
+    "note": "Pain has a nasal vowel, without a separate final n. Paix has an oral vowel and a silent x. Listen for the vowel, not a consonant ending.",
+    "targetEn": "bread",
+    "foilEn": "peace"
+  },
+  "fish": {
+    "target": "poisson",
+    "choices": [
+      "poisson",
+      "poison"
+    ],
+    "targetFi": "kala",
+    "foilFi": "myrkky",
+    "note": "Double ss in poisson makes an s sound. Single s between the vowels in poison makes a voiced z. Keep your voice buzzing for z.",
+    "targetEn": "fish",
+    "foilEn": "poison"
+  },
+  "dessert": {
+    "target": "dessert",
+    "choices": [
+      "dessert",
+      "désert"
+    ],
+    "targetFi": "jälkiruoka",
+    "foilFi": "aavikko",
+    "note": "Dessert has an s sound; désert has a voiced z. Double ss is a useful spelling anchor. In both words, the final t is silent.",
+    "targetEn": "dessert",
+    "foilEn": "desert"
+  },
+  "hot": {
+    "target": "chaud",
+    "choices": [
+      "chaud",
+      "seau"
+    ],
+    "targetFi": "kuuma",
+    "foilFi": "ämpäri",
+    "note": "Chaud starts with sh /ʃ/; seau starts with s. Au and eau both make an o-like vowel here. The final d in chaud is silent.",
+    "targetEn": "hot",
+    "foilEn": "bucket"
+  },
+  "three": {
+    "target": "trois",
+    "choices": [
+      "trois",
+      "droit"
+    ],
+    "targetFi": "kolme",
+    "foilFi": "suora; oikeus",
+    "note": "Listen for the first consonant: trois starts with t; droit starts with voiced d. Oi is /wa/ in both. The written final consonant is silent here.",
+    "targetEn": "three",
+    "foilEn": "straight; a right"
+  },
+  "price": {
+    "target": "prix",
+    "choices": [
+      "prix",
+      "bris"
+    ],
+    "targetFi": "hinta",
+    "foilFi": "rikkoutuminen",
+    "note": "Prix starts with p; bris starts with voiced b. Keep the b voiced before r. Neither word ends with a pronounced s or x here.",
+    "targetEn": "price",
+    "foilEn": "breakage"
+  },
+  "without": {
+    "target": "sans",
+    "choices": [
+      "sans",
+      "son"
+    ],
+    "targetFi": "ilman",
+    "foilFi": "ääni",
+    "note": "These are two different nasal vowels. Sans has the an sound; son has the on sound. Neither ends with a separate Finnish n here.",
+    "targetEn": "without",
+    "foilEn": "sound"
+  },
+  "rain": {
+    "target": "pluie",
+    "choices": [
+      "pluie",
+      "pli"
+    ],
+    "targetFi": "sade",
+    "foilFi": "taite; laskos",
+    "note": "In pluie, start with the lip rounding of Finnish y and glide quickly into i, keeping one syllable. Pli has only the i vowel.",
+    "targetEn": "rain",
+    "foilEn": "fold"
+  }
+}

@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const http=require('node:http'),fs=require('node:fs/promises'),path=require('node:path');
 const root=path.resolve(__dirname,'../dist'),key='bonjour-angers-vocabulary-v1';
 const base='http://127.0.0.1:8797';
-const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.png':'image/png','.webmanifest':'application/manifest+json'};
+const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.png':'image/png','.svg':'image/svg+xml','.webmanifest':'application/manifest+json'};
 const server=http.createServer(async(req,res)=>{try{const name=new URL(req.url,base).pathname;const file=path.join(root,name==='/'?'index.html':name.slice(1));const bytes=await fs.readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'text/plain','Cache-Control':'no-store'});res.end(bytes);}catch{res.writeHead(404).end();}});
 async function saved(p){return p.evaluate(key=>JSON.parse(localStorage.getItem(key)),key);}
 async function current(p){return p.evaluate(key=>{const d=JSON.parse(localStorage.getItem(key));const item=d.session.queue[d.session.index];return{item,word:[...VOCABULARY_WORDS,...d.custom].find(w=>w.id===item.id)};},key);}

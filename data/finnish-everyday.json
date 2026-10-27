@@ -1,0 +1,1695 @@
+{
+  "hello": {
+    "fi": "hei",
+    "fiAccepted": [
+      "hyvää päivää",
+      "päivää",
+      "terve"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Bon + jour links good + day. Reuse jour in bonjour and trois jours; greet the shopkeeper before asking for anything."
+    },
+    "soundFi": "French j is voiced sh, not Finnish j; ou is close to Finnish u. The n in bon marks a nasal vowel."
+  },
+  "thanks": {
+    "fi": "kiitos",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the server handing you a café: merci pour le café. Attach merci to the moment of receiving something."
+    },
+    "soundFi": "The final i is clear, like Finnish i. The r is heard; c before i sounds like s."
+  },
+  "please": {
+    "fi": "kiitos (pyynnön lopussa)",
+    "fiAccepted": [
+      "kiitos",
+      "olisitko ystävällinen"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Store the whole polite ending after your order: un café, s’il vous plaît. Finnish often puts kiitos in the same position."
+    },
+    "soundFi": "Ou in vous is close to Finnish u. The final s of vous and t of plaît are silent in this phrase."
+  },
+  "excuse": {
+    "fi": "anteeksi",
+    "fiAccepted": [
+      "pahoittelut"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English pardon has the same spelling. Use Pardon, où est… ? when you need to interrupt someone for directions."
+    },
+    "soundFi": "On is a nasal vowel here: do not finish with a separate Finnish n. The final written n marks that sound."
+  },
+  "yes": {
+    "fi": "kyllä",
+    "fiAccepted": [
+      "joo"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "At reception, nod and say oui before j’ai une réservation. Pair the sound with your nod."
+    },
+    "soundFi": "Oui begins with a quick /w/ glide into i; it is one syllable, not two Finnish vowels said separately."
+  },
+  "no": {
+    "fi": "ei",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Practise non, merci as one polite refusal. It is the French partner of Finnish ei kiitos."
+    },
+    "soundFi": "On is nasal in non. Keep the first n, but do not add a separate final n."
+  },
+  "today": {
+    "fi": "tänään",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Spot jour, day, inside aujourd’hui. Connect today’s date on your phone with this whole word."
+    },
+    "soundFi": "Au sounds like o; ou is close to Finnish u. In hui, move quickly from a y-like French u into i."
+  },
+  "tomorrow": {
+    "fi": "huomenna",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture moving your train ticket one day forward on a calendar: je pars demain."
+    },
+    "soundFi": "Ain is one nasal vowel, not Finnish ai + n. Start with a light de, then let the last vowel resonate through the nose."
+  },
+  "now": {
+    "fi": "nyt",
+    "fiAccepted": [
+      "juuri nyt"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "At the till, point to this moment: je voudrais payer maintenant. Connect the word to pressing Pay now."
+    },
+    "soundFi": "Ain and an mark nasal vowels in this word. Do not read their written n letters as separate Finnish n sounds."
+  },
+  "here": {
+    "fi": "täällä",
+    "fiAccepted": [
+      "tässä"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Tap the precise spot on your map and say ici. Pair the short word with your finger on the spot."
+    },
+    "soundFi": "Both i sounds are clear, close to Finnish i. C before i sounds like s."
+  },
+  "there": {
+    "fi": "tuolla",
+    "fiAccepted": [
+      "tuolla päin"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Learn ici / là-bas as a pointing pair: tap here, then point over there. The gesture supplies the contrast."
+    },
+    "soundFi": "The s at the end of bas is silent. À and a are a-like vowels; the accent does not mean a long Finnish vowel."
+  },
+  "open": {
+    "fi": "auki",
+    "fiAccepted": [
+      "avoin",
+      "avoinna"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Link ouvert with ouverture, opening. Picture pushing the café door and reading ouvert on its sign."
+    },
+    "soundFi": "Ou is close to Finnish u. The final t is silent in ouvert; it is heard in the feminine ouverte."
+  },
+  "closed": {
+    "fi": "suljettu",
+    "fiAccepted": [
+      "kiinni"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine a firm shut door and the sign fermé. Practise the sign pair ouvert / fermé."
+    },
+    "soundFi": "É is an e-like vowel, not a Finnish long ee. The final written é is pronounced; the r before m is also heard."
+  },
+  "name": {
+    "fi": "nimi",
+    "fiAccepted": [
+      "sukunimi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Nom resembles English name. On a French form, connect NOM with surname and PRÉNOM with first name."
+    },
+    "soundFi": "Om is nasal here: no separate final m. Le nom has two spoken syllables, not a long Finnish consonant.",
+    "article": {
+      "gender": "m",
+      "base": "nom",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Nom is masculine: un nom. Prénom is also masculine. Learn the article with the word, not from Finnish nimi."
+    }
+  },
+  "help": {
+    "fi": "auttaa",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Link the verb aider with the noun aide: m’aider asks for help; votre aide thanks someone for it."
+    },
+    "soundFi": "The infinitive ending -er sounds like é, an e-like vowel. Ai at the start is one vowel, not Finnish ai."
+  },
+  "station": {
+    "fi": "rautatieasema",
+    "fiAccepted": [
+      "juna-asema",
+      "asema"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture Gare d’Angers on the station frontage, then ask Où est la gare ? Connect gare with the building you need."
+    },
+    "soundFi": "G before a is a hard g, not French j. The final e is silent; pronounce the r before it.",
+    "article": {
+      "gender": "f",
+      "base": "gare",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Gare is feminine: une gare. German der Bahnhof is masculine, so its gender does not transfer."
+    }
+  },
+  "train": {
+    "fi": "juna",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English train is spelled the same way. Keep the familiar meaning while learning its different French sound."
+    },
+    "soundFi": "Ain is a nasal vowel, not Finnish ai + n. Keep the initial tr together and avoid a separate final n.",
+    "article": {
+      "gender": "m",
+      "base": "train",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Train is masculine: un train. The vehicle itself does not explain the gender; store the two words together."
+    }
+  },
+  "tram": {
+    "fi": "raitiovaunu",
+    "fiAccepted": [
+      "ratikka"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Tram is familiar from English and German Tram. Picture Angers’ tram and practise je prends le tram."
+    },
+    "soundFi": "The m is pronounced: this word does not end in a nasal vowel. The single a is not a Finnish long aa.",
+    "article": {
+      "gender": "m",
+      "base": "tram",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Tram is masculine, like tramway, its full form: un tram / un tramway."
+    }
+  },
+  "ticket": {
+    "fi": "lippu",
+    "fiAccepted": [
+      "matkalippu"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture your phone displaying a travel billet, then say un billet pour Angers. The destination completes the memory."
+    },
+    "soundFi": "Here ill gives a Finnish-j-like glide. The final t is silent; do not pronounce a Finnish double l.",
+    "article": {
+      "gender": "m",
+      "base": "billet",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Billet is masculine: un billet. The same ticket could be feminine la carte in another expression; gender follows the noun."
+    }
+  },
+  "platform": {
+    "fi": "asemalaituri",
+    "fiAccepted": [
+      "laituri"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine looking up at the numbered quai on a departure board, then following it to the platform edge."
+    },
+    "soundFi": "Qu sounds like k. Ai is one e-like vowel here, not Finnish ai; no consonant follows it in speech.",
+    "article": {
+      "gender": "m",
+      "base": "quai",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Quai is masculine: un quai. Learn this as a fixed pair rather than guessing from the object."
+    }
+  },
+  "departure": {
+    "fi": "lähtö",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Compare English departure with départ. On a station board, départ is your outgoing journey."
+    },
+    "soundFi": "The final t is silent; the final r is heard. É is an e-like vowel and does not indicate Finnish vowel length.",
+    "article": {
+      "gender": "m",
+      "base": "départ",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Départ is masculine, while arrivée is feminine. Keep the station-board pair le départ / l’arrivée."
+    }
+  },
+  "arrival": {
+    "fi": "saapuminen",
+    "fiAccepted": [
+      "tulo"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English arrival points toward arrivée. Pair the board headings départ / arrivée: leaving / arriving."
+    },
+    "soundFi": "Ée is pronounced as one e-like vowel. The doubled r is not a Finnish long rr.",
+    "article": {
+      "gender": "f",
+      "base": "arrivée",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Arrivée is feminine; l’ hides la before the vowel. Compare une arrivée with un départ."
+    }
+  },
+  "reservation": {
+    "fi": "varaus",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English reservation is a close visual anchor. Finish J’ai une… with réservation at a hotel or restaurant."
+    },
+    "soundFi": "The ending -tion sounds /sjɔ̃/, not Finnish -tio. Its final vowel is nasal; do not add n.",
+    "article": {
+      "gender": "f",
+      "base": "réservation",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Réservation is feminine. Many nouns ending in -tion are feminine; use this as a tendency, not an absolute rule."
+    }
+  },
+  "hotel": {
+    "fi": "hotelli",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Hotelli, hotel, hôtel: the familiar building keeps the same core meaning. Store un hôtel because l’ hides the gender."
+    },
+    "soundFi": "The h is silent. Ô is o-like, while the final l is pronounced; do not read an extra Finnish h.",
+    "article": {
+      "gender": "m",
+      "base": "hôtel",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Hôtel is masculine: un hôtel. The h is silent, so le becomes l’; l’ alone does not tell you the gender."
+    }
+  },
+  "bedroom": {
+    "fi": "makuuhuone",
+    "fiAccepted": [
+      "huone",
+      "hotellihuone"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture opening your hotel room with its key: la clé de ma chambre. Keep the room and its key together in memory."
+    },
+    "soundFi": "Ch sounds like sh. Am is nasal before b here; do not insert a separate m between that vowel and b.",
+    "article": {
+      "gender": "f",
+      "base": "chambre",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Chambre is feminine: une chambre. The gender is part of the noun, not a property of the room."
+    }
+  },
+  "key": {
+    "fi": "avain",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine the receptionist placing one key in your palm: voici la clé. Repeat clé while making the turning gesture."
+    },
+    "soundFi": "É is one clear e-like vowel. The k and l stay together; do not add a vowel between them.",
+    "article": {
+      "gender": "f",
+      "base": "clé",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Clé is feminine: une clé. The spelling ending -é does not make it masculine."
+    }
+  },
+  "address": {
+    "fi": "osoite",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English address points to adresse. Picture copying the hotel’s adresse into a map app."
+    },
+    "soundFi": "The double ss gives s, not a Finnish long ss. The last e is silent; the r is still pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "adresse",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Adresse is feminine: une adresse. L’ hides la before a vowel; un/une shows the gender clearly."
+    }
+  },
+  "left": {
+    "fi": "vasemmalle",
+    "fiAccepted": [
+      "vasemmalla"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "On your map, draw a left arrow as you say à gauche. Practise it opposite à droite, not as an isolated word."
+    },
+    "soundFi": "Au sounds like o; ch sounds like sh. The last e is silent."
+  },
+  "right": {
+    "fi": "oikealle",
+    "fiAccepted": [
+      "oikealla"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Compare à droite with tout droit. Droite has a heard t and means right; droit in tout droit means straight."
+    },
+    "soundFi": "Oi is a /wa/ sequence, not Finnish oi. The t in droite is heard; the last e is silent."
+  },
+  "straight": {
+    "fi": "suoraan",
+    "fiAccepted": [
+      "suoraan eteenpäin"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Draw a straight arrow: tout droit. Contrast it with the turning arrow for à droite; the tiny written e changes the phrase."
+    },
+    "soundFi": "Ou is close to Finnish u. The final t of droit is silent here, unlike the t in droite."
+  },
+  "goodbye": {
+    "fi": "näkemiin",
+    "fiAccepted": [
+      "hei hei",
+      "heippa"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Revoir connects to seeing again: au revoir is a leave-taking chunk. Say it as you step out of a shop."
+    },
+    "soundFi": "Au sounds like o; oi in revoir is /wa/, not Finnish oi. The final r is pronounced."
+  },
+  "good-evening": {
+    "fi": "hyvää iltaa",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Bon + soir means good + evening. Reuse soir in ce soir, this evening, and bonsoir, the greeting."
+    },
+    "soundFi": "On in bon is nasal. Oi in soir is a /wa/ sequence; do not use the Finnish oi diphthong."
+  },
+  "see-you-soon": {
+    "fi": "nähdään pian",
+    "fiAccepted": [
+      "pian nähdään"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture waving to a colleague you will meet again shortly: à bientôt. Link it to the next meeting, not a final farewell."
+    },
+    "soundFi": "Ien gives a glide into a nasal vowel. Ô sounds like o; the final t is silent."
+  },
+  "okay": {
+    "fi": "selvä",
+    "fiAccepted": [
+      "sopii",
+      "okei"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Accord resembles English accord and Finnish akordi. Picture two people agreeing on the same plan: d’accord."
+    },
+    "soundFi": "Cc here gives k, not a Finnish long kk. The final d is silent, while the r is heard."
+  },
+  "understand": {
+    "fi": "ymmärtää",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Keep Je ne comprends pas as a ready-made rescue phrase. Connect comprendre with the heard form comprends."
+    },
+    "soundFi": "Om and en are nasal vowels here. Do not add separate m or n sounds; the final dre keeps its consonants together."
+  },
+  "speak": {
+    "fi": "puhua",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Use the reusable frame parler + language: parler français, parler anglais. The language name is your replaceable slot."
+    },
+    "soundFi": "The infinitive -er ends in an e-like vowel; its final r is silent. The r in par- is still heard."
+  },
+  "repeat-verb": {
+    "fi": "toistaa",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English repeat is a useful visual neighbour of répéter. Picture pressing Replay to hear the phrase again."
+    },
+    "soundFi": "Each é is a clear e-like vowel. The infinitive -er also ends in that vowel, without a final r sound."
+  },
+  "slowly": {
+    "fi": "hitaasti",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "The ending -ment often makes adverbs, like Finnish -sti. Link lentement with lent, slow, and say plus lentement."
+    },
+    "soundFi": "En in lent- and -ment is nasal. Keep the t in the middle; do not pronounce the final t of -ment."
+  },
+  "wait": {
+    "fi": "odottaa",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a platform clock and hold up your palm: je peux attendre ici ? Pair attendre with the train you are waiting for."
+    },
+    "soundFi": "The doubled t is not a Finnish long tt. En is nasal, while the final dre is a consonant group."
+  },
+  "buy": {
+    "fi": "ostaa",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine selecting a ticket before paying: je voudrais acheter un billet. Attach acheter to the act of choosing the purchase."
+    },
+    "soundFi": "Ch sounds like sh. The middle e can disappear in normal speech; -er ends in an e-like vowel, not r."
+  },
+  "price": {
+    "fi": "hinta",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English price is a useful neighbour of prix. Picture the price tag beside the object: quel est le prix ?"
+    },
+    "soundFi": "The final x is silent on its own. I is a clear Finnish-i-like vowel; keep pr together.",
+    "article": {
+      "gender": "m",
+      "base": "prix",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Prix is masculine: un prix. Its final x is part of the word even in the singular."
+    }
+  },
+  "shop": {
+    "fi": "kauppa",
+    "fiAccepted": [
+      "liike"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Compare Finnish makasiini as a memory hook, but keep meanings apart: un magasin is a shop where you buy things."
+    },
+    "soundFi": "The g is hard. The single s between vowels is a voiced z. The final in is a nasal vowel, without a separate Finnish n.",
+    "article": {
+      "gender": "m",
+      "base": "magasin",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Magasin is masculine: un magasin. Its gender belongs to the French noun, not to Finnish kauppa."
+    }
+  },
+  "pharmacy": {
+    "fi": "apteekki",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Finnish farmasia points to pharmacie. Picture the pharmacy’s green cross while asking où est la pharmacie ?"
+    },
+    "soundFi": "Ph sounds like f; c before i sounds like s. The final ie is one i-like vowel, not Finnish ie.",
+    "article": {
+      "gender": "f",
+      "base": "pharmacie",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Pharmacie is feminine: une pharmacie. Many nouns ending in -ie are feminine, but there are exceptions."
+    }
+  },
+  "doctor": {
+    "fi": "lääkäri",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Link médecin with English medical and medicine. Picture the medical doctor you need, rather than an academic title."
+    },
+    "soundFi": "C before i sounds like s. The final in is a nasal vowel, not Finnish i followed by n.",
+    "article": {
+      "gender": "m",
+      "base": "médecin",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "This entry uses le médecin. Une médecin is also used for a female doctor; both articles can occur with this spelling.",
+      "acceptedGenders": [
+        "m",
+        "f"
+      ],
+      "quiz": false
+    }
+  },
+  "hospital": {
+    "fi": "sairaala",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Compare English hospital with hôpital. Picture the emergency entrance and ask où est l’hôpital ?"
+    },
+    "soundFi": "The h is silent. Ô is o-like; the final l is heard, so do not drop the whole last syllable.",
+    "article": {
+      "gender": "m",
+      "base": "hôpital",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Hôpital is masculine: un hôpital. Its silent h lets le shorten to l’."
+    }
+  },
+  "toilets": {
+    "fi": "WC",
+    "fiAccepted": [
+      "vessa",
+      "käymälä",
+      "vessat"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Toilettes resembles Finnish toaletti and English toilet. Look for the plural sign les toilettes, even for one bathroom."
+    },
+    "soundFi": "Oi gives /wa/, not Finnish oi. The double tt is not a Finnish long tt; final es is silent.",
+    "article": {
+      "gender": "f",
+      "base": "toilettes",
+      "definite": "les",
+      "indefinite": "des",
+      "note": "Toilettes is normally feminine plural: les toilettes. Use Où sont les toilettes ?, even for one bathroom."
+    }
+  },
+  "help-noun": {
+    "fi": "apu",
+    "fiAccepted": [
+      "avustus"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Aide is the noun partner of aider, to help. In merci pour votre aide, put the whole help event after merci."
+    },
+    "soundFi": "Ai is an e-like vowel here. The d is heard; the final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "aide",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Aide meaning help or assistance is feminine: une aide. Aide referring to a person can have a different use."
+    }
+  },
+  "emergency": {
+    "fi": "hätätilanne",
+    "fiAccepted": [
+      "kiireellinen tilanne"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English urgent points to urgence. Picture showing the urgent situation and saying c’est une urgence."
+    },
+    "soundFi": "U is close to Finnish y, not Finnish u. G before e is voiced sh; en marks a nasal vowel.",
+    "article": {
+      "gender": "f",
+      "base": "urgence",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Urgence is feminine: une urgence. Many nouns ending in -ence are feminine; l’ hides la here."
+    }
+  },
+  "phone": {
+    "fi": "puhelin",
+    "fiAccepted": [
+      "kännykkä"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Téléphone resembles Finnish telefoni and English telephone. Picture the phone you are holding, not an abstract spelling."
+    },
+    "soundFi": "Both é letters are e-like vowels. The final n is pronounced: -phone does not have a nasal vowel.",
+    "article": {
+      "gender": "m",
+      "base": "téléphone",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Téléphone is masculine: un téléphone. A phone’s gender comes from the noun, not its user or function."
+    }
+  },
+  "battery": {
+    "fi": "akku",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English battery points to batterie. Attach the word to your phone’s empty battery icon."
+    },
+    "soundFi": "The doubled tt is not Finnish long tt. The ending -ie is one i-like vowel, not a Finnish ie diphthong.",
+    "article": {
+      "gender": "f",
+      "base": "batterie",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Batterie is feminine: une batterie. Learn it beside masculine un téléphone as a paired phone scene."
+    }
+  },
+  "charger": {
+    "fi": "laturi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Link chargeur with charger, to charge. The -eur ending often names a person or device that does an action."
+    },
+    "soundFi": "Ch is sh; g before e is its voiced partner. -Eur has an open ö-like vowel followed by r.",
+    "article": {
+      "gender": "m",
+      "base": "chargeur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Chargeur is masculine: un chargeur. The -eur ending often names a device or a person doing an action."
+    }
+  },
+  "wifi": {
+    "fi": "Wi-Fi",
+    "fiAccepted": [
+      "langaton verkko",
+      "wifi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "The familiar Wi-Fi sign is already a memory anchor. Add the French article: le Wi-Fi."
+    },
+    "soundFi": "French usually says Wi-Fi with i-like vowels, rather than the English ai sounds. W here is a /w/ glide, not Finnish v.",
+    "article": {
+      "gender": "m",
+      "base": "Wi-Fi",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Wi-Fi is masculine in this use: le Wi-Fi. Store the familiar loanword with its French article."
+    }
+  },
+  "clock-time": {
+    "fi": "kellonaika",
+    "fiAccepted": [
+      "aika"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Heure is the word repeated in neuf heures and dix heures. Connect it to reading the hour on a clock."
+    },
+    "soundFi": "H is silent; eu is an open ö-like vowel. The r is heard; do not read eu as Finnish e + u.",
+    "article": {
+      "gender": "f",
+      "base": "heure",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Heure is feminine: une heure. The silent h causes l’, which hides the feminine article la."
+    }
+  },
+  "morning": {
+    "fi": "aamu",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a morning train and say ce matin, this morning. Pair matin / soir with morning and evening light."
+    },
+    "soundFi": "The final in is a nasal vowel. There is no separate Finnish n at the end.",
+    "article": {
+      "gender": "m",
+      "base": "matin",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Matin is masculine: un matin. Pair le matin and le soir as two masculine parts of the day."
+    }
+  },
+  "afternoon": {
+    "fi": "iltapäivä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Après means after and midi means noon: après-midi gives afternoon. Picture the clock moving past twelve."
+    },
+    "soundFi": "Après ends without an s sound. Midi has two i-like vowels; say the two word parts together smoothly.",
+    "article": {
+      "gender": "m",
+      "base": "après-midi",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Après-midi can be masculine or feminine. Un après-midi is common; une après-midi is also standard.",
+      "acceptedGenders": [
+        "m",
+        "f"
+      ],
+      "quiz": false
+    }
+  },
+  "evening": {
+    "fi": "ilta",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Reuse the soir from bonsoir: ce soir means this evening. Picture the same street after dark."
+    },
+    "soundFi": "Oi is /wa/, not Finnish oi. The final r is pronounced.",
+    "article": {
+      "gender": "m",
+      "base": "soir",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Soir is masculine: un soir. Reuse it in le soir, ce soir and bonsoir."
+    }
+  },
+  "yesterday": {
+    "fi": "eilen",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Move your calendar marker one day back and say hier. Pair it with aujourd’hui and demain on a three-day strip."
+    },
+    "soundFi": "The h is silent. I glides like Finnish j into an e-like vowel; the final r is heard."
+  },
+  "week": {
+    "fi": "viikko",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Circle all seven days of your Angers trip: une semaine. Let one full calendar row anchor the word."
+    },
+    "soundFi": "Ai is an e-like vowel. The n is pronounced here, unlike the nasal ain in train; the final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "semaine",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Semaine is feminine: une semaine. Contrast a full week with masculine un jour, one day."
+    }
+  },
+  "day": {
+    "fi": "päivä",
+    "fiAccepted": [
+      "vuorokausi"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "The jour inside bonjour also counts days: un jour, trois jours. Reuse a word part you have already met."
+    },
+    "soundFi": "J is voiced sh, not Finnish j. Ou is close to Finnish u; the final r is pronounced.",
+    "article": {
+      "gender": "m",
+      "base": "jour",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Jour is masculine: un jour. The related feminine journée often describes a day’s duration or experience."
+    }
+  },
+  "rain": {
+    "fi": "sade",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture raindrops on your hotel window and say la pluie. Link pluie with the weather phrase il pleut."
+    },
+    "soundFi": "Start u from a Finnish-y-like position and glide quickly into i. Do not turn ui into a long Finnish u + i sequence.",
+    "article": {
+      "gender": "f",
+      "base": "pluie",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Pluie is feminine: la pluie. Weather words do not share one gender: compare le soleil."
+    }
+  },
+  "sun": {
+    "fi": "aurinko",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the sun over the Loire and say du soleil. Pair la pluie / le soleil as two weather scenes."
+    },
+    "soundFi": "The ending -eil is an e-like vowel followed by a Finnish-j-like glide. The last written l is not a separate l sound.",
+    "article": {
+      "gender": "m",
+      "base": "soleil",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Soleil is masculine: le soleil, unlike German die Sonne. Learn the French article separately."
+    }
+  },
+  "hot": {
+    "fi": "kuuma",
+    "fiAccepted": [
+      "lämmin"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Keep il fait chaud for weather and j’ai chaud for feeling hot. Picture the heat reaching you from the sun."
+    },
+    "soundFi": "Ch sounds like sh; au is o-like. The final d is silent."
+  },
+  "cold": {
+    "fi": "kylmä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Learn the weather pair il fait chaud / il fait froid. The sentence frame stays fixed while the feeling changes."
+    },
+    "soundFi": "Oi is /wa/, not Finnish oi. The final d is silent; keep fr together without an added vowel."
+  },
+  "one": {
+    "fi": "yksi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Count one object with its article: un billet, une clé. French changes un to une with a feminine noun."
+    },
+    "soundFi": "Un is a nasal vowel, not Finnish u + n. Compare une, whose u is Finnish-y-like and whose n is pronounced."
+  },
+  "two": {
+    "fi": "kaksi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture two café cups and hold up two fingers: deux cafés. Attach the number to a tiny order."
+    },
+    "soundFi": "Eu is close to a rounded Finnish ö. The final x is silent alone; it can link as z before a vowel."
+  },
+  "three": {
+    "fi": "kolme",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture three marked days on your travel calendar: trois jours. Say the number with its counted object."
+    },
+    "soundFi": "Oi is /wa/, not Finnish oi. The final s is silent on its own."
+  },
+  "four": {
+    "fi": "neljä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture four chairs around a restaurant table: une table pour quatre. Let the chair count anchor the sound."
+    },
+    "soundFi": "Qu gives k. Keep the final tr together; the last e is normally silent."
+  },
+  "five": {
+    "fi": "viisi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture five minutes left on a departure countdown: dans cinq minutes. Count down on one hand."
+    },
+    "soundFi": "In is nasal. On its own, cinq ends with a k sound; do not pronounce the written q as a separate letter name."
+  },
+  "six": {
+    "fi": "kuusi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the clock at six before a meeting: à six heures. Learn the number inside that clock-time chunk."
+    },
+    "soundFi": "Alone, x sounds like s. Before heures it links as z; before a consonant the final sound can disappear."
+  },
+  "seven": {
+    "fi": "seitsemän",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Mark seven nights on the hotel calendar and say sept nuits. The written p is your reminder not to sound every letter."
+    },
+    "soundFi": "The p is silent, but the final t is pronounced. E is an open e-like vowel, not a long Finnish ee."
+  },
+  "eight": {
+    "fi": "kahdeksan",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture an eight on the platform clock and say huit heures. Use the clock face as a stable image."
+    },
+    "soundFi": "Start from a Finnish-y-like position, then glide into i. The final t is pronounced when huit is said alone."
+  },
+  "nine": {
+    "fi": "yhdeksän",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the start time of the first conference session: neuf heures. Store the number with that appointment."
+    },
+    "soundFi": "Eu is an open ö-like vowel. Neuf ends in f alone, but it becomes v in the common phrase neuf heures."
+  },
+  "ten": {
+    "fi": "kymmenen",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a ten-euro note when saying dix euros. Attach the number to an amount you can see."
+    },
+    "soundFi": "Alone, x sounds like s; in dix euros it links as z. Before a consonant the final sound can disappear."
+  },
+  "twenty": {
+    "fi": "kaksikymmentä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a twenty-euro note and say vingt euros. The note anchors the value while the phrase teaches linking."
+    },
+    "soundFi": "In is nasal and g is silent. The t is heard in vingt euros; do not pronounce every written consonant in vingt alone."
+  },
+  "how-much": {
+    "fi": "kuinka paljon",
+    "fiAccepted": [
+      "paljonko",
+      "miten paljon"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Use the fixed frame combien coûte… ? and insert the ticket or coffee. The price tag supplies the meaning."
+    },
+    "soundFi": "Om and ien are nasal vowel groups. I in -bien glides toward the final vowel; do not add a final n."
+  },
+  "bus": {
+    "fi": "bussi",
+    "fiAccepted": [
+      "linja-auto"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Finnish bussi and English bus give you the meaning. Keep the French sound distinct from English bus."
+    },
+    "soundFi": "U is close to Finnish y, not Finnish u. The final s is pronounced in bus.",
+    "article": {
+      "gender": "m",
+      "base": "bus",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Bus is masculine: un bus. Its final s is present even when there is only one bus."
+    }
+  },
+  "transport-stop": {
+    "fi": "pysäkki",
+    "fiAccepted": [
+      "bussipysäkki",
+      "raitiovaunupysäkki"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Connect arrêt, a stop, with arrêter, to stop. Picture the arrêt de tram sign beside the track."
+    },
+    "soundFi": "The double rr is not a Finnish long rr. Ê is e-like; the final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "arrêt",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Arrêt is masculine: un arrêt. L’ is simply le shortened before a vowel."
+    }
+  },
+  "airport": {
+    "fi": "lentoasema",
+    "fiAccepted": [
+      "lentokenttä"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Aéro- connects to English aero and Finnish aero-; port resembles airport. Picture the airport departure hall."
+    },
+    "soundFi": "A and é start two separate vowel sounds here. The final t is silent; the r before it is heard.",
+    "article": {
+      "gender": "m",
+      "base": "aéroport",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Aéroport is masculine: un aéroport. L’ hides le before the initial vowel."
+    }
+  },
+  "taxi": {
+    "fi": "taksi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Taxi and Finnish taksi are almost a ready-made pair. Picture the lit TAXI sign outside the station."
+    },
+    "soundFi": "X sounds like ks, as in Finnish taksi. The last i is i-like, not the English ai vowel.",
+    "article": {
+      "gender": "m",
+      "base": "taxi",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Taxi is masculine: un taxi. The familiar spelling does not supply its French article."
+    }
+  },
+  "car": {
+    "fi": "auto",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the car waiting outside your hotel: la voiture. Put the word beside the car keys in your memory scene."
+    },
+    "soundFi": "Oi is /wa/. U is close to Finnish y; the final e is silent, while the r is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "voiture",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Voiture is feminine: une voiture. German das Auto does not predict this noun’s gender."
+    }
+  },
+  "bicycle": {
+    "fi": "polkupyörä",
+    "fiAccepted": [
+      "pyörä"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Vélo is the everyday short form of vélocipède. Picture a bicycle-hire stand when saying louer un vélo."
+    },
+    "soundFi": "É is e-like and o stays a rounded o-like vowel. Avoid the English-style diphthong at the end.",
+    "article": {
+      "gender": "m",
+      "base": "vélo",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Vélo is masculine: un vélo. Bicyclette is feminine, so two names for the same thing can have different genders."
+    }
+  },
+  "on-foot": {
+    "fi": "jalan",
+    "fiAccepted": [
+      "kävellen"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Pied means foot; à pied means on foot. Picture your feet tracing the short route from hotel to café."
+    },
+    "soundFi": "Ie glides like Finnish j into an e-like vowel. The final d is silent."
+  },
+  "street-map": {
+    "fi": "kaupunkikartta",
+    "fiAccepted": [
+      "kartta"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English plan is a useful neighbour of plan. In plan de la ville, picture the city map you unfold to find your hotel."
+    },
+    "soundFi": "An is nasal here: do not finish with a separate Finnish n. Keep pl together at the start.",
+    "article": {
+      "gender": "m",
+      "base": "plan",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Plan is masculine: un plan. Carte is feminine, even though both can refer to a kind of map."
+    }
+  },
+  "street": {
+    "fi": "katu",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the French street sign above the hotel door: rue du Musée. Attach rue to the street, not the building."
+    },
+    "soundFi": "U is close to Finnish y, not Finnish u. The final e is silent; rue is one syllable.",
+    "article": {
+      "gender": "f",
+      "base": "rue",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Rue is feminine: une rue. Learn une rue as the unit rather than trying to derive gender from katu."
+    }
+  },
+  "town-square": {
+    "fi": "aukio",
+    "fiAccepted": [
+      "tori"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English place supplies a visual neighbour. In la place, picture the open town square with café tables around it."
+    },
+    "soundFi": "C before e gives s. The final e is silent; the word ends with an s sound.",
+    "article": {
+      "gender": "f",
+      "base": "place",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Place is feminine: une place. Keep the article when its meaning changes from square to seat or space."
+    }
+  },
+  "city-centre": {
+    "fi": "keskusta",
+    "fiAccepted": [
+      "kaupungin keskusta"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Centre + ville joins centre + town. The compound tells you where the tram is going."
+    },
+    "soundFi": "En in centre is nasal. The double ll in ville is not a Finnish long ll; the last e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "centre-ville",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Centre-ville is masculine because the main noun centre is masculine: un centre-ville."
+    }
+  },
+  "bridge": {
+    "fi": "silta",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture walking over a bridge across the river: traverser le pont. Link the bridge with the crossing action."
+    },
+    "soundFi": "On is nasal and the final t is silent. Do not finish with a Finnish n or t.",
+    "article": {
+      "gender": "m",
+      "base": "pont",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Pont is masculine: un pont. Connect the article to the word; the bridge itself offers no gender rule."
+    }
+  },
+  "river": {
+    "fi": "joki",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English river is a useful visual neighbour of rivière. Picture the water flowing beside your walking route."
+    },
+    "soundFi": "I before è makes a Finnish-j-like glide. The final e is silent, but the final r is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "rivière",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Rivière is feminine, while fleuve is masculine. The two French river nouns each keep their own gender."
+    }
+  },
+  "entrance": {
+    "fi": "sisäänkäynti",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English entry points to entrée. Picture the door with the ENTRÉE sign and an arrow going in."
+    },
+    "soundFi": "En is nasal. Ée finishes with one e-like vowel; the last written e does not add another syllable.",
+    "article": {
+      "gender": "f",
+      "base": "entrée",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Entrée is feminine: une entrée. L’ hides la; learn it in the pair l’entrée / la sortie."
+    }
+  },
+  "exit": {
+    "fi": "uloskäynti",
+    "fiAccepted": [
+      "poistumistie"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Connect sortie with sortir, to go out. Picture the SORTIE sign with an arrow leading out of the building."
+    },
+    "soundFi": "The t is pronounced, while the final e is silent. Ie here ends in a single i-like vowel.",
+    "article": {
+      "gender": "f",
+      "base": "sortie",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Sortie is feminine: une sortie. The ending -ie often belongs to feminine nouns, with exceptions."
+    }
+  },
+  "near": {
+    "fi": "lähellä",
+    "fiAccepted": [
+      "lähellä jotakin"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Près de la gare maps naturally to aseman lähellä. Store the whole landmark phrase, not a one-case translation of de."
+    },
+    "soundFi": "The s in près is silent. È is an open e-like vowel; de is light and often ö-like."
+  },
+  "far-from": {
+    "fi": "kaukana",
+    "fiAccepted": [
+      "kaukana jostakin"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Learn près de / loin de as a distance pair on your map: nearby hotel versus distant airport."
+    },
+    "soundFi": "Oin is a glide into a nasal vowel, /wɛ̃/. Do not read it as Finnish oi followed by n."
+  },
+  "opposite": {
+    "fi": "vastapäätä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Face resembles English face: picture two shop fronts facing each other across a street. En face de means opposite."
+    },
+    "soundFi": "En is nasal, while face ends with s. The final e of face is silent."
+  },
+  "next-to": {
+    "fi": "vieressä",
+    "fiAccepted": [
+      "vierellä"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Côté means side: à côté de places something at the side of something else. Picture two neighbouring doors."
+    },
+    "soundFi": "Ô is an o-like vowel and é is e-like. The final é is pronounced; an accent does not mark Finnish vowel length."
+  },
+  "behind": {
+    "fi": "takana",
+    "fiAccepted": [
+      "taakse"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Place your hotel behind a museum on a tiny map, then point and say derrière le musée."
+    },
+    "soundFi": "The double rr is not a Finnish long rr. I glides into è, and the final r is pronounced."
+  },
+  "in-front-of": {
+    "fi": "edessä",
+    "fiAccepted": [
+      "eteen"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a taxi parked directly in front of the hotel door: devant l’hôtel. Keep the taxi and façade in one scene."
+    },
+    "soundFi": "An is nasal. The final t is silent; do not add a separate n to the ending."
+  },
+  "cross": {
+    "fi": "ylittää",
+    "fiAccepted": [
+      "kulkea yli"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English traverse is a useful neighbour of traverser. Draw your path across the road: traverser la rue."
+    },
+    "soundFi": "The -er ending is an e-like vowel. S after r stays s here, unlike a single s between two vowels."
+  },
+  "turn": {
+    "fi": "kääntyä",
+    "fiAccepted": [
+      "kääntää"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English turn is a useful neighbour of tourner. Turn your hand as you say tournez à droite."
+    },
+    "soundFi": "Ou is close to Finnish u. Infinitive -er ends in an e-like vowel without a final r sound."
+  },
+  "go": {
+    "fi": "mennä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Store aller à + destination as a travel frame. Je vais à la gare means menen asemalle; the verb form changes."
+    },
+    "soundFi": "The double ll is not a Finnish long ll. The final -er is an e-like vowel, without r."
+  },
+  "come": {
+    "fi": "tulla",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Pair aller / venir with go / come. Point away for aller and toward yourself for venir."
+    },
+    "soundFi": "The final r is pronounced in -ir, unlike infinitive -er. Keep the first e light; i is close to Finnish i."
+  },
+  "return-trip": {
+    "fi": "paluumatka",
+    "fiAccepted": [
+      "paluu"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English return points toward retour. Link aller-retour with a ticket that takes you there and back."
+    },
+    "soundFi": "Ou is close to Finnish u. The final r is pronounced, and the last syllable rhymes with jour.",
+    "article": {
+      "gender": "m",
+      "base": "retour",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Retour is masculine: un retour. Pair it with un aller for the outward journey."
+    }
+  },
+  "one-way": {
+    "fi": "menolippu",
+    "fiAccepted": [
+      "yhdensuuntainen lippu"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Aller means to go and simple means single: un aller simple is a ticket going just one way. Contrast aller-retour."
+    },
+    "soundFi": "In simple, im is nasal before p. Keep the p and l, but do not add a separate m after the vowel.",
+    "article": {
+      "gender": "m",
+      "base": "aller simple",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Aller simple is masculine: un aller simple. The infinitive aller is used as a noun for the outward journey."
+    }
+  },
+  "delay": {
+    "fi": "myöhästyminen",
+    "fiAccepted": [
+      "viivästys",
+      "myöhässäolo"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the departure board adding ten minutes: dix minutes de retard. Attach retard to the growing delay number."
+    },
+    "soundFi": "The final d is silent, but the r is pronounced. Re- at the start is light, not a long Finnish ree.",
+    "article": {
+      "gender": "m",
+      "base": "retard",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Retard is masculine: un retard. Keep it in the phrase dix minutes de retard, with de rather than an article."
+    }
+  },
+  "connection": {
+    "fi": "vaihtoyhteys",
+    "fiAccepted": [
+      "jatkoyhteys",
+      "vaihto"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English correspondence is a visual neighbour, but here correspondance means the train or bus connection you must catch."
+    },
+    "soundFi": "On and an are nasal vowels. Final ce gives s; do not pronounce a final e syllable.",
+    "article": {
+      "gender": "f",
+      "base": "correspondance",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Correspondance is feminine. The ending -ance is often a useful feminine clue, with exceptions."
+    }
+  },
+  "final-stop": {
+    "fi": "päätepysäkki",
+    "fiAccepted": [
+      "pääteasema"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Terminal and terminus point to an endpoint. Picture everyone getting off at the last stop on the line."
+    },
+    "soundFi": "U is close to Finnish y, not Finnish u. The final s is pronounced in terminus.",
+    "article": {
+      "gender": "m",
+      "base": "terminus",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Terminus is masculine: un terminus. The final s is part of the singular word."
+    }
+  },
+  "driver": {
+    "fi": "kuljettaja",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English conductor is a useful visual neighbour, but conducteur here is the driver. Picture the person driving your tram."
+    },
+    "soundFi": "On is nasal, u is Finnish-y-like, and -eur has an open ö-like vowel followed by r.",
+    "article": {
+      "gender": "m",
+      "base": "conducteur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Conducteur is the masculine form: un conducteur. The feminine form is une conductrice."
+    }
+  },
+  "passenger": {
+    "fi": "matkustaja",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English passenger and German Passagier are close visual anchors for passager. Picture the person waiting beside you."
+    },
+    "soundFi": "The double ss gives s. G before e gives voiced sh; the final -er ends in an e-like vowel.",
+    "article": {
+      "gender": "m",
+      "base": "passager",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Passager is the masculine form: un passager. The feminine form is une passagère."
+    }
+  },
+  "suitcase": {
+    "fi": "matkalaukku",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture one wheeled suitcase rolling from the tram to your hotel. Say ma valise as you take its handle."
+    },
+    "soundFi": "The s between vowels is voiced z, not s. The final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "valise",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Valise is feminine: une valise. Store the pair with a picture of your suitcase."
+    }
+  },
+  "luggage-item": {
+    "fi": "matkatavara",
+    "fiAccepted": [
+      "matkatavarakappale",
+      "matkatavaran kappale"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English baggage points toward bagage. Count one item on the scale: un bagage, deux bagages."
+    },
+    "soundFi": "The first g, before a, is hard g; the second, before e, is voiced sh. The final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "bagage",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Bagage is masculine. Many -age nouns are masculine, but la page and l’image show that this is a tendency."
+    }
+  },
+  "passport": {
+    "fi": "passi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English passport and French passeport share a clear visual outline. Picture handing your passport to reception."
+    },
+    "soundFi": "The double ss gives s, not Finnish long ss. The final t is silent, while the r is pronounced.",
+    "article": {
+      "gender": "m",
+      "base": "passeport",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Passeport is masculine: un passeport. Keep the article even though Finnish passi has no gender."
+    }
+  },
+  "hotel-reception": {
+    "fi": "vastaanotto",
+    "fiAccepted": [
+      "hotellin vastaanotto"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "English reception points directly to réception. Picture the hotel’s front desk, key rack and receptionist."
+    },
+    "soundFi": "The ending -tion sounds /sjɔ̃/, not Finnish -tio. Its vowel is nasal; the p earlier in the word is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "réception",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Réception is feminine. The -tion ending is usually a good feminine clue, not a universal rule."
+    }
+  },
+  "floor": {
+    "fi": "kerros",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the lift display climbing from ground level to 1: le premier étage. Remember that the ground floor has its own name."
+    },
+    "soundFi": "É is e-like. G before e gives voiced sh; the final e does not make an extra syllable.",
+    "article": {
+      "gender": "m",
+      "base": "étage",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Étage is masculine: un étage. Many -age nouns are masculine, with exceptions such as la page."
+    }
+  },
+  "lift": {
+    "fi": "hissi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English ascend, go up, is a visual anchor for ascenseur. Picture the lift arrow moving upward."
+    },
+    "soundFi": "En is nasal and c before e sounds s. -Eur has an open ö-like vowel followed by a pronounced r.",
+    "article": {
+      "gender": "m",
+      "base": "ascenseur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Ascenseur is masculine: un ascenseur. L’ hides le; -eur often appears in names of devices."
+    }
+  },
+  "stairs": {
+    "fi": "portaikko",
+    "fiAccepted": [
+      "portaat"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the staircase curving up from the hotel lobby. Trace it upward while saying l’escalier."
+    },
+    "soundFi": "The ending -ier sounds like a Finnish-j-like glide plus an e-like vowel; the final r is silent.",
+    "article": {
+      "gender": "m",
+      "base": "escalier",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Escalier is masculine: un escalier. The singular names the staircase; les escaliers is the plural."
+    }
+  },
+  "shower": {
+    "fi": "suihku",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Finnish dušši is a useful spoken neighbour of douche. Picture the water running in your hotel shower."
+    },
+    "soundFi": "Ou is close to Finnish u; ch sounds like sh. The final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "douche",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Douche is feminine: une douche. Learn the article with the hotel-room object."
+    }
+  },
+  "towel": {
+    "fi": "pyyhe",
+    "fiAccepted": [
+      "kylpypyyhe"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the folded towel on the hotel bed: une serviette propre. Add de table later when the same noun means napkin."
+    },
+    "soundFi": "Ie glides into an e-like vowel. The double tt is not Finnish long tt; the last e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "serviette",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Serviette is feminine: une serviette. It keeps the same gender in une serviette de table, a napkin."
+    }
+  },
+  "breakfast": {
+    "fi": "aamiainen",
+    "fiAccepted": [
+      "aamupala"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Petit means small; petit déjeuner is breakfast in France. Picture the small morning meal before déjeuner, lunch."
+    },
+    "soundFi": "The t of petit is silent before déjeuner. Eu in déjeuner is ö-like, and -er ends in an e-like vowel.",
+    "article": {
+      "gender": "m",
+      "base": "petit déjeuner",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Petit déjeuner is masculine because déjeuner is the main noun: un petit déjeuner."
+    }
+  },
+  "stay": {
+    "fi": "oleskelu",
+    "fiAccepted": [
+      "vierailu",
+      "oleskeluaika"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Spot jour, day, inside séjour. Picture the stretch of days you spend in Angers: mon séjour dure une semaine."
+    },
+    "soundFi": "É is e-like; j is voiced sh, not Finnish j. Ou is close to Finnish u and the final r is heard.",
+    "article": {
+      "gender": "m",
+      "base": "séjour",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Séjour is masculine: un séjour. The jour part is also masculine in un jour."
+    }
+  },
+  "overnight-stay": {
+    "fi": "yöpyminen",
+    "fiAccepted": [
+      "yö",
+      "yhden yön yöpyminen"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Nuit means night; nuitée packages one night of accommodation. Picture a single hotel-calendar square with its price."
+    },
+    "soundFi": "Start ui with a Finnish-y-like position and glide quickly into i. Ée ends in one e-like vowel, not two syllables.",
+    "article": {
+      "gender": "f",
+      "base": "nuitée",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Nuitée is feminine, like nuit, night. Store une nuitée as one billed night of accommodation."
+    }
+  },
+  "available": {
+    "fi": "saatavilla",
+    "fiAccepted": [
+      "vapaana",
+      "käytettävissä"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the hotel’s green vacancy indicator and ask une chambre disponible ? The word attaches to the free room."
+    },
+    "soundFi": "The n is pronounced here, not nasal: it starts the next syllable. The final e is usually silent."
+  }
+}

@@ -11,6 +11,14 @@ try{
  await call('alice',[op('phone-1')]);state=await(await call('alice')).json();assert.equal(state.state.vocab.progress.hello['en-fr'].right,2);
  await call('alice',[op('phone-wrong',{wordId:'hello',track:'en-fr',ok:false,retry:false,day})]);state=await(await call('alice')).json();assert.equal(state.state.vocab.progress.hello['en-fr'].strength,10);
  const bob=await(await call('bob')).json();assert.deepEqual(bob.state.vocab.progress,{});assert.equal(bob.state.app.xp,0);
+ for(const track of ['article','sound']){
+  const introduced=op('finnish-intro-'+track,{wordId:'street',track},'vocab.introduced');
+  const practiced=op('finnish-attempt-'+track,{wordId:'street',track,ok:true,retry:false,day});
+  assert.equal((await call('finnish',[introduced,practiced])).status,200);
+ }
+ const finnish=(await(await call('finnish')).json()).state;
+ assert.equal(finnish.vocab.progress.street.article.strength,20);assert.equal(finnish.vocab.progress.street.sound.strength,20);
+ assert.equal(finnish.vocab.progress.street['en-fr'],undefined);assert.ok(finnish.vocab.introduced['street|article']);assert.ok(finnish.vocab.introduced['street|sound']);
  const reset=op('reset-alice',{},'reset');await call('alice',[reset,op('after-reset',undefined,'vocab.attempt','reset-alice')]);await call('alice',[op('stale-phone-answer')]);state=await(await call('alice')).json();assert.equal(state.state.app.xp,5);assert.equal(state.state.epoch,'reset-alice');
  // An idempotent retry that races between initial document read and ID lookup must not return stale state.
  const racing=op('racing',undefined,'vocab.attempt','reset-alice');db.beforeLookup=async()=>{assert.equal((await call('alice',[racing])).status,200);};const raceReply=await(await call('alice',[racing])).json();assert.equal(raceReply.state.vocab.progress.hello['en-fr'].right,2);

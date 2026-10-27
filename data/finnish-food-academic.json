@@ -1,0 +1,2057 @@
+{
+  "coffee": {
+    "fi": "kahvi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect café with Finnish kahvila: picture the café counter when you order un café."
+    },
+    "soundFi": "Final é is pronounced as a clear e-like vowel; avoid the English diphthong in café.",
+    "article": {
+      "gender": "m",
+      "base": "café",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Café is masculine. Du café means some coffee; un café normally means one serving.",
+      "countable": false
+    }
+  },
+  "tea": {
+    "fi": "tee",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Thé is the familiar tea word: connect it with Finnish tee and German Tee."
+    },
+    "soundFi": "The h is silent. Thé has one clear e-like vowel, with no final extra vowel.",
+    "article": {
+      "gender": "m",
+      "base": "thé",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Thé is masculine. Du thé means some tea; un thé can mean one serving.",
+      "countable": false
+    }
+  },
+  "water": {
+    "fi": "vesi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a jug arriving at your restaurant table: une carafe d’eau. The little word eau names the water."
+    },
+    "soundFi": "The three letters eau make one o-like vowel, a little more closed and rounded than Finnish o.",
+    "article": {
+      "gender": "f",
+      "base": "eau",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Eau is feminine: la becomes l’ before its vowel. For some water say de l’eau; une eau can name a type.",
+      "countable": false
+    }
+  },
+  "bread": {
+    "fi": "leipä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a bread basket beside your plate and ask for du pain. Keep pain with that meal scene."
+    },
+    "soundFi": "The ain is one nasal vowel. Do not pronounce a separate Finnish n at the end.",
+    "article": {
+      "gender": "m",
+      "base": "pain",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Pain is masculine. For an unspecified amount of bread, use du pain; un pain can mean a loaf.",
+      "countable": false
+    }
+  },
+  "croissant": {
+    "fi": "croissant",
+    "fiAccepted": [
+      "voisarvi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Use the crescent-shaped pastry you already know as the picture for croissant."
+    },
+    "soundFi": "The oi sounds like wa; an is nasal and the final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "croissant",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Croissant is masculine. Learn the pastry together with un croissant."
+    }
+  },
+  "set-menu": {
+    "fi": "ateriakokonaisuus",
+    "fiAccepted": [
+      "menu",
+      "kiinteähintainen menu"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Menu looks familiar, but here it means a set of courses for one price. La carte is the full list."
+    },
+    "soundFi": "The final u is close to Finnish y, not Finnish u.",
+    "article": {
+      "gender": "m",
+      "base": "menu",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Menu is masculine. Un menu names one set meal; this gender is a property of the noun."
+    }
+  },
+  "menu": {
+    "fi": "ruokalista",
+    "fiAccepted": [
+      "menu"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect carte with a card: picture the card listing the restaurant’s dishes."
+    },
+    "soundFi": "The t is pronounced; the final e is silent. Do not add a vowel after the t.",
+    "article": {
+      "gender": "f",
+      "base": "carte",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Carte is feminine. The menu card is une carte; learn article and noun together."
+    }
+  },
+  "table": {
+    "fi": "pöytä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English table gives the meaning directly. Attach the French article: une table."
+    },
+    "soundFi": "Final e is silent. The word ends in bl, without an extra Finnish vowel.",
+    "article": {
+      "gender": "f",
+      "base": "table",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Table is feminine. Its meaning does not predict its gender; keep une table as one unit."
+    }
+  },
+  "bill": {
+    "fi": "lasku",
+    "fiAccepted": [
+      "ravintolalasku"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine the server adding up your meal: ask for l’addition when you are ready to pay."
+    },
+    "soundFi": "The ending tion has a nasal vowel; do not add a separate Finnish n. Double d is not a long Finnish consonant.",
+    "article": {
+      "gender": "f",
+      "base": "addition",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Addition is feminine, like many nouns in -tion. Before its vowel, la becomes l’."
+    }
+  },
+  "jug": {
+    "fi": "kannu",
+    "fiAccepted": [
+      "karahvi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect carafe with English carafe: picture the water jug shared by everyone at the table."
+    },
+    "soundFi": "The final f is pronounced and the final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "carafe",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Carafe is feminine. Learn une carafe, especially in the chunk une carafe d’eau."
+    }
+  },
+  "dish": {
+    "fi": "ruokalaji",
+    "fiAccepted": [
+      "annos"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the main plate arriving: le plat du jour is the dish of the day."
+    },
+    "soundFi": "The final t is silent in plat. The word ends in its vowel.",
+    "article": {
+      "gender": "m",
+      "base": "plat",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Plat is masculine. Learn un plat du jour for one dish of the day."
+    }
+  },
+  "dessert": {
+    "fi": "jälkiruoka",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Dessert matches English dessert. Picture the sweet course after le plat."
+    },
+    "soundFi": "The double s is an unvoiced s. The final t is silent; désert has a different, voiced s sound.",
+    "article": {
+      "gender": "m",
+      "base": "dessert",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Dessert is masculine. Learn un dessert as the final course of the meal."
+    }
+  },
+  "vegetarian": {
+    "fi": "kasvisruokaa syövä",
+    "fiAccepted": [
+      "kasvissyöjä",
+      "kasvis-",
+      "vegetaarinen"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect végétarien with English vegetarian. For a dish, un plat végétarien means a vegetarian dish."
+    },
+    "soundFi": "The gé has a voiced zh sound, not Finnish g. The final ien is nasal."
+  },
+  "without": {
+    "fi": "ilman",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine crossing sugar off a coffee order: un café sans sucre. Put sans before the ingredient to leave out."
+    },
+    "soundFi": "The an is nasal. Neither the n nor the final s is a separate consonant here."
+  },
+  "takeaway": {
+    "fi": "mukaan",
+    "fiAccepted": [
+      "mukaan otettavaksi"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Emporter means to carry away. Picture carrying your cup out of the café: à emporter."
+    },
+    "soundFi": "The em is nasal; final er is pronounced as a clear e-like vowel, without a final r."
+  },
+  "conference": {
+    "fi": "tieteellinen konferenssi",
+    "fiAccepted": [
+      "konferenssi",
+      "tieteellinen kokous"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine colleagues gathering for talks: le colloque is the whole academic event. La conférence can mean one lecture."
+    },
+    "soundFi": "The final que is a k sound; its u and e are not separate vowels.",
+    "article": {
+      "gender": "m",
+      "base": "colloque",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Colloque is masculine. Learn un colloque for one academic event."
+    }
+  },
+  "presentation": {
+    "fi": "esitys",
+    "fiAccepted": [
+      "presentaatio"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect présentation with Finnish presentaatio and English presentation; picture yourself beside your slides."
+    },
+    "soundFi": "The ending tion has a nasal vowel, without a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "présentation",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Présentation is feminine, like many nouns ending in -tion."
+    }
+  },
+  "badge": {
+    "fi": "nimikyltti",
+    "fiAccepted": [
+      "nimikortti",
+      "konferenssikortti"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Badge matches English badge: picture the name label hanging from a conference lanyard."
+    },
+    "soundFi": "Keep the voiced dge sound of English badge; do not add a final Finnish vowel.",
+    "article": {
+      "gender": "m",
+      "base": "badge",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Badge is masculine in French. Its gender must be learned with the word."
+    }
+  },
+  "registration": {
+    "fi": "ilmoittautuminen",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Think of writing your name on the conference list: inscription. The ending -tion often marks an action noun."
+    },
+    "soundFi": "The initial in and final on are nasal vowels; neither needs a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "inscription",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Inscription is feminine, like many nouns ending in -tion. La becomes l’ before its vowel."
+    }
+  },
+  "meeting-room": {
+    "fi": "kokoushuone",
+    "fiAccepted": [
+      "sali",
+      "huone"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the room number on a conference door: la salle is the room or hall, not a hotel bedroom."
+    },
+    "soundFi": "The ll does not make a long Finnish l here. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "salle",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Salle is feminine. Keep une salle for a room or hall; une chambre is a bedroom."
+    }
+  },
+  "break": {
+    "fi": "tauko",
+    "fiAccepted": [
+      "paussi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect pause with Finnish paussi and German Pause. Picture leaving the lecture room for coffee."
+    },
+    "soundFi": "The au is o-like; the s is voiced z, unlike the s in Finnish paussi.",
+    "article": {
+      "gender": "f",
+      "base": "pause",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Pause is feminine. Learn une pause café, a coffee break."
+    }
+  },
+  "question": {
+    "fi": "kysymys",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Question matches English question. Picture raising a hand: j’ai une question."
+    },
+    "soundFi": "The qu is k. Say the t in question; final on is nasal without a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "question",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Question is feminine, like many nouns ending in -tion. Learn une question as a unit."
+    }
+  },
+  "answer": {
+    "fi": "vastaus",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect réponse with English response. Picture the speaker answering your raised hand."
+    },
+    "soundFi": "The on is nasal. The final se has an s sound, not z.",
+    "article": {
+      "gender": "f",
+      "base": "réponse",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Réponse is feminine. The gender belongs to the noun, not to who answers."
+    }
+  },
+  "research": {
+    "fi": "tutkimus",
+    "fiAccepted": [
+      "tutkimustyö"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "See chercher, “to look for”, inside recherche: research means looking for knowledge."
+    },
+    "soundFi": "Both ch groups have a sh sound. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "recherche",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Recherche is feminine. In this field-of-work sense, say de la recherche rather than une recherche.",
+      "countable": false
+    }
+  },
+  "field": {
+    "fi": "tutkimusala",
+    "fiAccepted": [
+      "ala"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect domaine with English domain: picture a label naming the area of your research."
+    },
+    "soundFi": "Here ai is e-like and the n is pronounced; the following e prevents the nasal reading.",
+    "article": {
+      "gender": "m",
+      "base": "domaine",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Domaine is masculine. Its final -e does not make it feminine; learn un domaine."
+    }
+  },
+  "programme": {
+    "fi": "ohjelma",
+    "fiAccepted": [
+      "konferenssiohjelma"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Programme matches English programme. Picture the printed timetable listing each conference session."
+    },
+    "soundFi": "Double m is not a long Finnish consonant here; final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "programme",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Programme is masculine despite its final -e. Learn un programme as a unit."
+    }
+  },
+  "poster": {
+    "fi": "juliste",
+    "fiAccepted": [
+      "posteri"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture your research poster fixed to the wall by the entrance: mon affiche."
+    },
+    "soundFi": "The ch is sh. Final e is silent, and ff is not a long Finnish f.",
+    "article": {
+      "gender": "f",
+      "base": "affiche",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Affiche is feminine: la becomes l’ before its vowel. Une affiche shows its gender clearly."
+    }
+  },
+  "university": {
+    "fi": "yliopisto",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "English university and German Universität give you a direct bridge to université."
+    },
+    "soundFi": "The initial u is close to Finnish y. Final é is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "université",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Université is feminine. Many abstract nouns in -té are feminine; the pattern has exceptions."
+    }
+  },
+  "researcher": {
+    "fi": "tutkija",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Chercher means to look for. A chercheur is a person who searches for knowledge; chercheuse is the feminine form."
+    },
+    "soundFi": "The ch is sh; eu is near Finnish ö, with a more open French vowel here.",
+    "article": {
+      "gender": "m",
+      "base": "chercheur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Chercheur is the masculine form; une chercheuse is the feminine form. Learn each noun with its article."
+    }
+  },
+  "chat": {
+    "fi": "keskustella",
+    "fiAccepted": [
+      "jutella"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect discuter with English discuss or Finnish diskuteerata: picture talking about a poster during the break."
+    },
+    "soundFi": "The u is close to Finnish y. Final er is e-like, without a final r."
+  },
+  "lunch": {
+    "fi": "lounas",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Use the timetable anchor: déjeuner is the meal around midi, noon. Petit déjeuner is breakfast."
+    },
+    "soundFi": "The j is voiced zh, not Finnish j. Final er is e-like and its r is silent.",
+    "article": {
+      "gender": "m",
+      "base": "déjeuner",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Déjeuner is masculine as a meal noun. Here un déjeuner is one lunch."
+    }
+  },
+  "dinner": {
+    "fi": "illallinen",
+    "fiAccepted": [
+      "päivällinen"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect dîner with English dinner; picture the evening meal after the last conference session."
+    },
+    "soundFi": "The î is an i vowel; its accent does not mean a Finnish double vowel. Final r is silent.",
+    "article": {
+      "gender": "m",
+      "base": "dîner",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Dîner is masculine as a meal noun. Here un dîner is one dinner."
+    }
+  },
+  "restaurant-server": {
+    "fi": "tarjoilija",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect serveur with English server: picture the person bringing la carte to your table."
+    },
+    "soundFi": "The eu is an ö-like vowel; keep the final r audible.",
+    "article": {
+      "gender": "m",
+      "base": "serveur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Serveur is the masculine form. The feminine form is une serveuse."
+    }
+  },
+  "bakery": {
+    "fi": "leipomo",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Boulanger is a baker; boulangerie is the baker’s shop. The ending -erie often names a shop or activity."
+    },
+    "soundFi": "The ou is close to Finnish u; an is nasal and g before e has a voiced zh sound.",
+    "article": {
+      "gender": "f",
+      "base": "boulangerie",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Boulangerie is feminine. The -erie ending often appears in feminine shop and activity nouns."
+    }
+  },
+  "restaurant": {
+    "fi": "ravintola",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Restaurant is familiar from English and German. Picture the sign above the place where you eat."
+    },
+    "soundFi": "The au is o-like and an is nasal. The final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "restaurant",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Restaurant is masculine. Learn un restaurant as the name of one place to eat."
+    }
+  },
+  "counter": {
+    "fi": "tiski",
+    "fiAccepted": [
+      "baaritiski"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture ordering while standing at the café counter: on commande au comptoir."
+    },
+    "soundFi": "The p is silent. The oi is wa-like, and the final r is pronounced.",
+    "article": {
+      "gender": "m",
+      "base": "comptoir",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Comptoir is masculine. Keep le comptoir with the useful location chunk au comptoir."
+    }
+  },
+  "terrace": {
+    "fi": "terassi",
+    "fiAccepted": [
+      "ulkoterassi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Terrasse connects directly with Finnish terassi: picture outdoor tables in an Angers square."
+    },
+    "soundFi": "Double s keeps an unvoiced s sound. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "terrasse",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Terrasse is feminine. Learn une terrasse as an outdoor seating area."
+    }
+  },
+  "drinking-glass": {
+    "fi": "juomalasi",
+    "fiAccepted": [
+      "lasi"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a transparent glass beside the water jug: un verre d’eau. Keep verre with that object."
+    },
+    "soundFi": "The final e is silent; rr is not a long Finnish consonant here.",
+    "article": {
+      "gender": "m",
+      "base": "verre",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Verre is masculine despite final -e. Un verre d’eau is one glass of water."
+    }
+  },
+  "cup": {
+    "fi": "kuppi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect tasse with German Tasse: picture the cup with a handle under your espresso."
+    },
+    "soundFi": "The double s is an unvoiced s. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "tasse",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Tasse is feminine. Keep une tasse with the cup image."
+    }
+  },
+  "plate": {
+    "fi": "lautanen",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture your meal sitting on the round plate: l’assiette. Contrast it with le plat, the dish itself."
+    },
+    "soundFi": "The final t is pronounced; final e is silent. Double t does not mean a long Finnish t.",
+    "article": {
+      "gender": "f",
+      "base": "assiette",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Assiette is feminine: la becomes l’ before its vowel. Une assiette makes the gender visible."
+    }
+  },
+  "fork": {
+    "fi": "haarukka",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine the fork’s prongs on the left of your plate: une fourchette."
+    },
+    "soundFi": "The ou is near Finnish u, ch is sh, and the final t is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "fourchette",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Fourchette is feminine. Nouns ending in -ette are often feminine, but endings are tendencies."
+    }
+  },
+  "knife": {
+    "fi": "veitsi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture cutting a bread roll with the knife: le couteau beside your plate."
+    },
+    "soundFi": "The ou is close to Finnish u. The letters eau make one o-like vowel.",
+    "article": {
+      "gender": "m",
+      "base": "couteau",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Couteau is masculine. Nouns ending in -eau are often masculine; l’eau is a useful exception."
+    }
+  },
+  "spoon": {
+    "fi": "lusikka",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a spoon lifting soup to your mouth: une cuillère pour la soupe."
+    },
+    "soundFi": "The u starts near Finnish y; ill contains a Finnish j-like glide. The final r is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "cuillère",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Cuillère is feminine. Learn une cuillère as a whole phrase."
+    }
+  },
+  "napkin": {
+    "fi": "lautasliina",
+    "fiAccepted": [
+      "servetti"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Serviette alone can mean a towel. De table, “of the table”, makes it the napkin beside your plate."
+    },
+    "soundFi": "In serviette, tt gives one t here. Final e is silent in both serviette and table.",
+    "article": {
+      "gender": "f",
+      "base": "serviette de table",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Serviette is feminine. Adding de table does not change the gender of the main noun."
+    }
+  },
+  "salt": {
+    "fi": "suola",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Imagine the small salt shaker beside the pepper: le sel. Say avec du sel when adding some salt."
+    },
+    "soundFi": "Keep the final l audible; do not add an extra vowel after it.",
+    "article": {
+      "gender": "m",
+      "base": "sel",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Sel is masculine. For some salt, use du sel; un sel would mean a kind of salt.",
+      "countable": false
+    }
+  },
+  "pepper": {
+    "fi": "pippuri",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture turning the pepper mill over your meal: du poivre. Contrast it with le sel."
+    },
+    "soundFi": "The oi is wa-like. The v is pronounced; final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "poivre",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Poivre is masculine. For some pepper, use du poivre; un poivre can mean a variety.",
+      "countable": false
+    }
+  },
+  "sugar": {
+    "fi": "sokeri",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Sucre echoes Finnish sokeri. Picture a sugar cube beside your coffee and the phrase sans sucre, without sugar."
+    },
+    "soundFi": "The u is close to Finnish y, not Finnish u. Final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "sucre",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Sucre is masculine. For some sugar, use du sucre; un sucre can mean a sugar cube.",
+      "countable": false
+    }
+  },
+  "milk": {
+    "fi": "maito",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a small milk jug beside the coffee cup: un peu de lait."
+    },
+    "soundFi": "The ai is an open e-like vowel. The final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "lait",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Lait is masculine. For some milk, use du lait; un lait may name a type or serving.",
+      "countable": false
+    }
+  },
+  "butter": {
+    "fi": "voi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a cube of butter melting into warm bread: du pain avec du beurre. Tie beurre to that breakfast scene."
+    },
+    "soundFi": "The eu is an open ö-like vowel. Final e is silent and rr is not Finnish double r.",
+    "article": {
+      "gender": "m",
+      "base": "beurre",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Beurre is masculine. For some butter, use du beurre; un beurre can mean a type.",
+      "countable": false
+    }
+  },
+  "cheese": {
+    "fi": "juusto",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the cheese board after a French meal: du fromage. Keep the word with that course."
+    },
+    "soundFi": "The final ge has a voiced zh sound; its e is not a separate vowel.",
+    "article": {
+      "gender": "m",
+      "base": "fromage",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Fromage is masculine. -age is often masculine, with exceptions. Du fromage means some cheese.",
+      "countable": false
+    }
+  },
+  "egg": {
+    "fi": "kananmuna",
+    "fiAccepted": [
+      "muna"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture one egg on a breakfast plate: un œuf. The singular object gives you a firm visual anchor."
+    },
+    "soundFi": "The œu is an open ö-like vowel, and the f is pronounced in this singular form.",
+    "article": {
+      "gender": "m",
+      "base": "œuf",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Œuf is masculine: le becomes l’ before its vowel. Un œuf shows the gender clearly."
+    }
+  },
+  "chicken": {
+    "fi": "kana",
+    "fiAccepted": [
+      "kananliha"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the chicken dish on a menu: le poulet avec du riz."
+    },
+    "soundFi": "The ou is close to Finnish u. Final et is e-like and the t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "poulet",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Poulet is masculine. Du poulet means some chicken meat; un poulet is a whole chicken.",
+      "countable": false
+    }
+  },
+  "fish": {
+    "fi": "kala",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a fish on the restaurant’s menu: le poisson du jour."
+    },
+    "soundFi": "The oi is wa-like, ss is unvoiced s, and on is nasal. Poison with one s has a voiced z.",
+    "article": {
+      "gender": "m",
+      "base": "poisson",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Poisson is masculine. Du poisson means some fish; un poisson means an individual fish.",
+      "countable": false
+    }
+  },
+  "meat": {
+    "fi": "liha",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the meat section of a menu; je ne mange pas de viande is the useful refusal chunk."
+    },
+    "soundFi": "The an is nasal. The final d is pronounced, while final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "viande",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Viande is feminine. For some meat, say de la viande rather than une viande.",
+      "countable": false
+    }
+  },
+  "vegetables": {
+    "fi": "vihannekset",
+    "fiAccepted": [
+      "kasvikset"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a colourful vegetable side dish: des légumes avec le plat."
+    },
+    "soundFi": "The u is close to Finnish y. The final plural s is silent.",
+    "article": {
+      "gender": "m",
+      "base": "légumes",
+      "definite": "les",
+      "indefinite": "des",
+      "note": "Légume is masculine; légumes is plural. Les/des are plural articles and do not reveal gender by themselves.",
+      "countable": false
+    }
+  },
+  "salad": {
+    "fi": "salaatti",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Salade connects directly with Finnish salaatti. Picture the salad bowl or a light lunch."
+    },
+    "soundFi": "Keep the final d audible; final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "salade",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Salade is feminine. Une salade can mean a prepared salad or one serving."
+    }
+  },
+  "soup": {
+    "fi": "keitto",
+    "fiAccepted": [
+      "soppa"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect soupe with German Suppe: picture a warm soup bowl and spoon."
+    },
+    "soundFi": "The ou is close to Finnish u. The p is audible and final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "soupe",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Soupe is feminine. De la soupe means some soup; une soupe can mean one serving or kind.",
+      "countable": false
+    }
+  },
+  "rice": {
+    "fi": "riisi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Riz connects with Finnish riisi and German Reis. Picture the small grains beside your main dish."
+    },
+    "soundFi": "The word ends in its i vowel: the final z is silent.",
+    "article": {
+      "gender": "m",
+      "base": "riz",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Riz is masculine. For an unspecified amount of rice, use du riz rather than un riz.",
+      "countable": false
+    }
+  },
+  "pasta": {
+    "fi": "pasta",
+    "fiAccepted": [
+      "makaroni"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture several strands of pasta on a plate. French normally uses the plural: des pâtes."
+    },
+    "soundFi": "The t is pronounced and the final plural s is silent. The accent is not a Finnish length mark.",
+    "article": {
+      "gender": "f",
+      "base": "pâtes",
+      "definite": "les",
+      "indefinite": "des",
+      "note": "Pâte is feminine; pâtes is normally plural for pasta. Use les pâtes or des pâtes.",
+      "countable": false
+    }
+  },
+  "potato": {
+    "fi": "peruna",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Pomme de terre literally gives “apple of the earth”: picture a potato coming out of the soil."
+    },
+    "soundFi": "Final e is silent in pomme and terre; the written double consonants are not Finnish long consonants.",
+    "article": {
+      "gender": "f",
+      "base": "pomme de terre",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Pomme is feminine. The phrase de terre does not change the main noun’s gender."
+    }
+  },
+  "apple": {
+    "fi": "omena",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture an apple beside a potato: pomme is the apple; pomme de terre is the potato."
+    },
+    "soundFi": "The m is pronounced, but mm does not make a long Finnish m here. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "pomme",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Pomme is feminine. Learn une pomme and connect it with une pomme de terre."
+    }
+  },
+  "juice": {
+    "fi": "mehu",
+    "fiAccepted": [
+      "hedelmämehu"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture an orange squeezed into a breakfast glass: un jus d’orange."
+    },
+    "soundFi": "The u is close to Finnish y. The final s is silent.",
+    "article": {
+      "gender": "m",
+      "base": "jus",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Jus is masculine. Du jus means some juice; un jus is commonly one serving.",
+      "countable": false
+    }
+  },
+  "beer": {
+    "fi": "olut",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Bière connects with German Bier. Picture ordering a local beer: une bière locale."
+    },
+    "soundFi": "The i leads into a Finnish j-like glide; è is an open e-like vowel, and the final r is audible.",
+    "article": {
+      "gender": "f",
+      "base": "bière",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Bière is feminine. De la bière means some beer; une bière can mean one serving.",
+      "countable": false
+    }
+  },
+  "wine": {
+    "fi": "viini",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect vin with Finnish viini. Picture a wine glass and the phrase un verre de vin."
+    },
+    "soundFi": "The in is one nasal vowel. Do not pronounce a separate Finnish n.",
+    "article": {
+      "gender": "m",
+      "base": "vin",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Vin is masculine. Du vin means some wine; un vin can mean a particular wine.",
+      "countable": false
+    }
+  },
+  "bottle": {
+    "fi": "pullo",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a whole bottle shared by the table: une bouteille d’eau. Contrast it with one verre."
+    },
+    "soundFi": "The ou is close to Finnish u; the ending ille has a Finnish j-like sound.",
+    "article": {
+      "gender": "f",
+      "base": "bouteille",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Bouteille is feminine. Une bouteille d’eau keeps the gender of bouteille, the container."
+    }
+  },
+  "sparkling-water": {
+    "fi": "hiilihapotettu vesi",
+    "fiAccepted": [
+      "kuplavesi",
+      "kivennäisvesi"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Connect gazeuse with gas: picture bubbles rising in the water. It contrasts with eau plate."
+    },
+    "soundFi": "The s in gazeuse is voiced z. The eu is a rounded ö-like vowel.",
+    "article": {
+      "gender": "f",
+      "base": "eau gazeuse",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Eau is feminine. Gazeuse agrees with it; for some sparkling water say de l’eau gazeuse.",
+      "countable": false
+    }
+  },
+  "still-water": {
+    "fi": "hiilihapoton vesi",
+    "fiAccepted": [
+      "tavallinen vesi",
+      "kuplaton vesi"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a flat, bubble-free surface: eau plate is still water. The “flat” picture is a memory association."
+    },
+    "soundFi": "The t in plate is pronounced, unlike the silent t in plat. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "eau plate",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Eau is feminine. Plate agrees with it; for some still water say de l’eau plate.",
+      "countable": false
+    }
+  },
+  "portion": {
+    "fi": "annos",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Portion matches English portion and Finnish annos: picture one measured serving on a plate."
+    },
+    "soundFi": "The ending tion has a nasal vowel, without a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "portion",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Portion is feminine, like many nouns ending in -tion. Learn une portion."
+    }
+  },
+  "food-order": {
+    "fi": "tilaus",
+    "fiAccepted": [
+      "ruokatilaus"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Pair the noun commande with the verb commander: your restaurant order is what you ask the kitchen to prepare."
+    },
+    "soundFi": "The an is nasal and the final d is pronounced. Double m is not a long Finnish consonant.",
+    "article": {
+      "gender": "f",
+      "base": "commande",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Commande is feminine. It is the noun paired with the verb commander."
+    }
+  },
+  "order-food": {
+    "fi": "tilata ruokaa",
+    "fiAccepted": [
+      "tilata"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Pair commander with la commande, the order. Picture telling the server which dish you want."
+    },
+    "soundFi": "The an is nasal. Final er is e-like, without a pronounced final r."
+  },
+  "pay": {
+    "fi": "maksaa",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect payer with English pay. Picture handing over your bank card: je voudrais payer."
+    },
+    "soundFi": "The middle y has a Finnish j-like sound. Final er is pronounced e-like, without r."
+  },
+  "bank-card": {
+    "fi": "pankkikortti",
+    "fiAccepted": [
+      "maksukortti"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "You already know carte as a card. Bancaire tells you this one belongs to the bank, not the restaurant menu."
+    },
+    "soundFi": "The an in bancaire is nasal, without a separate Finnish n. The final r is pronounced.",
+    "article": {
+      "gender": "f",
+      "base": "carte bancaire",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Carte is feminine. Bancaire describes the card and does not change its gender."
+    }
+  },
+  "cash": {
+    "fi": "käteinen",
+    "fiAccepted": [
+      "käteisraha"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture coins and notes in your hand: payer en espèces. Learn the payment chunk, not “species”."
+    },
+    "soundFi": "The c before è is an s sound. The final plural s is silent.",
+    "article": {
+      "gender": "f",
+      "base": "espèces",
+      "definite": "les",
+      "indefinite": "des",
+      "note": "Espèces is feminine plural in the cash expression. Learn payer en espèces; un/une does not fit this meaning.",
+      "countable": false
+    }
+  },
+  "separate-bill": {
+    "fi": "erillinen lasku",
+    "fiAccepted": [
+      "oma lasku"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Séparée resembles English separated: picture one bill for each person instead of a shared total."
+    },
+    "soundFi": "The final ée is a pronounced e-like vowel. The ending tion is nasal without a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "addition séparée",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Addition is feminine. Séparée agrees with it; la becomes l’ before its vowel."
+    }
+  },
+  "eat-in": {
+    "fi": "paikan päällä",
+    "fiAccepted": [
+      "täällä syötäväksi"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Place can mean a place. Picture keeping your cup at the café: sur place contrasts with à emporter."
+    },
+    "soundFi": "The u is close to Finnish y. Final e in place is silent."
+  },
+  "lecture": {
+    "fi": "luento",
+    "fiAccepted": [
+      "esitelmä"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Conférence resembles English conference, but here it is one lecture or talk. Le colloque is the whole academic event."
+    },
+    "soundFi": "The on and en are different nasal vowels; neither needs a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "conférence",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Conférence is feminine. The -ence ending is often feminine; here the word means a lecture or talk."
+    }
+  },
+  "session": {
+    "fi": "sessio",
+    "fiAccepted": [
+      "istunto"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Session connects with Finnish sessio: picture one block of talks on the conference timetable."
+    },
+    "soundFi": "The double s stays unvoiced; final ion ends in a nasal vowel.",
+    "article": {
+      "gender": "f",
+      "base": "session",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Session is feminine, like many nouns ending in -sion. Learn une session."
+    }
+  },
+  "workshop": {
+    "fi": "työpaja",
+    "fiAccepted": [
+      "workshop"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a small group doing an activity around a table: un atelier rather than a large lecture."
+    },
+    "soundFi": "The ending ier has a Finnish j-like glide followed by an e-like vowel; final r is silent.",
+    "article": {
+      "gender": "m",
+      "base": "atelier",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Atelier is masculine: le becomes l’ before its vowel. Un atelier shows the gender."
+    }
+  },
+  "meeting": {
+    "fi": "kokous",
+    "fiAccepted": [
+      "tapaaminen"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Réunion contains the idea of coming together again: picture colleagues gathering around a meeting table."
+    },
+    "soundFi": "The u is close to Finnish y; the final ion ends in a nasal vowel.",
+    "article": {
+      "gender": "f",
+      "base": "réunion",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Réunion is feminine, like many nouns ending in -ion. Learn une réunion."
+    }
+  },
+  "seminar": {
+    "fi": "seminaari",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Séminaire connects directly with Finnish seminaari and German Seminar."
+    },
+    "soundFi": "The ai is e-like; the n and final r are pronounced here.",
+    "article": {
+      "gender": "m",
+      "base": "séminaire",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Séminaire is masculine despite its final -e. Learn un séminaire."
+    }
+  },
+  "speaker": {
+    "fi": "puhuja",
+    "fiAccepted": [
+      "esiintyjä"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Intervenir means to intervene or contribute. Picture the person contributing the talk at the microphone."
+    },
+    "soundFi": "Initial in and final an are nasal vowels. The final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "intervenant",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Intervenant is the masculine form; une intervenante is the feminine form."
+    }
+  },
+  "audience": {
+    "fi": "yleisö",
+    "fiAccepted": [
+      "kuulijat"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect public with the public: picture everyone seated facing the speaker. Here it names the audience."
+    },
+    "soundFi": "The u is close to Finnish y. The final c is pronounced as k.",
+    "article": {
+      "gender": "m",
+      "base": "public",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Public is masculine as a collective noun. It stays le public regardless of the people in the audience.",
+      "countable": false
+    }
+  },
+  "attendee": {
+    "fi": "osallistuja",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Participant matches English participant. Picture each attendee collecting a badge at registration."
+    },
+    "soundFi": "The final ant is nasal, without a separate Finnish n. The final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "participant",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Participant is the masculine form; une participante is the feminine form."
+    }
+  },
+  "organizer": {
+    "fi": "järjestäjä",
+    "fiAccepted": [
+      "organisaattori"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Organisateur connects with Finnish organisaattori: picture the person answering questions at the conference desk."
+    },
+    "soundFi": "The s between vowels is voiced z. The ending eur has an ö-like vowel and an audible r.",
+    "article": {
+      "gender": "m",
+      "base": "organisateur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Organisateur is the masculine form; une organisatrice is the feminine form."
+    }
+  },
+  "colleague": {
+    "fi": "kollega",
+    "fiAccepted": [
+      "työtoveri"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Collègue connects directly with Finnish kollega and German Kollege. Picture the person from your own team."
+    },
+    "soundFi": "The gu gives a hard g; u is not a separate vowel here. Final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "collègue",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Collègue can describe any gender: un collègue or une collègue. The noun’s spelling stays the same.",
+      "acceptedGenders": [
+        "m",
+        "f"
+      ],
+      "quiz": false
+    }
+  },
+  "student": {
+    "fi": "opiskelija",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a student introducing their university: je suis étudiant à Angers."
+    },
+    "soundFi": "The u is close to Finnish y and final ant is nasal. The final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "étudiant",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Étudiant is the masculine form; une étudiante is the feminine form."
+    }
+  },
+  "professor": {
+    "fi": "professori",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Professeur connects directly with Finnish professori. In other contexts it can also mean a teacher."
+    },
+    "soundFi": "The ss is unvoiced s. The final eur has an ö-like vowel and an audible r.",
+    "article": {
+      "gender": "m",
+      "base": "professeur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "The listed form is le professeur. For a woman, la professeure is common; la professeur is also used.",
+      "acceptedGenders": [
+        "m",
+        "f"
+      ],
+      "quiz": false
+    }
+  },
+  "laboratory": {
+    "fi": "laboratorio",
+    "fiAccepted": [
+      "labra"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Laboratoire connects directly with Finnish laboratorio: picture your research group’s workplace."
+    },
+    "soundFi": "The ending oire is wa-like followed by r; final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "laboratoire",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Laboratoire is masculine despite final -e. Learn un laboratoire."
+    }
+  },
+  "team": {
+    "fi": "tiimi",
+    "fiAccepted": [
+      "ryhmä",
+      "joukkue"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture your colleagues grouped together on a project: notre équipe. Keep the word with that group picture."
+    },
+    "soundFi": "The qu is k, without a u vowel. Final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "équipe",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Équipe is feminine: la becomes l’ before its vowel. Une équipe makes the gender visible."
+    }
+  },
+  "project": {
+    "fi": "projekti",
+    "fiAccepted": [
+      "hanke"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Projet connects with Finnish projekti and English project. Picture a named folder containing your research plans."
+    },
+    "soundFi": "The j is voiced zh, not Finnish j. The final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "projet",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Projet is masculine. Learn un projet with the familiar project meaning."
+    }
+  },
+  "topic": {
+    "fi": "aihe",
+    "fiAccepted": [
+      "tutkimusaihe"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect sujet with English subject: picture the one topic written at the top of a presentation."
+    },
+    "soundFi": "The u is close to Finnish y, j is voiced zh, and the final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "sujet",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Sujet is masculine. Learn un sujet for the topic under discussion."
+    }
+  },
+  "title": {
+    "fi": "otsikko",
+    "fiAccepted": [
+      "nimi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect titre with English title: picture the large heading on the first slide or paper."
+    },
+    "soundFi": "The word ends in tr, without an extra Finnish vowel; final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "titre",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Titre is masculine despite final -e. Learn un titre as a unit."
+    }
+  },
+  "abstract": {
+    "fi": "tiivistelmä",
+    "fiAccepted": [
+      "abstrakti",
+      "yhteenveto"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Résumé means the summary of the paper here. Picture the short paragraph before the full research article."
+    },
+    "soundFi": "The s between vowels is voiced z. Both written é vowels are pronounced.",
+    "article": {
+      "gender": "m",
+      "base": "résumé",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Résumé is masculine as a noun. Learn un résumé for one summary or abstract."
+    }
+  },
+  "scientific-paper": {
+    "fi": "tutkimusartikkeli",
+    "fiAccepted": [
+      "artikkeli",
+      "tieteellinen artikkeli"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Article connects directly with Finnish artikkeli. Picture a paper with authors, an abstract and references."
+    },
+    "soundFi": "The c is a k sound; final e is silent. Do not add a vowel after the final l.",
+    "article": {
+      "gender": "m",
+      "base": "article",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Article is masculine: le becomes l’ before its vowel. Un article shows its gender."
+    }
+  },
+  "result": {
+    "fi": "tulos",
+    "fiAccepted": [
+      "tutkimustulos"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Résultat connects with English result: picture the outcome column in your experiment."
+    },
+    "soundFi": "The u is close to Finnish y. The s is voiced z and the final t is silent.",
+    "article": {
+      "gender": "m",
+      "base": "résultat",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Résultat is masculine. Learn un résultat for one outcome."
+    }
+  },
+  "method": {
+    "fi": "menetelmä",
+    "fiAccepted": [
+      "metodi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Méthode connects directly with Finnish metodi. Picture the “Methods” section of a research paper."
+    },
+    "soundFi": "The th is simply t, not English th. The final d is pronounced and final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "méthode",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Méthode is feminine despite the familiar English/German-looking form. Learn une méthode."
+    }
+  },
+  "data": {
+    "fi": "data",
+    "fiAccepted": [
+      "tutkimusaineisto",
+      "aineisto"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Donner means to give; données are the given information. Picture the rows of measurements in your dataset."
+    },
+    "soundFi": "The ending ées is one e-like vowel; final s is silent. Double n is not a long Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "données",
+      "definite": "les",
+      "indefinite": "des",
+      "note": "Donnée is feminine; données is plural. Les/des do not reveal gender, so remember une donnée too.",
+      "countable": false
+    }
+  },
+  "experiment": {
+    "fi": "koe",
+    "fiAccepted": [
+      "tieteellinen koe",
+      "koejärjestely"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Expérience resembles English experience, but in this scientific example it means an experiment. Picture a lab test."
+    },
+    "soundFi": "The x is ks. The en is nasal and final ce has an s sound.",
+    "article": {
+      "gender": "f",
+      "base": "expérience",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Expérience is feminine: la becomes l’ before its vowel. Une expérience shows the gender."
+    }
+  },
+  "analysis": {
+    "fi": "analyysi",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Analyse connects directly with Finnish analyysi. Picture studying the measurements after an experiment."
+    },
+    "soundFi": "The written y is an i sound, not Finnish y. The s is voiced z.",
+    "article": {
+      "gender": "f",
+      "base": "analyse",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Analyse is feminine: la becomes l’ before its vowel. Une analyse shows the gender."
+    }
+  },
+  "conclusion": {
+    "fi": "johtopäätös",
+    "fiAccepted": [
+      "päätelmä"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Conclusion matches English conclusion: picture the final statement that follows from the results."
+    },
+    "soundFi": "The u is close to Finnish y; s is voiced z, and final ion ends in a nasal vowel.",
+    "article": {
+      "gender": "f",
+      "base": "conclusion",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Conclusion is feminine, like many nouns ending in -sion. Learn une conclusion."
+    }
+  },
+  "source": {
+    "fi": "lähde",
+    "fiAccepted": [
+      "tietolähde"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Source matches English source: picture an arrow leading from a claim back to its original information."
+    },
+    "soundFi": "The ou is close to Finnish u. Final ce has an s sound.",
+    "article": {
+      "gender": "f",
+      "base": "source",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Source is feminine. Learn une source for one source of information."
+    }
+  },
+  "reference": {
+    "fi": "lähdeviite",
+    "fiAccepted": [
+      "viite"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Référence connects with English reference. Picture the author and year beside a claim in your paper."
+    },
+    "soundFi": "Final ence has a nasal vowel followed by s, without a separate Finnish n.",
+    "article": {
+      "gender": "f",
+      "base": "référence",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Référence is feminine. The -ence ending is often feminine, but endings are tendencies."
+    }
+  },
+  "graph": {
+    "fi": "kuvaaja",
+    "fiAccepted": [
+      "kaavio",
+      "graafi"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Graphique connects with Finnish grafiikka and English graph. Picture results plotted on two axes."
+    },
+    "soundFi": "The ph is f and qu is k. Final e is silent.",
+    "article": {
+      "gender": "m",
+      "base": "graphique",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Graphique is masculine as this noun, even though it ends in -e. Learn un graphique."
+    }
+  },
+  "slide": {
+    "fi": "esitysdia",
+    "fiAccepted": [
+      "dia"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Diapositive connects with Finnish dia. Picture one slide on the screen behind a speaker."
+    },
+    "soundFi": "The final v is pronounced; final e is silent. Keep i as an i vowel.",
+    "article": {
+      "gender": "f",
+      "base": "diapositive",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Diapositive is feminine. Its everyday shortened form is also feminine: une diapo."
+    }
+  },
+  "screen": {
+    "fi": "näyttö",
+    "fiAccepted": [
+      "valkokangas",
+      "ruutu"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the screen everyone is looking at during a talk: l’écran. It can also be your computer screen."
+    },
+    "soundFi": "Initial é is pronounced; an is nasal without a separate Finnish n.",
+    "article": {
+      "gender": "m",
+      "base": "écran",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Écran is masculine: le becomes l’ before its vowel. Un écran shows its gender."
+    }
+  },
+  "microphone": {
+    "fi": "mikrofoni",
+    "fiAccepted": [
+      "mikki"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Micro is the everyday short form of microphone: connect it with Finnish mikrofoni."
+    },
+    "soundFi": "The i is like Finnish i; keep final o rounded and do not add an extra vowel.",
+    "article": {
+      "gender": "m",
+      "base": "micro",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Micro is masculine, like the full noun microphone. Learn un micro."
+    }
+  },
+  "projector": {
+    "fi": "projektori",
+    "fiAccepted": [
+      "videotykki"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Projecteur connects with Finnish projektori. Picture the device sending your slides onto the screen."
+    },
+    "soundFi": "The j is voiced zh; final eur has an ö-like vowel and an audible r.",
+    "article": {
+      "gender": "m",
+      "base": "projecteur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Projecteur is masculine. Device nouns in -eur are often masculine, but -eur alone is not a universal rule."
+    }
+  },
+  "cable": {
+    "fi": "kaapeli",
+    "fiAccepted": [
+      "johto"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Câble connects with Finnish kaapeli and English cable. Picture the lead joining your laptop to the projector."
+    },
+    "soundFi": "Final e is silent. The accent on â is not an instruction to copy Finnish double-vowel spelling.",
+    "article": {
+      "gender": "m",
+      "base": "câble",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Câble is masculine despite final -e. Learn un câble with the cable image."
+    }
+  },
+  "socket": {
+    "fi": "pistorasia",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture the wall socket where you can plug in your charger: une prise près de la table."
+    },
+    "soundFi": "The s between vowels is voiced z; final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "prise",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Prise is feminine. Learn une prise for one electrical socket."
+    }
+  },
+  "computer": {
+    "fi": "tietokone",
+    "fiAccepted": [
+      "kannettava tietokone"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture your laptop inside your conference bag: mon ordinateur. Keep the word with your own device."
+    },
+    "soundFi": "Final eur has an ö-like vowel and an audible r. The final r is not silent here.",
+    "article": {
+      "gender": "m",
+      "base": "ordinateur",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Ordinateur is masculine: le becomes l’ before its vowel. Un ordinateur shows its gender."
+    }
+  },
+  "link": {
+    "fi": "linkki",
+    "fiAccepted": [
+      "verkkolinkki"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture a clickable connection between two webpages: le lien that someone sends after a talk."
+    },
+    "soundFi": "The i leads into a Finnish j-like glide; final en is nasal without a separate Finnish n.",
+    "article": {
+      "gender": "m",
+      "base": "lien",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Lien is masculine. Learn un lien for one connection or web link."
+    }
+  },
+  "website": {
+    "fi": "verkkosivusto",
+    "fiAccepted": [
+      "nettisivusto",
+      "verkkosivu"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Site web connects directly with English website. Picture the conference homepage with its programme."
+    },
+    "soundFi": "The w in web is a w sound, not Finnish v. The final b is voiced and audible.",
+    "article": {
+      "gender": "m",
+      "base": "site web",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Site is masculine. Adding web does not change the main noun’s gender."
+    }
+  },
+  "email": {
+    "fi": "sähköposti",
+    "fiAccepted": [
+      "sähköpostiviesti"
+    ],
+    "anchor": {
+      "type": "pattern",
+      "text": "Courriel combines French courrier, mail, and électronique. Picture sending your follow-up message after the conference."
+    },
+    "soundFi": "The ou is close to Finnish u; the ending iel has a Finnish j-like glide and an audible l.",
+    "article": {
+      "gender": "m",
+      "base": "courriel",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Courriel is masculine. Learn un courriel for one email message."
+    }
+  },
+  "business-card": {
+    "fi": "käyntikortti",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "You know carte, a card. De visite identifies the little card you give a new professional contact."
+    },
+    "soundFi": "The s in visite is voiced z; the final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "carte de visite",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Carte is feminine. The added phrase de visite does not change its gender."
+    }
+  },
+  "appointment": {
+    "fi": "sovittu tapaaminen",
+    "fiAccepted": [
+      "tapaaminen",
+      "ajanvaraus"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Connect rendez-vous with German Rendezvous. Picture a calendar entry reserved for an agreed meeting."
+    },
+    "soundFi": "The ez ends in an e-like vowel. The ou is close to Finnish u and final s is silent.",
+    "article": {
+      "gender": "m",
+      "base": "rendez-vous",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Rendez-vous is masculine. Its written ending stays -vous even for one appointment."
+    }
+  },
+  "date": {
+    "fi": "päivämäärä",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "cognate",
+      "text": "Date matches English date. Picture circling one day on the conference calendar."
+    },
+    "soundFi": "The final t is pronounced and final e is silent.",
+    "article": {
+      "gender": "f",
+      "base": "date",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Date is feminine. Learn une date as one calendar date."
+    }
+  },
+  "time-slot": {
+    "fi": "aikaväli",
+    "fiAccepted": [
+      "aikaikkuna",
+      "vapaa aika"
+    ],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture one empty block in a busy timetable: un créneau disponible is an available time slot."
+    },
+    "soundFi": "The ending eau is one rounded o-like vowel. Do not pronounce three separate vowels.",
+    "article": {
+      "gender": "m",
+      "base": "créneau",
+      "definite": "le",
+      "indefinite": "un",
+      "note": "Créneau is masculine. The ending -eau often appears in masculine nouns."
+    }
+  },
+  "duration": {
+    "fi": "kesto",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "pattern",
+      "text": "Pair durée with durer, to last. Picture a timer showing how long your presentation will take."
+    },
+    "soundFi": "The u is close to Finnish y. Final ée is a pronounced e-like vowel.",
+    "article": {
+      "gender": "f",
+      "base": "durée",
+      "definite": "la",
+      "indefinite": "une",
+      "note": "Durée is feminine. Learn une durée for a length of time."
+    }
+  },
+  "present": {
+    "fi": "esittää",
+    "fiAccepted": [
+      "esitellä"
+    ],
+    "anchor": {
+      "type": "cognate",
+      "text": "Pair présenter with la présentation. Picture yourself introducing a project while standing beside your slides."
+    },
+    "soundFi": "The s is voiced z, en is nasal, and final er is e-like without a final r."
+  },
+  "send": {
+    "fi": "lähettää",
+    "fiAccepted": [],
+    "anchor": {
+      "type": "scene",
+      "text": "Picture pressing Send on the message containing your slides: je peux vous envoyer le lien."
+    },
+    "soundFi": "Initial en is nasal; the middle oy includes a Finnish j-like glide. Final er has no pronounced r."
+  }
+}

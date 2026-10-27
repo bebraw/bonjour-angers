@@ -1,5 +1,5 @@
 (() => {
-  const BUILD='v7-word-guide-scenarios';
+  const BUILD='v8-finnish-memory';
   const panel=document.querySelector('#offline-panel');
   const label=document.querySelector('#offline-status');
   const retry=document.querySelector('#offline-retry');

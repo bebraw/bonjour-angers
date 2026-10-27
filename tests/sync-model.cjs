@@ -50,6 +50,13 @@ const introduction=M.applyOperation(start,op('vocab.introduced',{wordId:'hello',
 assert.deepEqual(introduction.vocab.introduced,{hello:t,'hello|listen':t});
 assert.equal(introduction.app.xp,0);
 assert.deepEqual(introduction.vocab.progress,{});
+for(const track of ['article','sound']){
+ const learned=M.project(start,[op('vocab.introduced',{wordId:'street',track}),attempt(true,{payload:{wordId:'street',track}})]);
+ assert.equal(learned.vocab.progress.street[track].strength,20);
+ assert.equal(learned.vocab.progress.street['en-fr'],undefined,'new practice tracks do not imply vocabulary recall');
+ assert.equal(learned.vocab.introduced['street|'+track],t);
+ assert.deepEqual(M.sanitizeSnapshot(learned),learned,'new modes survive cloud and backup validation');
+}
 const scenario=M.project(start,[op('app.scenario',{questionId:'station',ok:true,day:'2026-10-26'}),op('app.scenario',{questionId:'station',ok:false,day:'2026-10-26'}),op('app.complete',{topic:'travel'})]);
 assert.deepEqual(scenario.app.answers.station,{right:1,miss:1,attempts:2,streak:0});
 assert.equal(scenario.app.xp,10);
@@ -69,9 +76,11 @@ let custom=M.applyOperation(start,op('custom.put',{word:personal}));
 assert.equal(custom.vocab.custom.length,1);assert.equal(custom.vocab.custom[0].category,'custom');
 custom=M.applyOperation(custom,attempt(true,{payload:{wordId:personal.id}}));
 custom=M.applyOperation(custom,op('vocab.introduced',{wordId:personal.id}));
+for(const track of ['article','sound'])custom=M.applyOperation(custom,op('vocab.introduced',{wordId:personal.id,track}));
 const withPersonal=M.sanitizeSnapshot(custom);
 custom=M.applyOperation(custom,op('custom.delete',{wordId:personal.id}));
 assert.equal(custom.vocab.custom.length,0);assert.equal(custom.vocab.progress[personal.id],undefined);assert.equal(custom.vocab.introduced[personal.id],undefined);
+for(const track of ['article','sound'])assert.equal(custom.vocab.introduced[personal.id+'|'+track],undefined,'delete removes every mode-specific introduction');
 custom=M.applyOperation(custom,op('baseline',{snapshot:withPersonal}));
 assert.equal(custom.vocab.custom.length,0,'deletions are not resurrected by stale baselines');
 custom=M.applyOperation(custom,op('custom.put',{word:personal}));
